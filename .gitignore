@@ -8,4 +8,6 @@ blazon.tab.h
 blazon.l
 blazon.output
 blazon
+*.code-workspace
+
 
