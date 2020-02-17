@@ -1,0 +1,2 @@
+int getPossibles(char *, char *);
+

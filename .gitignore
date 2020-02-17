@@ -1,0 +1,11 @@
+*.o
+lex.yy.c
+t?.txt
+.vscode
+.idea
+blazon.tab.c
+blazon.tab.h
+blazon.l
+blazon.output
+blazon
+
