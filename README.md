@@ -1,6 +1,6 @@
 ## Blazon-Parser
 
-This is a Flex/Bison Parser for Blazonry of British heraldry. Blazonry is a formal language developed in the middle ages to describe the appearance of Coats of Arms. Despite not having a background in computational linguistics the heralds of the day developed a structured language that can be represented by a context free grammar and thus successfully parsed with an LR parser using single token look-ahead; thus anticipating the limitations of Flex/Bison 500 years in advance.
+This is a Flex/Bison Parser for Blazonry of British heraldry. Blazonry is a formal language developed in the middle ages to describe the appearance of Coats of Arms. Despite not having a background in computational linguistics the heralds of the day developed a structured language that can be represented by a context free grammar and hence successfully parsed with an LR parser using single token look-ahead; thereby anticipating the limitations of Flex/Bison 500 years in advance.
 
 Blazon-Parser is a combination of Flex lexer and Bison grammar that can recognise British Heraldic blazons and convert them to an Abstract Syntax Tree (AST) implemented in XML and conforming to the blazonML schema defined in the file blazonML.xsd. The drawshield suite of heraldry creation programs can use this AST to render an image of the blazon.
 
@@ -24,6 +24,8 @@ errors.\[ch] - error reporting routines
 Makefile - Is a standard makefile
 
 test.sh - Is a bash script that allows for interactive testing from the command line
+
+blazonML.xsd - An XML Schema document describing the Abstract Syntax Tree created by the parser
 
 ## Notes
 
