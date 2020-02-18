@@ -1,5 +1,12 @@
 #!/bin/bash
 
+echo "Enter a blazon, finish with an empty line."
+echo "Enter a empty line alone to repeat previous blazon."
+echo "Enter q on its own to quit."
+echo "enter >output.txt to redirect output to a named file"
+echo "enter <blazon.txt to read a blazon from a name file"
+echo "===================================================="
+
 prev='vert'
 while true
 do
