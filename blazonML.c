@@ -41,6 +41,19 @@ xmlNodePtr attr(xmlNodePtr node, char *name, char *value) {
     return node;
 }
 
+xmlNodePtr note(xmlNodePtr node, char *text) {
+    char notes[512];
+
+    // TODO Check for pre-existing property and append
+   // strncat(notes, xmlGetProp(node,A_NOTES), 511);
+    strncat(notes, text, 511);
+    strncat(notes, " ", 511);
+    /* xmlUnsetProp(node,A_NOTES); */
+    xmlNewProp(node,A_NOTES,notes);
+
+    return node;
+}
+
 void addChildNode(xmlNodePtr parent, xmlNodePtr child) {
     if (parent != (xmlNodePtr)0 && child != (xmlNodePtr)0) {
         xmlAddChild(parent,child);

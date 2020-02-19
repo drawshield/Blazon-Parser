@@ -39,6 +39,7 @@ T_* - Types for modifiers
 #define V_IMPALED "impaled"
 #define V_QUARTERED "quartered"
 #define E_MISSING "missing"
+#define E_BACKREF "backReference"
 #define E_MESSAGE "message"
 #define E_MESSAGES "messages"
 #define E_OVERALL "overall"
@@ -67,6 +68,7 @@ T_* - Types for modifiers
 #define A_KEYTERM "keyterm"
 #define V_IMPLIED "implied"
 #define V_OFNUM "ofnum"
+#define A_NOTES "annotation"
 
 #define T_ORIENTATION "orientation"
 #define T_LINETYPE "linetype"
@@ -88,6 +90,7 @@ xmlNodePtr changeNodeName(xmlNodePtr, char *);
 void setID(xmlNodePtr, char *);
 void drop(xmlNodePtr);
 char *getID(char *prefix);
+xmlNodePtr note(xmlNodePtr, char *);
 
 /* Some shorthand macros */
 #define parent(a,b,c) createParentNode(a,b,c)

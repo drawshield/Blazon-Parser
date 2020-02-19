@@ -29,7 +29,6 @@ quarterly{S}quartered { mkNode(E_DIVISION, "gyronny"); return DIVISION_2; }
 bendy { mkNode(E_DIVISION, "bendy"); return DIVISION_2; }
 per{S}fesse? { mkNode(E_DIVISION, "per-fess"); return DIVISION_2; }
 per{S}pale { mkNode(E_DIVISION, "per-pale"); return DIVISION_2; }
-per{S}pile { mkNode(E_DIVISION, "per-pile"); return DIVISION_2; }
 per{S}pall { mkNode(E_DIVISION, "per-pall"); return DIVISION_2; }
 per{S}pall{S}arrondi { mkNode(E_DIVISION, "per-pall-arrondi"); return DIVISION_2; }
 per{S}chevron { mkNode(E_DIVISION, "per-chevron"); return DIVISION_2; }
@@ -42,6 +41,8 @@ barry{S}bendy({S}lozengy)? { mkNode(E_DIVISION, "barry-bendy"); return DIVISION_
 bendy{S}lozengy { mkNode(E_DIVISION, "barry-bendy"); return DIVISION_2; }
 barry{S}pily { mkNode(E_DIVISION, "barry-pily"); return DIVISION_2; }
 barry{S}indented({S}the)?{S}(one|1){S}in{S}the{S}other { mkNode(E_DIVISION, "barry-indented-oio"); return DIVISION_2; }
+
+per{S}pile { mkNode(E_DIVISION, "per-pile"); return DIVISION_2_3; }
 
 tierced?{S}(in|per){S}pairle { mkNode(E_DIVISION, "per-pall"); return DIVISION_3; }
 tierced?{S}(in|per){S}pairle{S}arrondi { mkNode(E_DIVISION, "per-pall-arrondi"); return DIVISION_3; }
