@@ -51,7 +51,7 @@ char *i2a(int i) {
 /* -------------------------------------------------------------------------- */
 
 /* ---------------------- Punctuation, multi-use words ---------------------- */
-%token AND SEMI SEMI2
+%token AND SEMI 
 %token ON PIECES POINTS FIELD OF IN THE AS SAME
 
 /* --------------------------------- Numbers -------------------------------- */
@@ -69,7 +69,7 @@ char *i2a(int i) {
 /* Quarterly may also be an ordinary */
 
 /* ------------------------------- Ordinaries ------------------------------- */
-%token <n> ORDINARY ORD_OR_CHG
+%token <n> ORDINARY ORD_OR_CHG ORDMOD
 
 /* --------------------------------- Charges -------------------------------- */
 %token <n> CHARGE
@@ -91,11 +91,11 @@ char *i2a(int i) {
 %type <n> blazon shield simple field objects object
 %type <n> quartered quarterList quarterNum quarterNums
 %type <n> divmod divmods div2type division2 division3 division division23
-%type <n> div23Type backref
+%type <n> div23Type backref counterchange
 %type <n> tincture treat2mod treatment tinctureList
-%type <n> ordType ordprefixes ordinary
+%type <n> ordType ordprefixes ordinary ordprefix ordsuffixes ordsuffix
 %type <n> charge chgType
-%nterm onfield
+%nterm onfield ofthe
 
 /* ------------------------- Error recovery actions ------------------------- */
 %destructor { drop($$); } <n>
@@ -127,9 +127,9 @@ blazon:
 
 shield:
     simple { $$ = parent(E_SHIELD, $1, NULL); }
-    | simple SEMI2 { $$ = parent(E_SHIELD, $1, NULL); }
+    | simple SEMI { $$ = parent(E_SHIELD, $1, NULL); }
     | simple PAIRED simple { child($2, $1); child($2, $3); $$ = parent(E_SHIELD, $2, NULL); }
-    | quartered quarterList { addList($1, $2); $$ = $1; }
+    | quartered quarterList { $$ = addList($1, $2); }
     ;
 
 /* ------------------- Basic elements of the simple shield ------------------ */
@@ -152,7 +152,7 @@ field:
 
 objects:
     object { $$ = parent(E_OBJECTS, $1, NULL);}
-    | objects object { child($1, $2); $$ = $1; }
+    | objects object { $$ = child($1, $2); }
     ;
 
 object:
@@ -164,7 +164,7 @@ object:
 
 quartered:
     QUARTERED { $$ = $1; }
-    | QUARTERED quarterCount { attr($1, A_PARAM, $2); $$ = $1;  }
+    | QUARTERED quarterCount { $$ = attr($1, A_PARAM, $2);  }
     | QUARTERLY { $$ = parent(E_COMPLEX, NULL, "quarterly"); drop($1); }
     | QUARTERLY quarterCount { $$ = parent(E_COMPLEX, NULL, "quarterly");  attr($$, A_PARAM, $2);  drop($1); }
     ;
@@ -186,8 +186,8 @@ quarterNum:
 
 quarterNums:
     quarterNum { $$ = parent(E_LIST, $1, NULL); }
-    | quarterNums quarterNum { child($1, $2); $$ = $1; }
-    | quarterNums AND quarterNum { child($1, $3); $$ = $1; }
+    | quarterNums quarterNum { $$ = child($1, $2); }
+    | quarterNums AND quarterNum { $$ = child($1, $3); }
     ;
 
 /* -------------------------------- Tinctures ------------------------------- */
@@ -204,15 +204,16 @@ tincture:
     | treatment { $$ = parent(E_TINCTURE, $1, NULL); }
     | FUR { $$ = parent(E_TINCTURE, $1, NULL); }
     | division tinctureList { addList($1,$2); $$ = parent(E_TINCTURE, $1, NULL); }
-    | COUNTERCHANGED { $$ = parent(E_TINCTURE, $1, NULL); }
     | PROPER { $$ = parent(E_TINCTURE, $1, NULL); }
     | backref { $$ = parent(E_TINCTURE, $1, NULL); }
     ;
 
+/* TODO Note difference organisation of counterchanged division */
 tinctureList:
     tincture { attr($1, A_INDEX, "1"); $$ = parent(E_LIST, $1, NULL); tc = 1; }
     | tinctureList tincture { attr($2,A_INDEX,i2a(++tc)); child($1, $2); $$ = $1; }
     | tinctureList AND tincture { attr($3,A_INDEX,i2a(++tc)); child($1, $3); $$ = $1; }
+    | tinctureList division2 counterchange { attr($3,A_INDEX,i2a(++tc)); $$ = child($1,child($2,$3)); }
     ;
 
 treat2mod:
@@ -221,19 +222,29 @@ treat2mod:
     ;
 
 treatment:
-    TREATMENT2 tincture AND tincture { attr($2,A_INDEX,"1"); attr($4,A_INDEX,"2"); child($1, $2); child($1, $4); $$ = $1;; }
+    TREATMENT2 tincture AND tincture { attr($2,A_INDEX,"1"); attr($4,A_INDEX,"2"); $$ = child($1, $2); child($1, $4); }
     | TREATMENT2 treat2mod tincture AND tincture { attr($3,A_INDEX,"1"); attr($5,A_INDEX,"2"); 
-                                    child($1, $2); child($1, $3); child($1, $5); $$ = $1; }
-    | tincture TREATMENT1 { child($2, $1); $$ = $2; }
+                                    child($1, $2); child($1, $3); $$ = child($1, $5); }
+    | tincture TREATMENT1 { $$ = child($2, $1);}
     | tincture TREATMENT2 tincture { attr($1,A_INDEX,"1"); attr($3,A_INDEX,"2"); 
-                                     child($2,$1); child($2,$3); $$ = $2; }
+                                     child($2,$1); $$ = child($2,$3);}
     | tincture TREATMENT2 treat2mod tincture { attr($1,A_INDEX,"1"); attr($4,A_INDEX,"2");  
-                                    child($2, $3); child($2,$1); child($2,$4); $$ = $2; }
+                                    child($2, $3); child($2,$1); $$ = child($2,$4); }
+    ;
+
+ofthe:
+    AS THE
+    | OF THE
     ;
 
 backref:
-    AS THE QUARTERNUM { $$ = parent(E_BACKREF, NULL, $3); }
-    | AS THE SAME { $$ = parent(E_BACKREF, NULL, "same"); }
+    ofthe QUARTERNUM { $$ = parent(E_BACKREF, NULL, $2); }
+    | ofthe SAME { $$ = parent(E_BACKREF, NULL, "same"); }
+    | ofthe FIELD { $$ = parent(E_BACKREF, NULL, "field"); }
+    ;
+
+counterchange:
+    COUNTERCHANGED { $$ = parent(E_TINCTURE, $1, NULL); }
     ;
 
 /* --------------------- Divsions and division modifiers -------------------- */
@@ -255,7 +266,7 @@ divmod:
 
 divmods:
     divmod { $$ = parent(E_LIST, $1, NULL); }
-    | divmods divmod { child($1, $2); $$ = $1; }
+    | divmods divmod { $$ = child($1, $2); }
     ;
 
 div2type:
@@ -272,52 +283,88 @@ div23Type:
 
 division23:
     div23Type { $$ = $1; }
-    | div23Type divmods { addList($1, $2); $$ = $1; }
+    | div23Type divmods { $$ = addList($1, $2); }
     ;
 
 division2:
     div2type { $$ = $1; }
-    | div2type divmods { addList($1, $2); $$ = $1; }
+    | div2type divmods { $$ = addList($1, $2); }
     ;
 
 division3:
     DIVISION_3  { $$ = $1; }
-    | DIVISION_3 divmods { addList($1, $2); $$ = $1; }
+    | DIVISION_3 divmods { $$ = addList($1, $2); }
     ;
 
 division: 
-    division2  { note($1, "check:div2"); $$ = $1; }
-    | division3  { note($1, "check:div3"); $$ = $1; }
-    | division23  { note($1, "check:div23"); $$ = $1; }
+    division2  { $$ = note($1, "minTinc:2, maxTinc:2"); }
+    | division3  { $$ = note($1, "minTinc:3, maxTinc:3"); }
+    | division23  { $$ = note($1, "minTinc:2, maxTinc:3"); }
     ;
 
+/* ------------------- Oridinaries, prefixes and suffixes ------------------- */
+
+/*********************************************************************************
+ * Ordinaries are probably the most complex part of blazonry. They can have both *
+ * prefix and suffix modifiers, charges can be placed on or around them and some *
+ * have identical names to charges and must be disambiguated through the number. *
+ *********************************************************************************/
+
+ordprefix:
+    ORIENTATION  { $$ = $1; }
+    | CHEVRONMOD { $$ = $1; }
+    ;
+
+ordsuffix:
+    ordprefix  { $$ = $1; }
+    | ORDMOD  { $$ = $1; }
+    | OF number POINTS { $$ = newMod(T_NUMMOD, V_OFNUM);  attr($$,A_NUMBER,$2); }
+    ;
 
 ordprefixes:
-    ORIENTATION { $$ = parent(E_LIST, $1, NULL); }
-    | CHEVRONMOD { $$ = parent(E_LIST, $1, NULL); }
-    | ordprefixes ORIENTATION { child($1, $2); $$ = $1; }
-    | ordprefixes CHEVRONMOD { child($1, $2); $$ = $1; }
+    ordprefix { $$ = parent(E_LIST, $1, NULL); }
+    | ordprefixes ordprefix { $$ = child($1, $2); }
     ;
+
+ordsuffixes:
+    ordsuffix { $$ = parent(E_LIST, $1, NULL); }
+    | ordsuffixes ordsuffix { $$ = child($1, $2); }
+    ;    
+
+/******************************************************************************
+ * This is the ordinary / charge disambiguation. If there is one item then we *
+ * conclude it is an ordinary. (The opposite conclusion is made under the     *
+ * charges section). We need to change the returned node type ORD_OR_CHG to   *
+ * be a plain ordinary.                                                       *
+ ******************************************************************************/
 
 ordType:
-    THE ORD_OR_CHG { attr($2,A_NUMBER,"1"); $$ = $2; }
-    | THE ordprefixes ORD_OR_CHG { attr($3,A_NUMBER,"1"); child($3,$2); $$ = $3; }
+    THE ORD_OR_CHG { attr($2,A_NUMBER,"1"); $$ = change($2, E_ORDINARY); }
+    | THE ordprefixes ORD_OR_CHG { attr($3,A_NUMBER,"1"); $$ = change($3, E_ORDINARY); addList($$,$2); }
     | number ORDINARY { attr($2,A_NUMBER,$1); $$ = $2; }
-    | number ordprefixes ORDINARY { attr($3,A_NUMBER,$1); child($3,$2); $$ = $3; }
+    | number ordprefixes ORDINARY { attr($3,A_NUMBER,$1); addList($3,$2); $$ = $3; }
     ; 
-  /* TODO Need to change type of ORD_OR_CHG to ORDINARY, + same for CHARGE */
+
 ordinary:
-    ordType tincture { child($1, $2); $$ = $1; }
+    ordType tincture { $$ = child($1, $2);  }
+    | ordType counterchange { $$ = child($1, $2);  }
+    | ordType ordsuffixes tincture { addList($1, $2); $$ = child($1, $3); }
+    | ordType ordsuffixes counterchange { addList($1, $2); $$ = child($1, $3); }
     ;
 
+/* --------------------------------- Charges -------------------------------- */
+
+
 chgType:
-    number CHARGE { attr($2,A_NUMBER,$1); $$ = $2; }
-    | NUMBER ORD_OR_CHG { attr($2,A_NUMBER,$1); $$ = $2; }
+    number CHARGE { $$ = attr($2,A_NUMBER,$1); }
+    | NUMBER ORD_OR_CHG { attr($2,A_NUMBER,$1); $$ = change($2,E_CHARGE); }
     ;
 
 charge:
-    chgType tincture { child($1, $2); $$ = $1; }
+    chgType tincture { $$ = child($1, $2); }
     ;
+
+/* --------------------------------- Numbers -------------------------------- */
 
 number:
     NUMBER { $$ = $1; }

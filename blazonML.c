@@ -15,9 +15,9 @@ void setID(xmlNodePtr node, char *prefix) {
     if (node == (xmlNodePtr)0 ) return;
 
     if (prefix != NULL && strlen(prefix) > 0) {
-        strncat(idString, prefix, 48);
+        strncpy(idString, prefix, 48);
     } else {
-        strcat(idString,"id");
+        strcpy(idString,"id");
     }
     sprintf(numString, "%05d", idNum++);
     strcat(idString, numString);
@@ -54,10 +54,11 @@ xmlNodePtr note(xmlNodePtr node, char *text) {
     return node;
 }
 
-void addChildNode(xmlNodePtr parent, xmlNodePtr child) {
+xmlNodePtr addChildNode(xmlNodePtr parent, xmlNodePtr child) {
     if (parent != (xmlNodePtr)0 && child != (xmlNodePtr)0) {
         xmlAddChild(parent,child);
     }
+    return parent;
 }
 
 xmlNodePtr createModifierNode(char *modType, char *keyterm) {
@@ -84,17 +85,29 @@ xmlNodePtr dupQuarters(xmlNodePtr shield, xmlNodePtr quarterNums) {
         xmlNewProp(sameShield, A_IDREF, targetID);
         xmlNewProp(sameShield, A_INDEX, xmlGetProp(cur, A_KEYTERM));
         addChildNode(list,sameShield);
-    }
+    } // TODO free the quarternums list?
 
     return list;
 }
 
 xmlNodePtr changeNodeName(xmlNodePtr old, char *name) {
     xmlNodePtr node;
+    char keyterm[64];
 
     node = xmlNewNode(NULL, BAD_CAST name);
+    xmlNewProp(node,A_ID,xmlGetProp(old,A_ID));
+    xmlNewProp(node,A_TOKENS,xmlGetProp(old,A_TOKENS));
+    xmlNewProp(node,A_NUMBER,xmlGetProp(old,A_NUMBER));
+    xmlNewProp(node,A_LINENUMBER,xmlGetProp(old,A_LINENUMBER));
+    strncpy(keyterm, xmlGetProp(old,A_KEYTERM), 63);
+    if (strcmp(name,"ordinary") == 0) {
+        strcpy(keyterm,strchr(keyterm,'/') + 1);
+    }
+    xmlNewProp(node,A_KEYTERM,keyterm);
     xmlCopyPropList(node, old->properties);
     xmlFreeNode(old);
+
+    return node;
 }
 
 void drop(xmlNodePtr node) {

@@ -13,24 +13,23 @@ do
 	blazon=''
 	outfile=''
 
-	echo -n ": "
-	while read line
+	while read -ep": "
 	do
-	  echo -n ": "
-	  [ -z "$line" ] && break
-	  if [ "$line" = "q" ]; then
+	  history -s $REPLY
+	  [ -z "$REPLY" ] && break
+	  if [ "$REPLY" = "q" ]; then
 	  	exit
 	  fi
-	  if [ ${line:0:1} = '<' ]; then
-	    infile=${line:1}
+	  if [ ${REPLY:0:1} = '<' ]; then
+	    infile=${REPLY:1}
 	    blazon=$(<$infile)
 	    break
 	  fi
-	  if [ ${line:0:1} = '>' ]; then
-	    outfile=${line:1}
+	  if [ ${REPLY:0:1} = '>' ]; then
+	    outfile=${REPLY:1}
 	    continue
 	  fi
-	  blazon+=$line
+	  blazon+=$REPLY
 	  blazon+='\n'
 	done
 	[ -z "$blazon" ] && blazon=$prev && echo -e $blazon

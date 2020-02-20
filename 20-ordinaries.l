@@ -93,3 +93,4 @@ cross{S}(formee|patt?ee?) { mkNode( E_ORD_OR_CHG, "quadrate/cross-formy"); retur
 cross{S}(formy|patt?y) { mkNode( E_ORD_OR_CHG, "quadrate/cross-formy"); return ORD_OR_CHG; }
 frets? { mkNode( E_ORD_OR_CHG, "geometric/fret"); return ORD_OR_CHG; }
 salta?ires? { mkNode( E_ORD_OR_CHG, "saltire"); return ORD_OR_CHG; }
+

@@ -75,6 +75,7 @@ T_* - Types for modifiers
 #define T_NUMMOD "number"
 #define T_DECORATION "decoration"
 #define T_CHEVRONMOD "chevronmod"
+#define T_ORDMOD "ordmod"
 
 /* "Dummy" elements for temporary storage */
 #define E_LIST "list"  /* gather nodes for use later */
@@ -82,7 +83,7 @@ T_* - Types for modifiers
 #define E_VALUE "dummyval"
 
 xmlNodePtr createParentNode(char *nodeName, xmlNodePtr, char *keyterm); 
-void addChildNode(xmlNodePtr, xmlNodePtr); 
+xmlNodePtr addChildNode(xmlNodePtr, xmlNodePtr); 
 xmlNodePtr attr(xmlNodePtr node, char *name, char *value);
 xmlNodePtr createModifierNode(char *modType, char *keyterm);
 xmlNodePtr dupQuarters(xmlNodePtr, xmlNodePtr);
