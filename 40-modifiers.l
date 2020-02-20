@@ -59,6 +59,10 @@ bott?onn?(ee|y) {mkNode(T_ORDMOD, "botonny"); return ORDMOD; }
 engouled{S}((into|by){S})?(dragons?{S})?(heads?)? {mkNode(T_ORDMOD, "engouled"); return ORDMOD; }
 en(aluron|urney|toire|toyre) {mkNode(T_ORDMOD, "entire"); return ORDMOD; }
 
+(compony|gobone|gobonated) { mkNode(T_ORDMOD, "compony1"); return ORDMODCOL; }
+counter{S}(compony|gobone|gobonated) { mkNode(T_ORDMOD, "compony2"); return ORDMODCOL; }
+(fimbriated|edged) { mkNode(T_ORDMOD, "fimbriated"); return ORDMODCOL; }
+
 
   /* how many things */
 (piece|part)s? { stash(); return PIECES; }

@@ -69,7 +69,7 @@ char *i2a(int i) {
 /* Quarterly may also be an ordinary */
 
 /* ------------------------------- Ordinaries ------------------------------- */
-%token <n> ORDINARY ORD_OR_CHG ORDMOD
+%token <n> ORDINARY ORD_OR_CHG ORDMOD ORDMODCOL
 
 /* --------------------------------- Charges -------------------------------- */
 %token <n> CHARGE
@@ -94,6 +94,7 @@ char *i2a(int i) {
 %type <n> div23Type backref counterchange
 %type <n> tincture treat2mod treatment tinctureList
 %type <n> ordType ordprefixes ordinary ordprefix ordsuffixes ordsuffix
+%type <n> simpleOrd
 %type <n> charge chgType
 %nterm onfield ofthe
 
@@ -345,12 +346,16 @@ ordType:
     | number ordprefixes ORDINARY { attr($3,A_NUMBER,$1); addList($3,$2); $$ = $3; }
     ; 
 
-ordinary:
+simpleOrd:
     ordType tincture { $$ = child($1, $2);  }
     | ordType counterchange { $$ = child($1, $2);  }
     | ordType ordsuffixes tincture { addList($1, $2); $$ = child($1, $3); }
     | ordType ordsuffixes counterchange { addList($1, $2); $$ = child($1, $3); }
     ;
+
+ordinary:
+    simpleOrd { $$ = $1; }
+    | simpleOrd ORDMODCOL tincture { child($2, $3); $$ = child($1, $2); }
 
 /* --------------------------------- Charges -------------------------------- */
 
