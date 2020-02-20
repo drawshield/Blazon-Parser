@@ -88,6 +88,7 @@ xmlNodePtr attr(xmlNodePtr node, char *name, char *value);
 xmlNodePtr createModifierNode(char *modType, char *keyterm);
 xmlNodePtr dupQuarters(xmlNodePtr, xmlNodePtr);
 xmlNodePtr changeNodeName(xmlNodePtr, char *);
+xmlNodePtr addChildList(xmlNodePtr, xmlNodePtr);
 void setID(xmlNodePtr, char *);
 void drop(xmlNodePtr);
 char *getID(char *prefix);
@@ -96,7 +97,7 @@ xmlNodePtr note(xmlNodePtr, char *);
 /* Some shorthand macros */
 #define parent(a,b,c) createParentNode(a,b,c)
 #define child(a,b) addChildNode(a,b)
-#define addList(a,b) xmlAddChildList(a,b->children)
+#define addList(a,b) addChildList(a,b->children)
 #define newMod(a,b) createModifierNode(a,b)
 #define getID(a) xmlGetProp(a,A_ID)
 #define change(a,b) changeNodeName(a,b)

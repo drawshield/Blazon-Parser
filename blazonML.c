@@ -90,6 +90,11 @@ xmlNodePtr dupQuarters(xmlNodePtr shield, xmlNodePtr quarterNums) {
     return list;
 }
 
+xmlNodePtr addChildList(xmlNodePtr node, xmlNodePtr list) {
+    xmlAddChildList(node, list);
+    return node;
+}
+
 xmlNodePtr changeNodeName(xmlNodePtr old, char *name) {
     xmlNodePtr node;
     char keyterm[64];
