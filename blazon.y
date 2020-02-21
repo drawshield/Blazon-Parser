@@ -75,7 +75,7 @@ char *i2a(int i) {
 %token <n> CHARGE
 
 /* -------------------------------- Modifiers ------------------------------- */
-%token <n> LINETYPE DECORATION
+%token <n> LINETYPE DECORATION VOIDED
 %token <n> ORIENTATION CHEVRONMOD
 
 /* ------------------------------- Marshalling ------------------------------ */
@@ -92,9 +92,9 @@ char *i2a(int i) {
 %type <n> quartered quarterList quarterNum quarterNums
 %type <n> divmod divmods div2type division2 division3 division division23
 %type <n> div23Type backref counterchange
-%type <n> tincture treat2mod treatment tinctureList
+%type <n> tincture treat2mod treatment tinctureList andTincture
 %type <n> ordType ordprefixes ordinary ordprefix ordsuffixes ordsuffix
-%type <n> simpleOrd
+%type <n> simpleOrd ordsuffixItem
 %type <n> charge chgType
 %nterm onfield ofthe
 
@@ -222,10 +222,15 @@ treat2mod:
     | OF number POINTS { $$ = newMod(T_NUMMOD, V_OFNUM);  attr($$,A_NUMBER,$2); }
     ;
 
+andTincture:
+    tincture { $$ = $1; }
+    | AND tincture { $$ = $2; }
+    ;
+
 treatment:
-    TREATMENT2 tincture AND tincture { attr($2,A_INDEX,"1"); attr($4,A_INDEX,"2"); $$ = child($1, $2); child($1, $4); }
-    | TREATMENT2 treat2mod tincture AND tincture { attr($3,A_INDEX,"1"); attr($5,A_INDEX,"2"); 
-                                    child($1, $2); child($1, $3); $$ = child($1, $5); }
+    TREATMENT2 tincture andTincture { attr($2,A_INDEX,"1"); attr($3,A_INDEX,"2"); $$ = child($1, $2); child($1, $3); }
+    | TREATMENT2 treat2mod tincture andTincture { attr($3,A_INDEX,"1"); attr($3,A_INDEX,"2"); 
+                                    child($1, $2); child($1, $3); $$ = child($1, $4); }
     | tincture TREATMENT1 { $$ = child($2, $1);}
     | tincture TREATMENT2 tincture { attr($1,A_INDEX,"1"); attr($3,A_INDEX,"2"); 
                                      child($2,$1); $$ = child($2,$3);}
@@ -317,9 +322,15 @@ ordprefix:
     ;
 
 ordsuffix:
+    ordsuffixItem { $$ = $1; }
+    | AND ordsuffixItem { $$ = $2; }
+    ;
+
+ordsuffixItem:
     ordprefix  { $$ = $1; }
     | ORDMOD  { $$ = $1; }
     | OF number POINTS { $$ = newMod(T_NUMMOD, V_OFNUM);  attr($$,A_NUMBER,$2); }
+    | VOIDED { $$ = $1; }
     ;
 
 ordprefixes:
@@ -356,6 +367,8 @@ simpleOrd:
 ordinary:
     simpleOrd { $$ = $1; }
     | simpleOrd ORDMODCOL tincture { child($2, $3); $$ = child($1, $2); }
+    | simpleOrd VOIDED tincture { child($2, $3); $$ = child($1, $2); }
+    ;
 
 /* --------------------------------- Charges -------------------------------- */
 

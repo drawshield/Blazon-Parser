@@ -37,6 +37,6 @@ blazon: $(OBJECTS)
 	$(CC) $(CFLAGS) $(LNFLAGS) -o blazon $(OBJECTS)  $(LIBS)
 
 clean: 
-	/bin/rm -f $(OBJECTS) blazon.l
+	/bin/rm -f $(OBJECTS) blazon.l blazon.tab.c
 
 

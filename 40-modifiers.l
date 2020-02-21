@@ -29,40 +29,40 @@ false { mkMod(T_CHEVRONMOD, "voided"); return CHEVRONMOD; }
   * ORDINARY MODS
   ******************************/
 
-lozengy {mkNode(T_ORDMOD, "lozengy"); return ORDMOD; }
-triangular {mkNode(T_ORDMOD, "triangular"); return ORDMOD; }
-throughout {mkNode(T_ORDMOD, "throughout"); return ORDMOD; }
-of{S}pretence {mkNode(T_ORDMOD, "of-pretence"); return ORDMOD; }
-voided {mkNode(T_ORDMOD, "voided"); return ORDMOD; }
-ploye {mkNode(T_ORDMOD, "ploye"); return ORDMOD; }
-closetted {mkNode(T_ORDMOD, "closetted"); return ORDMOD; }
-embowed {mkNode(T_ORDMOD, "embowed"); return ORDMOD; }
-(nowy{S})?quadrate {mkNode(T_ORDMOD, "quadrate"); return ORDMOD; }
-nowy{S}lozengy {mkNode(T_ORDMOD, "nowy-lozengy"); return ORDMOD; }
-rivett?ed {mkNode(T_ORDMOD, "riveted"); return ORDMOD; }
-[ie]narched {mkNode(T_ORDMOD, "inarched"); return ORDMOD; }
-(couped|humetty|alese) {mkNode(T_ORDMOD, "couped"); return ORDMOD; }
-(couped|humetty|alese){S}(in{S})?sinister {mkNode(T_ORDMOD, "couped-sinister"); return ORDMOD; }
-(couped|humetty|alese){S}(in{S})?dexter {mkNode(T_ORDMOD, "couped-dexter"); return ORDMOD; }
-(couped|humetty|alese){S}(in{S})?chief {mkNode(T_ORDMOD, "couped-chief"); return ORDMOD; }
-(couped|humetty|alese){S}(in{S})?base {mkNode(T_ORDMOD, "couped-base"); return ORDMOD; }
-pointed {mkNode(T_ORDMOD, "pointed"); return ORDMOD; }
-fl(o|eu)ry{S}counter{S}fl(o|eu)ry {mkNode(T_ORDMOD, "flory-counter-flory"); return ORDMOD; }
-pointed{S}(in{S})?sinister {mkNode(T_ORDMOD, "pointed-sinister"); return ORDMOD; }
-pointed{S}(in{S})?dexter {mkNode(T_ORDMOD, "pointed-dexter"); return ORDMOD; }
-pointed{S}(in{S})?chief {mkNode(T_ORDMOD, "pointed-chief"); return ORDMOD; }
-pointed{S}(in{S})?base {mkNode(T_ORDMOD, "pointed-base"); return ORDMOD; }
-(bra[zc]ed|interlaced) {mkNode(T_ORDMOD, "braced"); return ORDMOD; }
-(gemm?ell?(s|ed)?) {mkNode(T_ORDMOD, "gemel"); return ORDMOD; }
-double{S}dancetty {mkNode(T_ORDMOD, "fracted"); return ORDMOD; }
-bott?onn?(ee|y) {mkNode(T_ORDMOD, "botonny"); return ORDMOD; }
-engouled{S}((into|by){S})?(dragons?{S})?(heads?)? {mkNode(T_ORDMOD, "engouled"); return ORDMOD; }
-en(aluron|urney|toire|toyre) {mkNode(T_ORDMOD, "entire"); return ORDMOD; }
+lozengy {mkMod(T_ORDMOD, "lozengy"); return ORDMOD; }
+triangular {mkMod(T_ORDMOD, "triangular"); return ORDMOD; }
+throughout {mkMod(T_ORDMOD, "throughout"); return ORDMOD; }
+of{S}pretence {mkMod(T_ORDMOD, "of-pretence"); return ORDMOD; }
+ploye {mkMod(T_ORDMOD, "ploye"); return ORDMOD; }
+closetted {mkMod(T_ORDMOD, "closetted"); return ORDMOD; }
+embowed {mkMod(T_ORDMOD, "embowed"); return ORDMOD; }
+(nowy{S})?quadrate {mkMod(T_ORDMOD, "quadrate"); return ORDMOD; }
+nowy{S}lozengy {mkMod(T_ORDMOD, "nowy-lozengy"); return ORDMOD; }
+rivett?ed {mkMod(T_ORDMOD, "riveted"); return ORDMOD; }
+[ie]narched {mkMod(T_ORDMOD, "inarched"); return ORDMOD; }
+(couped|humetty|alese) {mkMod(T_ORDMOD, "couped"); return ORDMOD; }
+(couped|humetty|alese){S}(in{S})?sinister {mkMod(T_ORDMOD, "couped-sinister"); return ORDMOD; }
+(couped|humetty|alese){S}(in{S})?dexter {mkMod(T_ORDMOD, "couped-dexter"); return ORDMOD; }
+(couped|humetty|alese){S}(in{S})?chief {mkMod(T_ORDMOD, "couped-chief"); return ORDMOD; }
+(couped|humetty|alese){S}(in{S})?base {mkMod(T_ORDMOD, "couped-base"); return ORDMOD; }
+pointed {mkMod(T_ORDMOD, "pointed"); return ORDMOD; }
+fl(o|eu)ry{S}counter{S}fl(o|eu)ry {mkMod(T_ORDMOD, "flory-counter-flory"); return ORDMOD; }
+pointed{S}(in{S})?sinister {mkMod(T_ORDMOD, "pointed-sinister"); return ORDMOD; }
+pointed{S}(in{S})?dexter {mkMod(T_ORDMOD, "pointed-dexter"); return ORDMOD; }
+pointed{S}(in{S})?chief {mkMod(T_ORDMOD, "pointed-chief"); return ORDMOD; }
+pointed{S}(in{S})?base {mkMod(T_ORDMOD, "pointed-base"); return ORDMOD; }
+(bra[zc]ed|interlaced) {mkMod(T_ORDMOD, "braced"); return ORDMOD; }
+(gemm?ell?(s|ed)?) {mkMod(T_ORDMOD, "gemel"); return ORDMOD; }
+double{S}dancetty {mkMod(T_ORDMOD, "fracted"); return ORDMOD; }
+bott?onn?(ee|y) {mkMod(T_ORDMOD, "botonny"); return ORDMOD; }
+engouled{S}((into|by){S})?(dragons?{S})?(heads?)? {mkMod(T_ORDMOD, "engouled"); return ORDMOD; }
+en(aluron|urney|toire|toyre) {mkMod(T_ORDMOD, "entire"); return ORDMOD; }
 
-(compony|gobone|gobonated) { mkNode(T_ORDMOD, "compony1"); return ORDMODCOL; }
-counter{S}(compony|gobone|gobonated) { mkNode(T_ORDMOD, "compony2"); return ORDMODCOL; }
-(fimbriated|edged) { mkNode(T_ORDMOD, "fimbriated"); return ORDMODCOL; }
+(compony|gobone|gobonated) { mkMod(T_ORDMOD, "compony1"); return ORDMODCOL; }
+counter{S}(compony|gobone|gobonated) { mkMod(T_ORDMOD, "compony2"); return ORDMODCOL; }
+(fimbriated|edged) { mkMod(T_ORDMOD, "fimbriated"); return ORDMODCOL; }
 
+voided { mkMod(T_ORDMOD, "voided"); return VOIDED; }
 
   /* how many things */
 (piece|part)s? { stash(); return PIECES; }
