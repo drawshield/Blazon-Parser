@@ -62,7 +62,24 @@ en(aluron|urney|toire|toyre) {mkMod(T_ORDMOD, "entire"); return ORDMOD; }
 counter{S}(compony|gobone|gobonated) { mkMod(T_ORDMOD, "compony2"); return ORDMODCOL; }
 (fimbriated|edged) { mkMod(T_ORDMOD, "fimbriated"); return ORDMODCOL; }
 
+
+ /******************************
+  * COMPLEX ORDINARY MODS
+  ******************************/
+
 voided { mkMod(T_ORDMOD, "voided"); return VOIDED; }
+
+cott?i(s|ss|c)es? { mkMod(T_ORDMOD, "cottice1"); return COTTICE; }
+close{S}coupled { mkMod(T_ORDMOD, "cottice1"); return COTTICE; }
+(endorsed|addorsed|cost) { mkMod(T_ORDMOD, "cottice1"); return COTTICE; }
+doubl[ey]{S}cott?i(s|ss|c)ed  { mkMod(T_ORDMOD, "cottice2"); return COTTICE; }
+(triple|treble|triply){S}cott?i(s|ss|c)ed   { mkMod(T_ORDMOD, "cottice3"); return COTTICE; }
+
+the{S}(dexter|first|1st|upper|higher)({S}(one|1))? { mkMod(T_BARMOD, "barmod-up"); return BARMOD; }
+the{S}(sinister|last|lower|lowest)({S}(one|1))? { mkMod(T_BARMOD, "barmod-down"); return BARMOD; }
+the{S}(inner|inside)({S}(ones?|1))? { mkMod(T_BARMOD, "barmod-in"); return BARMOD; }
+the{S}(outer|outside)({S}(ones?|1))? { mkMod(T_BARMOD, "barmod-out"); return BARMOD; }
+
 
   /* how many things */
 (piece|part)s? { stash(); return PIECES; }

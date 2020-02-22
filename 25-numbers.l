@@ -3,16 +3,19 @@
  /******************************
   * NUMBERS
   ******************************/
-[1-9][0-9]* { val( yytext); return NUMBER; }
-one { val( "1" ); return NUMBER; }
-two { val( "2" ); return NUMBER; }
-three { val( "3" ); return NUMBER; }
-four { val( "4" ); return NUMBER; }
-five { val( "5" ); return NUMBER; }
-six { val( "6"  ); return NUMBER; }
-seven { val( "7" ); return NUMBER; }
-eight { val( "8" ); return NUMBER; }
-nine { val( "9" ); return NUMBER; }
+
+  /* In most cases numbers are just numbers, but sometimes we
+     do different things based on the lower numbers  */
+[1-9][0-9]+ { val( yytext); return NUMBER; }
+(one|1) { val( "1" ); return ONE; }
+(two|2) { val( "2" ); return TWO; }
+(three|3) { val( "3" ); return THREE; }
+(four|4) { val( "4" ); return FOUR; }
+(five|5) { val( "5" ); return FIVE; }
+(six|6) { val( "6"  ); return SIX; }
+(seven|7) { val( "7" ); return NUMBER; }
+(eight|8) { val( "8" ); return NUMBER; }
+(nine|9) { val( "9" ); return NUMBER; }
 ten { val( "10" ); return NUMBER; }
 eleven { val( "11" ); return NUMBER; }
 twelve { val( "12" ); return NUMBER; }

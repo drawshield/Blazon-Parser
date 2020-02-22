@@ -76,6 +76,7 @@ T_* - Types for modifiers
 #define T_DECORATION "decoration"
 #define T_CHEVRONMOD "chevronmod"
 #define T_ORDMOD "ordmod"
+#define T_BARMOD "cotmod"
 
 /* "Dummy" elements for temporary storage */
 #define E_LIST "list"  /* gather nodes for use later */

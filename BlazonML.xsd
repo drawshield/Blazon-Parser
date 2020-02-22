@@ -108,7 +108,7 @@
      <xs:documentation>This is a blank separated list of tokens created by the lexical analyser. The "tokens" attributes of other elements are zero based references to this list.</xs:documentation>
     </xs:annotation>
    </xs:attribute>
-   <xs:attribute name="schemaVersion" fixed="1.1"/>
+   <xs:attribute name="schemaVersion" fixed="1.2"/>
    <xs:attribute name="creatorName">
     <xs:annotation>
      <xs:documentation>Free format string for use of the program that generated this xml</xs:documentation>
@@ -220,6 +220,7 @@
       </xs:complexType>
      </xs:element>
      <xs:element ref="counterChanged"/>
+     <xs:element ref="backReference"/>
      <xs:element ref="division"/>
     </xs:choice>
    </xs:sequence>
@@ -258,11 +259,19 @@
    <xs:attributeGroup ref="common"/>
   </xs:complexType>
  </xs:element>
+ <xs:element name="backReference">
+  <xs:complexType>
+   <xs:attributeGroup ref="common"/>
+  </xs:complexType>
+ </xs:element>
  <xs:element name="division">
+  <xs:annotation>
+   <xs:documentation>The "internal" division should only ever be a counterchanged division</xs:documentation>
+  </xs:annotation>
   <xs:complexType>
    <xs:sequence>
     <xs:choice>
-     <xs:element minOccurs="0" ref="counterChanged"/>
+     <xs:element minOccurs="0" ref="division"/>
      <xs:element maxOccurs="unbounded" minOccurs="0" ref="modifier"/>
      <xs:element ref="tincture" maxOccurs="unbounded"/>
     </xs:choice>

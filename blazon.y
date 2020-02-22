@@ -52,10 +52,10 @@ char *i2a(int i) {
 
 /* ---------------------- Punctuation, multi-use words ---------------------- */
 %token AND SEMI 
-%token ON PIECES POINTS FIELD OF IN THE AS SAME
+%token ON PIECES POINTS FIELD OF IN THE AS SAME WITHIN
 
 /* --------------------------------- Numbers -------------------------------- */
-%token <s> NUMBER 
+%token <s> NUMBER ONE TWO THREE FOUR FIVE SIX
 /* token THE also sometimes means the number "1"
 
 /* -------------------------------- Tinctures ------------------------------- */
@@ -75,8 +75,8 @@ char *i2a(int i) {
 %token <n> CHARGE
 
 /* -------------------------------- Modifiers ------------------------------- */
-%token <n> LINETYPE DECORATION VOIDED
-%token <n> ORIENTATION CHEVRONMOD
+%token <n> LINETYPE DECORATION VOIDED COTTICE
+%token <n> ORIENTATION CHEVRONMOD BARMOD
 
 /* ------------------------------- Marshalling ------------------------------ */
 %token <n> PAIRED QUARTERED 
@@ -87,14 +87,14 @@ char *i2a(int i) {
 /*                                Non-Terminals                               */
 /* -------------------------------------------------------------------------- */
 /* most of these correspond closely to the nodes of the blazonML Schema */
-%type <s> number quarterCount
+%type <s> number quarterCount twoOrMore
 %type <n> blazon shield simple field objects object
 %type <n> quartered quarterList quarterNum quarterNums
 %type <n> divmod divmods div2type division2 division3 division division23
 %type <n> div23Type backref counterchange
 %type <n> tincture treat2mod treatment tinctureList andTincture
 %type <n> ordType ordprefixes ordinary ordprefix ordsuffixes ordsuffix
-%type <n> simpleOrd ordsuffixItem
+%type <n> simpleOrd ordsuffixItem barmodList cottice cotticeItem
 %type <n> charge chgType
 %nterm onfield ofthe
 
@@ -331,6 +331,7 @@ ordsuffixItem:
     | ORDMOD  { $$ = $1; }
     | OF number POINTS { $$ = newMod(T_NUMMOD, V_OFNUM);  attr($$,A_NUMBER,$2); }
     | VOIDED { $$ = $1; }
+    | cottice  { $$ = $1; }
     ;
 
 ordprefixes:
@@ -368,13 +369,39 @@ ordinary:
     simpleOrd { $$ = $1; }
     | simpleOrd ORDMODCOL tincture { child($2, $3); $$ = child($1, $2); }
     | simpleOrd VOIDED tincture { child($2, $3); $$ = child($1, $2); }
+    | simpleOrd cottice tincture { child($2, $3); $$ = child($1, $2); }
+    ;
+
+cotticeItem:
+    COTTICE { $$ = $1; }
+    | WITHIN ONE COTTICE { $$ = $3; free($2); }
+    | WITHIN THE COTTICE { $$ = $3; }
+    | WITHIN TWO COTTICE { $$ = $3; free($2); }
+    | WITHIN THREE COTTICE { $$ = attr ($3, A_KEYTERM, "cottice3"); free($2); }
+    | WITHIN FOUR COTTICE { $$ = attr ($3, A_KEYTERM, "cottice2"); free($2); }
+    | WITHIN SIX COTTICE { $$ = attr ($3, A_KEYTERM, "cottice3"); free($2); }
+    ;
+
+cottice:
+    cotticeItem { $$ = $1; }
+    | cotticeItem barmodList { $$ = addList($1, $2); }
+    ;
+
+barmodList:
+    BARMOD { $$ = parent(E_LIST, $1, NULL); }
+    | barmodList BARMOD { $$ = child($1, $2); }
     ;
 
 /* --------------------------------- Charges -------------------------------- */
 
+/*******************************************************************************
+ * This is the charge / ordinary disambiguation. If there are more than one we *
+ * assume it is a charge and change the name of the element accordingly. (see  *
+ * also ordinaries above).                                                     *
+ *******************************************************************************/
 
 chgType:
-    number CHARGE { $$ = attr($2,A_NUMBER,$1); }
+    twoOrMore CHARGE { $$ = attr($2,A_NUMBER,$1); }
     | NUMBER ORD_OR_CHG { attr($2,A_NUMBER,$1); $$ = change($2,E_CHARGE); }
     ;
 
@@ -384,8 +411,18 @@ charge:
 
 /* --------------------------------- Numbers -------------------------------- */
 
-number:
+twoOrMore:
     NUMBER { $$ = $1; }
+    | TWO { $$ = $1; }
+    | THREE { $$ = $1; }
+    | FOUR { $$ = $1; }
+    | FIVE { $$ = $1; }
+    | SIX { $$ = $1; }
+    ;
+
+number:
+    twoOrMore
+    | ONE  { $$ = $1; }
     | THE { $$ = "1"; }
     ;
 
