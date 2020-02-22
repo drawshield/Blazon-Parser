@@ -69,7 +69,7 @@ counter{S}(compony|gobone|gobonated) { mkMod(T_ORDMOD, "compony2"); return ORDMO
 
 voided { mkMod(T_ORDMOD, "voided"); return VOIDED; }
 
-cott?i(s|ss|c)es? { mkMod(T_ORDMOD, "cottice1"); return COTTICE; }
+cott?i(s|ss|c)e[sd]? { mkMod(T_ORDMOD, "cottice1"); return COTTICE; }
 close{S}coupled { mkMod(T_ORDMOD, "cottice1"); return COTTICE; }
 (endorsed|addorsed|cost) { mkMod(T_ORDMOD, "cottice1"); return COTTICE; }
 doubl[ey]{S}cott?i(s|ss|c)ed  { mkMod(T_ORDMOD, "cottice2"); return COTTICE; }

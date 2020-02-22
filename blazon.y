@@ -45,7 +45,6 @@ char *i2a(int i) {
 
 /* Take this out for production, we should provide our own error messages*/
 %define parse.error verbose
-
 /* -------------------------------------------------------------------------- */
 /*                          Tokens (terminal symbols)                         */
 /* -------------------------------------------------------------------------- */
@@ -72,7 +71,7 @@ char *i2a(int i) {
 %token <n> ORDINARY ORD_OR_CHG ORDMOD ORDMODCOL
 
 /* --------------------------------- Charges -------------------------------- */
-%token <n> CHARGE
+%token <n> CHARGE ARRANGEMENT CHGPREFIX
 
 /* -------------------------------- Modifiers ------------------------------- */
 %token <n> LINETYPE DECORATION VOIDED COTTICE
@@ -82,7 +81,6 @@ char *i2a(int i) {
 %token <n> PAIRED QUARTERED 
 %token <s>  QUARTERNUM
 %token QUARTERMARK QUARTER
-
 /* -------------------------------------------------------------------------- */
 /*                                Non-Terminals                               */
 /* -------------------------------------------------------------------------- */
@@ -95,7 +93,7 @@ char *i2a(int i) {
 %type <n> tincture treat2mod treatment tinctureList andTincture
 %type <n> ordType ordprefixes ordinary ordprefix ordsuffixes ordsuffix
 %type <n> simpleOrd ordsuffixItem barmodList cottice cotticeItem
-%type <n> charge chgType
+%type <n> charge chgNum chgprefixes
 %nterm onfield ofthe
 
 /* ------------------------- Error recovery actions ------------------------- */
@@ -107,11 +105,11 @@ char *i2a(int i) {
 %left DIVISION_2 PARTED_DIVISION DIVISION_3 DIVISION_2_3
 %left AND
 
-%%
-
 /* -------------------------------------------------------------------------- */
 /*                             Grammar Starts Here                            */
 /* -------------------------------------------------------------------------- */
+
+%%
 
 /* ----------------------------- Top level node ----------------------------- */
 blazon:
@@ -132,7 +130,6 @@ shield:
     | simple PAIRED simple { child($2, $1); child($2, $3); $$ = parent(E_SHIELD, $2, NULL); }
     | quartered quarterList { $$ = addList($1, $2); }
     ;
-
 /* ------------------- Basic elements of the simple shield ------------------ */
 
 simple: 
@@ -160,7 +157,6 @@ object:
     ordinary { $$ = $1; }
     | charge { $$ = $1; }
     ;
-
 /* ------------------- Marshallings for quartered shields ------------------- */
 
 quartered:
@@ -190,7 +186,6 @@ quarterNums:
     | quarterNums quarterNum { $$ = child($1, $2); }
     | quarterNums AND quarterNum { $$ = child($1, $3); }
     ;
-
 /* -------------------------------- Tinctures ------------------------------- */
 
 /***************************************************************************************
@@ -252,7 +247,6 @@ backref:
 counterchange:
     COUNTERCHANGED { $$ = parent(E_TINCTURE, $1, NULL); }
     ;
-
 /* --------------------- Divsions and division modifiers -------------------- */
 
 /********************************************************************************
@@ -307,7 +301,6 @@ division:
     | division3  { $$ = note($1, "minTinc:3, maxTinc:3"); }
     | division23  { $$ = note($1, "minTinc:2, maxTinc:3"); }
     ;
-
 /* ------------------- Oridinaries, prefixes and suffixes ------------------- */
 
 /*********************************************************************************
@@ -370,6 +363,7 @@ ordinary:
     | simpleOrd ORDMODCOL tincture { child($2, $3); $$ = child($1, $2); }
     | simpleOrd VOIDED tincture { child($2, $3); $$ = child($1, $2); }
     | simpleOrd cottice tincture { child($2, $3); $$ = child($1, $2); }
+    | simpleOrd tincture barmodList { addList($1,$3); $$ = child($1,$2); }
     ;
 
 cotticeItem:
@@ -384,14 +378,15 @@ cotticeItem:
 
 cottice:
     cotticeItem { $$ = $1; }
+    | cotticeItem LINETYPE { $$ = child($1, $2); }
     | cotticeItem barmodList { $$ = addList($1, $2); }
+    | cotticeItem LINETYPE barmodList { $$ = child($1, $2); addList($2, $3); }
     ;
 
 barmodList:
-    BARMOD { $$ = parent(E_LIST, $1, NULL); }
-    | barmodList BARMOD { $$ = child($1, $2); }
+    BARMOD LINETYPE { child($1,$2); $$ = parent(E_LIST, $1, NULL); }
+    | barmodList BARMOD LINETYPE {$$ = child($1,$2); child($2, $3); }
     ;
-
 /* --------------------------------- Charges -------------------------------- */
 
 /*******************************************************************************
@@ -400,15 +395,21 @@ barmodList:
  * also ordinaries above).                                                     *
  *******************************************************************************/
 
-chgType:
-    twoOrMore CHARGE { $$ = attr($2,A_NUMBER,$1); }
-    | NUMBER ORD_OR_CHG { attr($2,A_NUMBER,$1); $$ = change($2,E_CHARGE); }
+chgNum:
+    number CHARGE { $$ = attr($2,A_NUMBER,$1); }
+    | twoOrMore ORD_OR_CHG { attr($2,A_NUMBER,$1); $$ = change($2,E_CHARGE); }
+    ;
+
+chgprefixes:
+    ARRANGEMENT { $$ = parent(E_LIST, $1, NULL); }
+    | chgprefixes ARRANGEMENT { $$ = child($1, $2); }
+    | chgprefixes AND ARRANGEMENT { $$ = child($1, $3); }
     ;
 
 charge:
-    chgType tincture { $$ = child($1, $2); }
+    chgNum tincture { $$ = child($1, $2); }
+    | chgprefixes chgNum tincture { addList($2, $1); $$ = child($2, $3); }
     ;
-
 /* --------------------------------- Numbers -------------------------------- */
 
 twoOrMore:

@@ -6,7 +6,7 @@ Blazon-Parser is a combination of Flex lexer and Bison grammar that can recognis
 
 ## Current Status
 
-A work in progress. Supports plain fields, divisions, treatments, ordinaries, variant line types, marshalling. Starting to add charges. No error recovery at present, but spelling corrections are offered for unrecognised words. The grammar in blazon.y needs comments and probably a bit of more coherent organisation.
+A work in progress. Supports plain fields, divisions, treatments, ordinaries, variant line types, marshalling. Starting to add charges. No error recovery at present, but spelling corrections are offered for unrecognised words. The grammar in blazon.y needs comments and probably a bit of more coherent organisation. At present there are dozens of shift/reduce conflicts but these are all benign (the default shift is the desired behaviour), they are the result of many "lists" of variable items.
 
 
 ## Files
@@ -29,4 +29,4 @@ blazonML.xsd - An XML Schema document describing the Abstract Syntax Tree create
 
 ## Notes
 
-(1) I am aware that Re:Flex does support include files, so that is an alternative if you don't like my approach
+(1) I am aware that Re:Flex does support include files, so that is an alternative if you don't like my approach    

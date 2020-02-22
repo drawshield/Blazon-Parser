@@ -1,0 +1,34 @@
+%%
+
+in{S}ann?ull?o { mkMod(T_ARRANGEMENT, "inannulo"); return ARRANGEMENT; }
+in{S}(the{S})?pale { mkMod(T_ARRANGEMENT, "inpale"); return ARRANGEMENT; }
+in{S}(the{S})?pale{S}throughout { mkMod(T_ARRANGEMENT, "inpalethrough"); return ARRANGEMENT; }
+in{S}(the{S})?pall { mkMod(T_ARRANGEMENT, "inpall"); return ARRANGEMENT; }
+in{S}(the{S})?fesse? { mkMod(T_ARRANGEMENT, "infess"); return ARRANGEMENT; }
+in{S}(the{S})?fesse?{S}throughout { mkMod(T_ARRANGEMENT, "infessthrough"); return ARRANGEMENT; }
+in{S}(the{S})?bend{S}sinister { mkMod(T_ARRANGEMENT, "inbendsin"); return ARRANGEMENT; }
+in{S}(the{S})?bend({S}dexter)? { mkMod(T_ARRANGEMENT, "inbend"); return ARRANGEMENT; }
+in{S}(the{S})?chevron { mkMod(T_ARRANGEMENT, "inchevron"); return ARRANGEMENT; }
+in{S}(the{S})?pile { mkMod(T_ARRANGEMENT, "inpile"); return ARRANGEMENT; }
+in{S}?an{S}orle { mkMod(T_ARRANGEMENT, "inorle"); return ARRANGEMENT; }
+in{S}(the{S})?orle { mkMod(T_ARRANGEMENT, "inorle"); return ARRANGEMENT; }
+in{S}(the{S})?salti(er|re) { mkMod(T_ARRANGEMENT, "insaltire"); return ARRANGEMENT; }
+salti(er|re)w(ays|ise) { mkMod(T_ARRANGEMENT, "insaltire"); return ARRANGEMENT; }
+salti(er|re){S}w(ays|ise) { mkMod(T_ARRANGEMENT, "insaltire"); return ARRANGEMENT; }
+in{S}(the{S})?cross { mkMod(T_ARRANGEMENT, "incross"); return ARRANGEMENT; }
+(in{S})?counter{S}passant { mkMod(T_ARRANGEMENT, "counter-passant"); return ARRANGEMENT; }
+pilewise { mkMod(T_ARRANGEMENT, "pilewise"); return ARRANGEMENT; }
+in{S}bar { mkMod(T_ARRANGEMENT, "inbar"); return ARRANGEMENT; }
+bar(wise|ways) { mkMod(T_ARRANGEMENT, "inbar"); return ARRANGEMENT; }
+in{S}(the{S})?chief{S}throughout { mkMod(T_ARRANGEMENT, "inchiefthrough"); return ARRANGEMENT; }
+in{S}?a{S}quadrangle { mkMod(T_ARRANGEMENT, "quadrangle"); return ARRANGEMENT; }
+chevronwise { mkMod(T_ARRANGEMENT, "chevronwise"); return ARRANGEMENT; }
+in{S}point { mkMod(T_ARRANGEMENT, "pilewise"); return ARRANGEMENT; }
+in{S}triangle { mkMod(T_ARRANGEMENT, "triangle"); return ARRANGEMENT; }
+respecting{S}each{S}other { mkMod(T_ARRANGEMENT, "facing-in"); return ARRANGEMENT; }
+respectant { mkMod(T_ARRANGEMENT, "facing-in"); return ARRANGEMENT; }
+counter{S}rampant { mkMod(T_ARRANGEMENT, "facing-in"); return ARRANGEMENT; }
+(affrontt?ant|aspectant) { mkMod(T_ARRANGEMENT, "facing-in"); return ARRANGEMENT; }
+confront(e|ing|y) { mkMod(T_ARRANGEMENT, "combattant"); return ARRANGEMENT; }
+combatt?ant { mkMod(T_ARRANGEMENT, "combattant"); return ARRANGEMENT; }
+(addorsed|adosse|endorsed) { mkMod(T_ARRANGEMENT, "facing-out"); return ARRANGEMENT; }

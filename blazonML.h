@@ -77,6 +77,8 @@ T_* - Types for modifiers
 #define T_CHEVRONMOD "chevronmod"
 #define T_ORDMOD "ordmod"
 #define T_BARMOD "cotmod"
+#define T_CHGMOD "chgmod"
+#define T_ARRANGEMENT "arrangement"
 
 /* "Dummy" elements for temporary storage */
 #define E_LIST "list"  /* gather nodes for use later */

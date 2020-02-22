@@ -18,14 +18,19 @@ spelling.c: spelling.h
 
 errors.c: errors.h blazonML.h spelling.h
 
-blazon.y: errors.h blazonML.h
+blazon.y: grammar/[0-9][0-9]-*.y errors.h blazonML.h
+	cat grammar/_top.y > blazon.y; \
+	for i in grammar/[0-9][0-9]*.y; do \
+		tail -n +2 $$i >> blazon.y; \
+	done; \
+	cat grammar/_bottom.y >> blazon.y;
 
-blazon.l: [0-9][0-9]-*.l _top.l _bottom.l
-	cat _top.l > blazon.l; \
-	for i in [0-9][0-9]*.l; do \
+blazon.l: tokens/[0-9][0-9]-*.l tokens/_top.l tokens/_bottom.l
+	cat tokens/_top.l > blazon.l; \
+	for i in tokens/[0-9][0-9]*.l; do \
 		tail -n +2 $$i >> blazon.l; \
 	done; \
-	cat _bottom.l >> blazon.l;
+	cat tokens/_bottom.l >> blazon.l;
 
 lex.yy.c: blazon.l errors.h blazonML.h blazon.tab.h
 	$(LEX) blazon.l
