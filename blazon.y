@@ -27,6 +27,8 @@ char *i2a(int i) {
     return tc_buf;
 }
 
+xmlNodePtr temp; // used for conversion of strings to nodes as required
+
 /* -------------------------------------------------------------------------- */
 
 %}
@@ -71,7 +73,7 @@ char *i2a(int i) {
 %token <n> ORDINARY ORD_OR_CHG ORDMOD ORDMODCOL
 
 /* --------------------------------- Charges -------------------------------- */
-%token <n> CHARGE ARRANGEMENT CHGPREFIX
+%token <n> CHARGE ARRANGEMENT CHGPREFIX CHGMOD
 
 /* -------------------------------- Modifiers ------------------------------- */
 %token <n> LINETYPE DECORATION VOIDED COTTICE
@@ -93,7 +95,9 @@ char *i2a(int i) {
 %type <n> tincture treat2mod treatment tinctureList andTincture
 %type <n> ordType ordprefixes ordinary ordprefix ordsuffixes ordsuffix
 %type <n> simpleOrd ordsuffixItem barmodList cottice cotticeItem
-%type <n> charge chgNum chgprefixes
+%type <n> charge chgNum chgprefixes chgsuffixes
+%type <n> numberList 
+%type <s> numberListItem
 %nterm onfield ofthe
 
 /* ------------------------- Error recovery actions ------------------------- */
@@ -406,9 +410,27 @@ chgprefixes:
     | chgprefixes AND ARRANGEMENT { $$ = child($1, $3); }
     ;
 
+numberListItem:
+    number { $$ = $1; }
+    | AND number { $$ = $2; }
+    ;
+
+numberList:
+    number numberListItem { $$ = parent(E_LIST, newMod(T_CHGMOD,$1), NULL); child($$,newMod(T_CHGMOD,$2)); }
+    | numberList numberListItem { $$ =  child($1,newMod(T_CHGMOD,$2)); }
+    ;
+
+chgsuffixes:
+    CHGMOD { $$ = $1; }
+    | numberList { $$ = newMod(T_CHGMOD, "rows"); addList($$, $1); }
+    | numberList SEMI { $$ = newMod(T_CHGMOD, "rows"); addList($$, $1); }
+    ;
+
 charge:
     chgNum tincture { $$ = child($1, $2); }
     | chgprefixes chgNum tincture { addList($2, $1); $$ = child($2, $3); }
+    | chgNum chgsuffixes tincture { $$ = child($1, $3); child($1, $2); }
+    | chgprefixes chgNum chgsuffixes tincture { addList($2, $1); child($2, $4); $$ = child($2, $3); }
     ;
 /* --------------------------------- Numbers -------------------------------- */
 

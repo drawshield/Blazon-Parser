@@ -1,0 +1,1 @@
+Charge modifier "rows" now has one child per row number, NOT a concatenated string of numbers.

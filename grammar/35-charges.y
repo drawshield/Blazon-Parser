@@ -18,7 +18,25 @@ chgprefixes:
     | chgprefixes AND ARRANGEMENT { $$ = child($1, $3); }
     ;
 
+numberListItem:
+    number { $$ = $1; }
+    | AND number { $$ = $2; }
+    ;
+
+numberList:
+    number numberListItem { $$ = parent(E_LIST, newMod(T_CHGMOD,$1), NULL); child($$,newMod(T_CHGMOD,$2)); }
+    | numberList numberListItem { $$ =  child($1,newMod(T_CHGMOD,$2)); }
+    ;
+
+chgsuffixes:
+    CHGMOD { $$ = $1; }
+    | numberList { $$ = newMod(T_CHGMOD, "rows"); addList($$, $1); }
+    | numberList SEMI { $$ = newMod(T_CHGMOD, "rows"); addList($$, $1); }
+    ;
+
 charge:
     chgNum tincture { $$ = child($1, $2); }
     | chgprefixes chgNum tincture { addList($2, $1); $$ = child($2, $3); }
+    | chgNum chgsuffixes tincture { $$ = child($1, $3); child($1, $2); }
+    | chgprefixes chgNum chgsuffixes tincture { addList($2, $1); child($2, $4); $$ = child($2, $3); }
     ;

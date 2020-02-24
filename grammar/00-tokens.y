@@ -25,7 +25,7 @@
 %token <n> ORDINARY ORD_OR_CHG ORDMOD ORDMODCOL
 
 /* --------------------------------- Charges -------------------------------- */
-%token <n> CHARGE ARRANGEMENT CHGPREFIX
+%token <n> CHARGE ARRANGEMENT CHGPREFIX CHGMOD
 
 /* -------------------------------- Modifiers ------------------------------- */
 %token <n> LINETYPE DECORATION VOIDED COTTICE

@@ -11,7 +11,9 @@
 %type <n> tincture treat2mod treatment tinctureList andTincture
 %type <n> ordType ordprefixes ordinary ordprefix ordsuffixes ordsuffix
 %type <n> simpleOrd ordsuffixItem barmodList cottice cotticeItem
-%type <n> charge chgNum chgprefixes
+%type <n> charge chgNum chgprefixes chgsuffixes
+%type <n> numberList 
+%type <s> numberListItem
 %nterm onfield ofthe
 
 /* ------------------------- Error recovery actions ------------------------- */

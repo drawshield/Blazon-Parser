@@ -27,6 +27,8 @@ char *i2a(int i) {
     return tc_buf;
 }
 
+xmlNodePtr temp; // used for conversion of strings to nodes as required
+
 /* -------------------------------------------------------------------------- */
 
 %}
