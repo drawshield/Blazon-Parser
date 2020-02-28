@@ -30,6 +30,7 @@ void mkMod(char *modType, char *keyterm) {
 
 
 void val(char *value) {
+  stash();
   yylval.s = (char *)malloc(strlen(value)+1);
   strcpy(yylval.s, value);
 }
