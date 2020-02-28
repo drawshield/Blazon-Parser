@@ -37,14 +37,14 @@ cross(let|lets|es)?{S}crescenty { mkNode( E_CHARGE, "quadrate/cross-crescenty");
 cross(let|lets|es)?{S}clech(y|e|ee) { mkNode( E_CHARGE, "quadrate/cross-cleche"); return CHARGE; }
 cross(let|lets|es)?{S}urd(y|e|ee) { mkNode( E_CHARGE, "quadrate/cross-cleche"); return CHARGE; }
 cross(es)?{S}cross?lett?{S}crossed{S}?patt(ee|y) { mkNode( E_CHARGE, "quadrate/cross-crosslet-crossed"); return CHARGE; }
-cross(es)?{S}cross?lett?s?{S}?recoursy { mkNode( E_CHARGE, "quadrate/cross-crosslet"); return CHARGE; }
+cross(es)?{S}cross?lett?s?({S}recoursy)? { mkNode( E_CHARGE, "quadrate/cross-crosslet"); return CHARGE; }
 cross(let|lets|es)?{S}florettys? { mkNode( E_CHARGE, "quadrate/cross-floretty"); return CHARGE; }
 cross(let|lets|es)?{S}(flory|fleuronny){S}of{S}(nine|9){S}fusils? { mkNode( E_CHARGE, "quadrate/cross-flory-of-9-fusils"); return CHARGE; }
 cross(let|lets|es)?{S}(flory|fleuronny){S}of{S}(one|1){S}lozenge { mkNode( E_CHARGE, "quadrate/cross-flory-lozenge"); return CHARGE; }
 cross(let|lets|es)?{S}florys? { mkNode( E_CHARGE, "quadrate/cross-flory"); return CHARGE; }
 cross(let|lets|es)?{S}fleuronny? { mkNode( E_CHARGE, "quadrate/cross-flory"); return CHARGE; }
-cross(es|lets?){S}(formee|patt?ee?){S}?couped { mkNode( E_CHARGE, "quadrate/cross-formy"); return CHARGE; }
-cross(es|lets?){S}(formy|patt?y){S}?couped { mkNode( E_CHARGE, "quadrate/cross-formy"); return CHARGE; }{S}
+cross(es|lets?){S}(formee|patt?ee?)({S}couped)? { mkNode( E_CHARGE, "quadrate/cross-formy"); return CHARGE; }
+cross(es|lets?){S}(formy|patt?y)({S}couped)? { mkNode( E_CHARGE, "quadrate/cross-formy"); return CHARGE; }
 cross(let|lets|es)?{S}fourche { mkNode( E_CHARGE, "quadrate/cross-fourche"); return CHARGE; }
 cross(let|lets|es)?{S}(molines?|ancre|anchory) { mkNode( E_CHARGE, "quadrate/cross-moline"); return CHARGE; }
 cross(let|lets|es)?{S}patonces? { mkNode( E_CHARGE, "quadrate/cross-patonce"); return CHARGE; }
@@ -69,4 +69,3 @@ chevrons?{S}couped { mkNode( E_CHARGE, "geometric/chevron"); return CHARGE; }
 saltires?{S}couped { mkNode( E_CHARGE, "cross/saltire"); return CHARGE; }
 cross(es)?{S}fitch(y|ee){S}doubled? { mkNode( E_CHARGE, "quadrate/cross-fitchy-double"); return CHARGE; }
 cross(es)?{S}fitch(y|ee) { mkNode( E_CHARGE, "quadrate/cross-fitchy"); return CHARGE; }
-    );
