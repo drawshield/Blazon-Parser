@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blazon creatorName="blazonYacc">
+    <shield ID="id00010">
+        <simple ID="id00009">
+            <field ID="id00003">
+                <tincture ID="id00001">
+                    <colour ID="id00000" keyterm="gules" linenumber="1" tokens="gules"/>
+                </tincture>
+            </field>
+            <objects ID="id00008">
+                <charge ID="id00005" keyterm="lion/lion" linenumber="1" tokens="three lions" number="3">
+                    <modifier ID="id00002" keyterm="inpale" type="arrangement" linenumber="1" tokens="in pale"/>
+                    <tincture ID="id00007">
+                        <colour ID="id00006" keyterm="or" linenumber="1" tokens="or"/>
+                    </tincture>
+                </charge>
+            </objects>
+        </simple>
+    </shield>
+    <messages/>
+</blazon>

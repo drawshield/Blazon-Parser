@@ -34,3 +34,7 @@ blazonML.xsd - An XML Schema document describing the Abstract Syntax Tree create
 ## Notes
 
 (1) I am aware that Re:Flex does support include files, so that is an alternative if you don't like my approach    
+
+## Examples
+
+This is not the place to cover the whole of heraldry, there are plenty of books on the subject, however we can look at a few examples of input and the corresponding output.
