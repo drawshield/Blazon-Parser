@@ -5,7 +5,8 @@
 
 /* ---------------------- Punctuation, multi-use words ---------------------- */
 %token AND SEMI 
-%token ON PIECES POINTS FIELD OF IN THE AS SAME WITHIN
+%token ON PIECES POINTS FIELD OF IN THE AS SAME WITHIN WITH
+%token <s> WORD STRING
 
 /* --------------------------------- Numbers -------------------------------- */
 %token <s> NUMBER ONE TWO THREE FOUR FIVE SIX

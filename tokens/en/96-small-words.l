@@ -16,3 +16,5 @@ of { stash(); return OF; }
 (field|court) { stash(); return FIELD; }
 quarters? { stash(); return QUARTER; }
 (between|within) { stash(); return WITHIN; }
+(with|using) { stash(); return WITH; }
+

@@ -15,5 +15,7 @@ and { stash(); return AND; }
 [ \t\n\r,]+  /* ignore */
  /* Without the ; here, "word;" is a longer match than "word" so is */
  /* erroneously matched, same for other punctuation chars */
-[^ \t\n\r,;&)("']+ { lexerMessage(yytext); }
+ /* [^ \t\n\r,;&)("']+ { lexerMessage(yytext); } */
+
+[^ \t\n\r,;&)("']+ { stash(); val(yytext); return WORD; }
 

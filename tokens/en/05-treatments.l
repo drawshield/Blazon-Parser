@@ -37,13 +37,6 @@ verd(e|oy) { mkNode(E_TREATMENT, "verdy"); return TREATMENT2; }
 barruly{S}wavy { mkNode(E_TREATMENT, "barruly-wavy"); return TREATMENT2; }
 pied({S}at)?({S}random)? { mkNode(E_TREATMENT, "pied"); return TREATMENT2; }
 piebald { mkNode(E_TREATMENT, "pied"); return TREATMENT2; }
-grad(ed|y) { mkNode(E_TREATMENT, "grady"); return TREATMENT2; }
-grad(ed|y){S}in{S}fesse? { mkNode(E_TREATMENT, "grady-in-fess"); return TREATMENT2; }
-grad(ed|y){S}in{S}pale { mkNode(E_TREATMENT, "grady-in-pale"); return TREATMENT2; }
-grad(ed|y){S}in{S}bend { mkNode(E_TREATMENT, "grady-in-bend"); return TREATMENT2; }
-grad(ed|y){S}in{S}bend{S}bendsinister { mkNode(E_TREATMENT, "grady-in-bendsin"); return TREATMENT2; }
-grad(ed|y){S}in{S}sinister{S}bendbend { mkNode(E_TREATMENT, "grady-in-bendsin"); return TREATMENT2; }
-grad(ed|y){S}in{S}annull?o { mkNode(E_TREATMENT, "grady-in-annulo"); return TREATMENT2; }
  /* treatments that follow a single tincture (i.e. of x fixed colour ) */
 hurty |
 platy |

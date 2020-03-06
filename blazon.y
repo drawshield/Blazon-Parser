@@ -53,7 +53,8 @@ xmlNodePtr temp; // used for conversion of strings to nodes as required
 
 /* ---------------------- Punctuation, multi-use words ---------------------- */
 %token AND SEMI 
-%token ON PIECES POINTS FIELD OF IN THE AS SAME WITHIN
+%token ON PIECES POINTS FIELD OF IN THE AS SAME WITHIN WITH
+%token <s> WORD STRING
 
 /* --------------------------------- Numbers -------------------------------- */
 %token <s> NUMBER ONE TWO THREE FOUR FIVE SIX
@@ -83,6 +84,11 @@ xmlNodePtr temp; // used for conversion of strings to nodes as required
 %token <n> PAIRED QUARTERED 
 %token <s>  QUARTERNUM
 %token QUARTERMARK QUARTER
+%token <n> SHAPE PALETTE EFFECT ASPECT
+%token DRAWN
+%token <s> REALNUM RATIO
+
+
 /* -------------------------------------------------------------------------- */
 /*                                Non-Terminals                               */
 /* -------------------------------------------------------------------------- */
@@ -109,12 +115,14 @@ xmlNodePtr temp; // used for conversion of strings to nodes as required
 %left DIVISION_2 PARTED_DIVISION DIVISION_3 DIVISION_2_3
 %left AND
 
+%type <n> drawnItem drawnItems drawn
+%type <s> aspectRatio
+%nterm using
 /* -------------------------------------------------------------------------- */
 /*                             Grammar Starts Here                            */
 /* -------------------------------------------------------------------------- */
 
 %%
-
 /* ----------------------------- Top level node ----------------------------- */
 blazon:
     shield { child(xmlRootNode, $1); $$ = xmlRootNode; }
@@ -133,6 +141,9 @@ shield:
     | simple SEMI { $$ = parent(E_SHIELD, $1, NULL); }
     | simple PAIRED simple { child($2, $1); child($2, $3); $$ = parent(E_SHIELD, $2, NULL); }
     | quartered quarterList { $$ = addList($1, $2); }
+    ;
+blazon:
+    shield drawn { child(xmlRootNode, $1); child(xmlRootNode, $2); $$ = xmlRootNode; }
     ;
 /* ------------------- Basic elements of the simple shield ------------------ */
 
@@ -449,6 +460,39 @@ number:
     | THE { $$ = "1"; }
     ;
 
+using:
+    WITH { }
+    | IN { }
+    ;
+
+aspectRatio:
+    REALNUM { $$ = $1; }
+    | RATIO { $$ = $1; }
+    ;
+
+drawnItem:
+    using THE WORD PALETTE { $$ = attr($4, A_KEYTERM, $3); } 
+    | using WORD PALETTE { $$ = attr($3, A_KEYTERM, $2); }
+    | using THE WORD SHAPE { $$ = attr($4, A_KEYTERM, $3); } 
+    | using WORD SHAPE { $$ = attr($3, A_KEYTERM, $2); }
+    | using THE WORD EFFECT { $$ = attr($4, A_KEYTERM, $3); } 
+    | using WORD EFFECT { $$ = attr($3, A_KEYTERM, $2); }
+    | using THE aspectRatio ASPECT { $$ = attr($4, A_KEYTERM, $3); }
+    | using aspectRatio ASPECT { $$ = attr($3, A_KEYTERM, $2); }
+    | using THE ASPECT OF aspectRatio { $$ = attr($3, A_KEYTERM, $5); }
+    | using THE ASPECT aspectRatio { $$ = attr($3, A_KEYTERM, $4); }
+    ;
+
+drawnItems:
+    drawnItem { $$ = parent(E_LIST, $1, NULL); }
+    | drawnItems drawnItem { $$ = child($1, $2); }
+    | drawnItems AND drawnItem { $$ = child($1, $3); }
+    ;
+
+drawn:
+    DRAWN drawnItems { $$ = parent(E_INSTRUCTIONS, NULL, NULL); addList($$, $2); }
+    | drawnItems { $$ = parent(E_INSTRUCTIONS, NULL, NULL); addList($$, $1); }
+    ;
 %%
 
 void main()

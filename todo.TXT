@@ -1,1 +1,3 @@
 Charge modifier "rows" now has one child per row number, NOT a concatenated string of numbers.
+
+"spanish" is a prefix as well as a shield shape - need to use sub-domains or whatever they are called in the lexer...
