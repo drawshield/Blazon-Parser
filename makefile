@@ -4,7 +4,7 @@ DRAWSHIELD = true
 LANG = en
 
 CC		= cc
-CFLAGS	= -g
+CFLAGS	= -g -D LANG=$(LANG)
 INC		= -I/usr/include/libxml2
 LIBS	= -lxml2
 LEX		= flex
@@ -14,13 +14,13 @@ OBJECTS	= blazonML.o blazon.tab.o lex.yy.o errors.o spelling.o
 
 # By default, use only flex and bison fragments like 00-whatever.l
 # i.e. do NOT match 00ds-extension.l
-GRAMMAR = grammar/[0-9][0-9]-*.y
-LEXER = tokens/[0-9][0-9]-*.l
+GRAMMAR = grammar/$(LANG)/[0-9][0-9]-*.y
+TOKENS = tokens/$(LANG)/[0-9][0-9]-*.l
 
 # If DRAWSHIELD is define use all flex and bison fragments
 ifdef DRAWSHIELD
 GRAMMAR = grammar/$(LANG)/[0-9][0-9]*.y
-LEXER = tokens/$(LANG)/[0-9][0-9]*.l
+TOKENS = tokens/$(LANG)/[0-9][0-9]*.l
 endif
 
 .c.o:
@@ -41,9 +41,9 @@ blazon.y: $(GRAMMAR) errors.h blazonML.h
 	done; \
 	cat grammar/_bottom.y >> blazon.y;
 
-blazon.l: $(LEXER) tokens/_top.l tokens/_bottom.l
+blazon.l: $(TOKENS) tokens/_top.l tokens/_bottom.l
 	cat tokens/_top.l > blazon.l; \
-	for i in $(LEXER); do \
+	for i in $(TOKENS); do \
 		tail -n +2 $$i >> blazon.l; \
 	done; \
 	cat tokens/_bottom.l >> blazon.l;
