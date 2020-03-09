@@ -10,6 +10,7 @@
 #include "blazon.tab.h"
 #include "blazonML.h"
 #include "errors.h"
+#include "canon.h"
 
 /* Interface to Flex */
 
@@ -498,6 +499,7 @@ drawn:
 void main()
 {
     xmlDocPtr doc;
+    char buffer[4096];
 
     // XML Document
     doc = xmlNewDoc(BAD_CAST "1.0");
@@ -509,6 +511,9 @@ void main()
     xmlAddChild(xmlRootNode, getMessages());
 
     xmlSaveFormatFileEnc("-", doc, "UTF-8", 1);
+    puts("Calling");
+    canonical (xmlRootNode, buffer, 4096);
+    puts(buffer);
     xmlFreeDoc(doc);
 }
 

@@ -103,6 +103,7 @@
      <xs:documentation>DEPRECATED - prefer the input element </xs:documentation>
     </xs:annotation>
    </xs:attribute>
+   <xs:attribute name="canonical" type="xs:string"/>
    <xs:attribute name="blazonTokens" use="required">
     <xs:annotation>
      <xs:documentation>This is a blank separated list of tokens created by the lexical analyser. The "tokens" attributes of other elements are zero based references to this list.</xs:documentation>

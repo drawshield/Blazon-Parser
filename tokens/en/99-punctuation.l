@@ -17,5 +17,5 @@ and { stash(); return AND; }
  /* erroneously matched, same for other punctuation chars */
  /* [^ \t\n\r,;&)("']+ { lexerMessage(yytext); } */
 
-[^ \t\n\r,;&)("']+ { stash(); val(yytext); return WORD; }
+[^ \t\n\r,;&)("']+ { val(yytext); return WORD; }
 

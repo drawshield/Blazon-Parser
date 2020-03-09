@@ -3,6 +3,7 @@
 void main()
 {
     xmlDocPtr doc;
+    char buffer[4096];
 
     // XML Document
     doc = xmlNewDoc(BAD_CAST "1.0");
@@ -14,6 +15,8 @@ void main()
     xmlAddChild(xmlRootNode, getMessages());
 
     xmlSaveFormatFileEnc("-", doc, "UTF-8", 1);
+    canonical (xmlRootNode, buffer, 4096);
+    puts(buffer);
     xmlFreeDoc(doc);
 }
 

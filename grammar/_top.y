@@ -10,6 +10,7 @@
 #include "blazon.tab.h"
 #include "blazonML.h"
 #include "errors.h"
+#include "canon.h"
 
 /* Interface to Flex */
 

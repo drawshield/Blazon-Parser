@@ -10,7 +10,7 @@ LIBS	= -lxml2
 LEX		= flex
 YACC	= bison
 YFLAGS	= -vd
-OBJECTS	= blazonML.o blazon.tab.o lex.yy.o errors.o spelling.o
+OBJECTS	= blazonML.o blazon.tab.o lex.yy.o errors.o spelling.o canon.o
 
 # By default, use only flex and bison fragments like 00-whatever.l
 # i.e. do NOT match 00ds-extension.l
@@ -34,7 +34,7 @@ spelling.c: spelling.h
 
 errors.c: errors.h blazonML.h spelling.h
 
-blazon.y: $(GRAMMAR) errors.h blazonML.h
+blazon.y: $(GRAMMAR) errors.h blazonML.h grammar/_top.y grammar/_bottom.y
 	cat grammar/_top.y > blazon.y; \
 	for i in $(GRAMMAR); do \
 		tail -n +2 $$i >> blazon.y; \
