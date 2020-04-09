@@ -116,7 +116,7 @@ xmlNodePtr changeNodeName(xmlNodePtr old, char *name) {
 }
 
 void drop(xmlNodePtr node) {
-    if (node = (xmlNodePtr)0) {
+    if (node == (xmlNodePtr)0) {
         puts("Null ptr in drop");
     } else {
         xmlFreeNode(node);
