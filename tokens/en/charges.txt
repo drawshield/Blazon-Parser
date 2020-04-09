@@ -98,7 +98,7 @@ catamounts? { mkNode( E_CHARGE, "wildlife/wildcat"); return CHARGE; }
 wildcats? { mkNode( E_CHARGE, "wildlife/wildcat"); return CHARGE; }
 mountain{S}cats? { mkNode( E_CHARGE, "wildlife/wildcat"); return CHARGE; }
 cats? { mkNode( E_CHARGE, "wildlife/cat"); return CHARGE; }
-fox(es)? { mkNode( E_CHARGE, "wildlife/fox"); return CHARGE; }
+foxe?s? { mkNode( E_CHARGE, "wildlife/fox"); return CHARGE; }  // 'e' is optional, e.g., "fox's head"
 (hedgehog|urcheon|urchin)s? { mkNode( E_CHARGE, "wildlife/hedgehog"); return CHARGE; }
 (weasel|mart[ie]n|foine|stoat|ermine|genet)s? { mkNode( E_CHARGE, "wildlife/weasel"); return CHARGE; }
 squirrels? { mkNode( E_CHARGE, "wildlife/squirrel"); return CHARGE; }
@@ -110,7 +110,7 @@ beavers? { mkNode( E_CHARGE, "wildlife/beaver"); return CHARGE; }
 bears? { mkNode( E_CHARGE, "bear/bear"); return CHARGE; }
 (polar|ice){S}bears? { mkNode( E_CHARGE, "bear/polar-bear"); return CHARGE; }
 mol(diwarp|e)s? { mkNode( E_CHARGE, "wildlife/mole"); return CHARGE; }
-bears?{S}and{S}ragged{S}staffs? { mkNode( E_CHARGE, "bear/bear-ragged-staff"); return CHARGE; }
+bears?{S}and{S}ragged{S}sta(ff|ve)s? { mkNode( E_CHARGE, "bear/bear-ragged-staff"); return CHARGE; }
 otters? { mkNode( E_CHARGE, "wildlife/otter"); return CHARGE; }
 
    // snakes{S}and{S}stuff
@@ -238,19 +238,19 @@ cheval{S}traps? { mkNode( E_CHARGE, "weapon/caltrap"); return CHARGE; }
 ?spiked{S}clubs? { mkNode( E_CHARGE, "weapon/club"); return CHARGE; }
 cronels? { mkNode( E_CHARGE, "weapon/cronel"); return CHARGE; }
 crossbows? { mkNode( E_CHARGE, "weapon/crossbow"); return CHARGE; }
-(staff|bourdon)s? { mkNode( E_CHARGE, "weapon/staff"); return CHARGE; }
-ragged{S}staffs? { mkNode( E_CHARGE, "weapon/staff-ragged"); return CHARGE; }
-wreathed{S}staffs? { mkNode( E_CHARGE, "weapon/staff-wreathed"); return CHARGE; }
+(staff|stave|bourdon)s? { mkNode( E_CHARGE, "weapon/staff"); return CHARGE; }
+ragged{S}sta(ff|ve)s? { mkNode( E_CHARGE, "weapon/staff-ragged"); return CHARGE; }
+wreathed{S}sta(ff|ve)s? { mkNode( E_CHARGE, "weapon/staff-wreathed"); return CHARGE; }
 arba?l[ea]sts? { mkNode( E_CHARGE, "weapon/crossbow"); return CHARGE; }
 bourdons? { mkNode( E_CHARGE, "weapon/staff-palmer"); return CHARGE; }
-palmers{S}staffs? { mkNode( E_CHARGE, "weapon/staff-palmer"); return CHARGE; }
+palmers{S}sta(ff|ve)s? { mkNode( E_CHARGE, "weapon/staff-palmer"); return CHARGE; }
 [ck]atherine{S}wheels? { mkNode( E_CHARGE, "weapon/catherine-wheel"); return CHARGE; }
 sword{S}chapes? { mkNode( E_CHARGE, "weapon/sword-chape"); return CHARGE; }
 thors{S}hammers? { mkNode( E_CHARGE, "weapon/thors-hammer"); return CHARGE; }
 mjolnirs? { mkNode( E_CHARGE, "weapon/thors-hammer"); return CHARGE; }
 shackles? { mkNode( E_CHARGE, "weapon/shackle"); return CHARGE; }
    // tools
-(barnacles|brey)s? { mkNode( E_CHARGE, "tools/brey"); return CHARGE; }
+(barnacle|brey)s? { mkNode( E_CHARGE, "tools/brey"); return CHARGE; }
 (fetter|pad)locks? { mkNode( E_CHARGE, "tools/padlock"); return CHARGE; }
 (flea?g?me?|lancet)s? { mkNode( E_CHARGE, "tools/fleam"); return CHARGE; }
 (hammer|martell)s? { mkNode( E_CHARGE, "tools/hammer"); return CHARGE; }
@@ -280,6 +280,7 @@ flails? { mkNode( E_CHARGE, "tools/flail"); return CHARGE; }
 flo(at|te)s? { mkNode( E_CHARGE, "tools/float"); return CHARGE; }
 forge{S}hammers? { mkNode( E_CHARGE, "tools/forge-hammer"); return CHARGE; }
 sledge{S}hammers? { mkNode( E_CHARGE, "tools/sledge-hammer"); return CHARGE; }
+sledgehammers? { mkNode( E_CHARGE, "tools/sledge-hammer"); return CHARGE; }
 grappling{S}irons? { mkNode( E_CHARGE, "tools/grappling-iron"); return CHARGE; }
 hackles? { mkNode( E_CHARGE, "tools/hemp-break"); return CHARGE; }
 hemp{S}(break|bracke)s? { mkNode( E_CHARGE, "tools/hemp-break"); return CHARGE; }
@@ -507,7 +508,7 @@ trilliums?{S}?flowers? { mkNode( E_CHARGE, "flower/trillium"); return CHARGE; }
 forget{S}me{S}nots? { mkNode( E_CHARGE, "flower/forget-me-not"); return CHARGE; }
 stems?{S}of{S}?a{S}flowers? { mkNode( E_CHARGE, "flower/flower-stem"); return CHARGE; }
 lil(y|ies) { mkNode( E_CHARGE, "flower/lily"); return CHARGE; }
-jasmine{S}?flowers? { mkNode( E_CHARGE, "flower/jasmine"); return CHARGE; }
+jasmines?{S}?flowers? { mkNode( E_CHARGE, "flower/jasmine"); return CHARGE; }
 strawberry{S}flowers? { mkNode( E_CHARGE, "flower/strawberry-flower"); return CHARGE; }
 strawberry{S}plants? { mkNode( E_CHARGE, "flower/strawberry-plant"); return CHARGE; }
 (quintfoil|cinquefoil|frais)e?s? { mkNode( E_CHARGE, "flower/cinquefoil"); return CHARGE; }
@@ -537,10 +538,10 @@ blue{S}bottles? { mkNode( E_CHARGE, "flower/cornflower"); return CHARGE; }
 tulips? { mkNode( E_CHARGE, "flower/tulip"); return CHARGE; }
 popp(y|ies) { mkNode( E_CHARGE, "flower/poppy"); return CHARGE; }
 dais(y|ies) { mkNode( E_CHARGE, "flower/daisy"); return CHARGE; }
-lotus{S}?(flower|blossom)s? { mkNode( E_CHARGE, "flower/lotus"); return CHARGE; }
+lotus(es)?{S}?(flower|blossom)s? { mkNode( E_CHARGE, "flower/lotus"); return CHARGE; }
    // other{S}plants
 pine{S}apples? { mkNode( E_CHARGE, "plant/pineapple"); return CHARGE; }
-bullrushe?s? { mkNode( E_CHARGE, "plant/bullrush"); return CHARGE; }
+bull?rush(es)? { mkNode( E_CHARGE, "plant/bullrush"); return CHARGE; }
 pineapples? { mkNode( E_CHARGE, "plant/pineapple"); return CHARGE; }
 ears?{S}of{S}?big{S}(wheat|corn) { mkNode( E_CHARGE, "plant/wheat-ear"); return CHARGE; }
 (wheat|corn) { mkNode( E_CHARGE, "plant/wheat"); return CHARGE; }
@@ -580,13 +581,13 @@ cherub(im)?s? { mkNode( E_CHARGE, "christian/cherub"); return CHARGE; }
 (paschal|holy){S}lambs? { mkNode( E_CHARGE, "christian/paschal-lamb"); return CHARGE; }
 lambs?{S}of{S}god { mkNode( E_CHARGE, "christian/paschal-lamb"); return CHARGE; }
 agnus{S}dei { mkNode( E_CHARGE, "christian/paschal-lamb"); return CHARGE; }
-cro[s|z]iers? { mkNode( E_CHARGE, "christian/crozier"); return CHARGE; }
+cro[sz]iers? { mkNode( E_CHARGE, "christian/crozier"); return CHARGE; }
 virgin{S}?mary{S}?(holding|and){S}?the{S}?child{S}?jesus{S}?in{S}?her{S}?arms { mkNode( E_CHARGE, "christian/virgin"); return CHARGE; }
 madonna { mkNode( E_CHARGE, "christian/virgin"); return CHARGE; }
 mitres? { mkNode( E_CHARGE, "christian/mitre"); return CHARGE; }
 angels? { mkNode( E_CHARGE, "christian/angel"); return CHARGE; }
 ?(church|war){S}bells? { mkNode( E_CHARGE, "christian/church-bell"); return CHARGE; }
-pastoral{S}staffs? { mkNode( E_CHARGE, "christian/staff-pastoral"); return CHARGE; }
+pastoral{S}sta(ff|ve)s? { mkNode( E_CHARGE, "christian/staff-pastoral"); return CHARGE; }
 altars? { mkNode( E_CHARGE, "christian/altar"); return CHARGE; }
 passion{S}nails? { mkNode( E_CHARGE, "christian/passion-nail"); return CHARGE; }
    // architecture
@@ -623,21 +624,23 @@ fountain{S}stones? { mkNode( E_CHARGE, "architecture/fountain-stone"); return CH
    // geometric
 
    // axe
-lochaber{S}axes? { mkNode( E_CHARGE, "axe/lochaber-axe"); return CHARGE; }
-pole{S}axes? { mkNode( E_CHARGE, "axe/pole-axe"); return CHARGE; }
-(poleaxe|halbert)s? { mkNode( E_CHARGE, "axe/pole-axe"); return CHARGE; }
+lochaber{S}axe?s? { mkNode( E_CHARGE, "axe/lochaber-axe"); return CHARGE; }
+pole{S}axe?s? { mkNode( E_CHARGE, "axe/pole-axe"); return CHARGE; }
+(poleaxe?|halbert)s? { mkNode( E_CHARGE, "axe/pole-axe"); return CHARGE; }
 addices? { mkNode( E_CHARGE, "axe/addice"); return CHARGE; }
-carpenters?{S}axes? { mkNode( E_CHARGE, "axe/addice"); return CHARGE; }
-battle{S}axes? { mkNode( E_CHARGE, "axe/battle-axe"); return CHARGE; }
-battleaxes? { mkNode( E_CHARGE, "axe/battle-axe"); return CHARGE; }
-?common{S}axes? { mkNode( E_CHARGE, "axe/common-axe"); return CHARGE; }
+carpenters?{S}axe?s? { mkNode( E_CHARGE, "axe/addice"); return CHARGE; }
+battle{S}axe?s? { mkNode( E_CHARGE, "axe/battle-axe"); return CHARGE; }
+battleaxe?s? { mkNode( E_CHARGE, "axe/battle-axe"); return CHARGE; }
+?common{S}axe?s? { mkNode( E_CHARGE, "axe/common-axe"); return CHARGE; }
 hatchets? { mkNode( E_CHARGE, "axe/common-axe"); return CHARGE; }
-(miners|pick){S}axes? { mkNode( E_CHARGE, "axe/pick-axe"); return CHARGE; }
+(miners|pick){S}axe?s? { mkNode( E_CHARGE, "axe/pick-axe"); return CHARGE; }
+pickaxe?s? { mkNode( E_CHARGE, "axe/pick-axe"); return CHARGE; }
 hews? { mkNode( E_CHARGE, "axe/pick-axe"); return CHARGE; }
-turners?{S}axes? { mkNode( E_CHARGE, "axe/turner-axe"); return CHARGE; }
-slaughter{S}axes? { mkNode( E_CHARGE, "axe/slaughter-axe"); return CHARGE; }
-broad{S}axes? { mkNode( E_CHARGE, "axe/broad-axe"); return CHARGE; }
-throwing{S}axes? { mkNode( E_CHARGE, "axe/throwing-axe"); return CHARGE; }
+turners?{S}axe?s? { mkNode( E_CHARGE, "axe/turner-axe"); return CHARGE; }
+slaughter{S}axe?s? { mkNode( E_CHARGE, "axe/slaughter-axe"); return CHARGE; }
+broad{S}axe?s? { mkNode( E_CHARGE, "axe/broad-axe"); return CHARGE; }
+broadaxe?s? { mkNode( E_CHARGE, "axe/broad-axe"); return CHARGE; }
+throwing{S}axe?s? { mkNode( E_CHARGE, "axe/throwing-axe"); return CHARGE; }
    // natural
 (hill|hillock|mound|mount) { mkNode( E_CHARGE, "natural/hillock"); return CHARGE; }
 mole{S}hills? { mkNode( E_CHARGE, "natural/mole-hill"); return CHARGE; }
@@ -699,14 +702,14 @@ dragons? { mkNode( E_CHARGE, "dragon/dragon"); return CHARGE; }
 w[yi]vern?s? { mkNode( E_CHARGE, "dragon/wyvern"); return CHARGE; }
    // mythical{S}/{S}stylised{S}creatures
 deer{S}goats? { mkNode( E_CHARGE, "mythical/deer-goat"); return CHARGE; }
-?worm{S}ou?rou?borose?s? { mkNode( E_CHARGE, "mythical/ouroboros"); return CHARGE; }
+?worms?{S}ou?rou?boro(i|s|ses) { mkNode( E_CHARGE, "mythical/ouroboros"); return CHARGE; }
 lion{S}goats? { mkNode( E_CHARGE, "mythical/lion-goat"); return CHARGE; }
 camelopardels? { mkNode( E_CHARGE, "mythical/giraffe-horned"); return CHARGE; }
 unicorns? { mkNode( E_CHARGE, "mythical/unicorn"); return CHARGE; }
 uni{S}corns? { mkNode( E_CHARGE, "mythical/unicorn"); return CHARGE; }
-sphinx(es)? { mkNode( E_CHARGE, "mythical/sphinx"); return CHARGE; }
-egyptian{S}sphinx(es)? { mkNode( E_CHARGE, "mythical/sphinx-egyptian"); return CHARGE; }
-greek{S}sphinx(es)? { mkNode( E_CHARGE, "mythical/sphinx-greek"); return CHARGE; }
+sphin(ges|x|xes) { mkNode( E_CHARGE, "mythical/sphinx"); return CHARGE; }
+egyptian{S}sphin(ges|x|xes) { mkNode( E_CHARGE, "mythical/sphinx-egyptian"); return CHARGE; }
+greek{S}sphin(ges|x|xes) { mkNode( E_CHARGE, "mythical/sphinx-greek"); return CHARGE; }
 man{S}lions? { mkNode( E_CHARGE, "mythical/man-lion"); return CHARGE; }
 opinic(i|us) { mkNode( E_CHARGE, "mythical/opinicus"); return CHARGE; }
 t[iy]gers? { mkNode( E_CHARGE, "animal/tiger"); return CHARGE; }
@@ -738,7 +741,7 @@ phoenixe?s? { mkNode( E_CHARGE, "mythical/phoenix"); return CHARGE; }
 salamanders? { mkNode( E_CHARGE, "mythical/salamander"); return CHARGE; }
 petasus { mkNode( E_CHARGE, "mythical/petasus"); return CHARGE; }
 yales? { mkNode( E_CHARGE, "mythical/yale"); return CHARGE; }
-pegas(i|us) { mkNode( E_CHARGE, "mythical/pegasus"); return CHARGE; }
+pegas(i|us|uses) { mkNode( E_CHARGE, "mythical/pegasus"); return CHARGE; }
 {S}//  {S}array{S}( 'amphisien{S}cockatrices? { mkNode( E_CHARGE, "mythical/basilisk"); return CHARGE; }
 bagwyns? { mkNode( E_CHARGE, "mythical/bagwyn"); return CHARGE; }
 basilisks? { mkNode( E_CHARGE, "mythical/basilisk"); return CHARGE; }
@@ -784,7 +787,7 @@ wool{S}[ps]acks? { mkNode( E_CHARGE, "furnishings/wool-pack"); return CHARGE; }
 cheese{S}wedges? { mkNode( E_CHARGE, "food/cheese-wedge"); return CHARGE; }
 cheese{S}wheels? { mkNode( E_CHARGE, "food/cheese-wheel"); return CHARGE; }
 breadloa(f|ves) { mkNode( E_CHARGE, "food/breadloaf"); return CHARGE; }
-loa(f|ves){S}of{S}bread { mkNode( E_CHARGE, "food/breadloaf"); return CHARGE; }
+loa(f|ves){S}?of{S}?bread { mkNode( E_CHARGE, "food/breadloaf"); return CHARGE; }
    //games
 dic?e { mkNode( E_CHARGE, "games/dice"); return CHARGE; }
 domino(es)? { mkNode( E_CHARGE, "games/domino"); return CHARGE; }
@@ -816,7 +819,7 @@ artists{S}brush(es)? { mkNode( E_CHARGE, "crafts/artists-brush"); return CHARGE;
 embroiderers?{S}broach(es)? { mkNode( E_CHARGE, "crafts/embroiderers-broach"); return CHARGE; }
 quills?{S}?pens? { mkNode( E_CHARGE, "crafts/quill-pen"); return CHARGE; }
 thread{S}spools? { mkNode( E_CHARGE, "crafts/thread-spool"); return CHARGE; }
-barber{S}poles? { mkNode( E_CHARGE, "crafts/barber-pole"); return CHARGE; }
+barbers?{S}poles? { mkNode( E_CHARGE, "crafts/barber-pole"); return CHARGE; }
 spools?{S}?of{S}threads? { mkNode( E_CHARGE, "crafts/thread-spool"); return CHARGE; }
    // household
 bungs?{S}?of{S}?a{S}?tun { mkNode( E_CHARGE, "household/bung"); return CHARGE; }
@@ -834,7 +837,7 @@ books? { mkNode( E_CHARGE, "household/book"); return CHARGE; }
 shel(f|ves){S}of{S}books? { mkNode( E_CHARGE, "household/book-shelf"); return CHARGE; }
 bookshel(f|ves) { mkNode( E_CHARGE, "household/book-shelf"); return CHARGE; }
 book{S}shel(f|ves) { mkNode( E_CHARGE, "household/book-shelf"); return CHARGE; }
-abacus(es)? { mkNode( E_CHARGE, "household/abacus"); return CHARGE; }
+abac(i|us|uses) { mkNode( E_CHARGE, "household/abacus"); return CHARGE; }
 combs? { mkNode( E_CHARGE, "household/comb"); return CHARGE; }
 writing{S}pens? { mkNode( E_CHARGE, "household/pen"); return CHARGE; }
 pestles?{S}?and{S}mortars? { mkNode( E_CHARGE, "household/mortar-pestle"); return CHARGE; }
@@ -862,7 +865,7 @@ triumphal{S}crowns? { mkNode( E_CHARGE, "crown/triumphal"); return CHARGE; }
 papal{S}crowns? { mkNode( E_CHARGE, "crown/papal"); return CHARGE; }
 obsidional{S}crowns? { mkNode( E_CHARGE, "crown/obsidional"); return CHARGE; }
 (astral|celestial){S}(crown|coronet)s? { mkNode( E_CHARGE, "crown/astral"); return CHARGE; }
-barons?{S}(crown|coronet)s? { mkNode( E_CHARGE, "crown/baron"); return CHARGE; }
+baron(ial|s)?{S}(crown|coronet)s? { mkNode( E_CHARGE, "crown/baron"); return CHARGE; }
 civil{S}crowns? { mkNode( E_CHARGE, "crown/civil"); return CHARGE; }
 ducal{S}(crown|coronet)s? { mkNode( E_CHARGE, "crown/ducal"); return CHARGE; }
 dukes?{S}(crown|coronet)s? { mkNode( E_CHARGE, "crown/duke"); return CHARGE; }
@@ -886,7 +889,7 @@ viscounts?{S}(crown|coronet)s? { mkNode( E_CHARGE, "crown/viscount"); return CHA
 cla[vr]i(on|cord)s? { mkNode( E_CHARGE, "music/clarion"); return CHARGE; }
 accordions? { mkNode( E_CHARGE, "music/accordion"); return CHARGE; }
 hautboys? { mkNode( E_CHARGE, "music/hautboy"); return CHARGE; }
-shofars? { mkNode( E_CHARGE, "music/shofar"); return CHARGE; }
+shof(ars?|roth) { mkNode( E_CHARGE, "music/shofar"); return CHARGE; }
 rests? { mkNode( E_CHARGE, "music/clarion"); return CHARGE; }
 drums? { mkNode( E_CHARGE, "music/drum"); return CHARGE; }
 recorders? { mkNode( E_CHARGE, "music/recorder"); return CHARGE; }
@@ -979,11 +982,11 @@ escut?cheons?{S}?of{S}?pretence { mkNode( E_CHARGE, "special/escutcheon"); retur
 socheons? { mkNode( E_CHARGE, "special/escutcheon"); return CHARGE; }
    // emblem
 rods?{S}?of{S}(a|e|ae)scu?l[ae]pi?us { mkNode( E_CHARGE, "emblem/rod-of-esclapius"); return CHARGE; }
-thyrsuse?s?{S}?of{S}?dionysus { mkNode( E_CHARGE, "emblem/thyrsus"); return CHARGE; }
+thyrs(i|us|uses){S}?of{S}?dionysus { mkNode( E_CHARGE, "emblem/thyrsus"); return CHARGE; }
 ankhs? { mkNode( E_CHARGE, "emblem/ankh"); return CHARGE; }
-caduceus { mkNode( E_CHARGE, "emblem/caduceus"); return CHARGE; }
+caduce(i|us) { mkNode( E_CHARGE, "emblem/caduceus"); return CHARGE; }
 laurel{S}wreaths? { mkNode( E_CHARGE, "emblem/laurel-wreath"); return CHARGE; }
-staffs?{S}of{S}mercury { mkNode( E_CHARGE, "emblem/caduceus"); return CHARGE; }
+sta(ff|ve)s?{S}of{S}mercury { mkNode( E_CHARGE, "emblem/caduceus"); return CHARGE; }
 cornucopias? { mkNode( E_CHARGE, "emblem/cornucopia"); return CHARGE; }
 ermine{S}spots? { mkNode( E_CHARGE, "emblem/ermine-spot"); return CHARGE; }
 spots? { mkNode( E_CHARGE, "emblem/spot"); return CHARGE; }
@@ -995,7 +998,7 @@ chi{S}rho { mkNode( E_CHARGE, "emblem/chi-rho"); return CHARGE; }
 menorah { mkNode( E_CHARGE, "emblem/menorah"); return CHARGE; }
 (star|shield)s?{S}of{S}david { mkNode( E_CHARGE, "emblem/star-of-david"); return CHARGE; }
 fleurs?{S}de{S}l(y|i)s { mkNode( E_CHARGE, "emblem/fleur-de-lys"); return CHARGE; }
-heralds?{S}(staff|baton)s? { mkNode( E_CHARGE, "emblem/heralds-staff"); return CHARGE; }
+heralds?{S}(staff|stave|baton)s? { mkNode( E_CHARGE, "emblem/heralds-staff"); return CHARGE; }
 labyrinths? { mkNode( E_CHARGE, "emblem/labyrinth"); return CHARGE; }
 musical{S}notes? { mkNode( E_CHARGE, "emblem/musical-note"); return CHARGE; }
 nesselblatt(s|er)? { mkNode( E_CHARGE, "emblem/nesselblatt"); return CHARGE; }
