@@ -73,9 +73,9 @@ cross(es)?{S}fitch(y|ee) 		{ mkNode( E_CHARGE, "quadrate/cross-fitchy"); return 
 cross(es)?{S}of{S}pisa			{ mkNode( E_CHARGE, "quadrate/cross-pisa"); return CHARGE; }
 cross(es)?{S}of{S}toulouse		{ mkNode( E_CHARGE, "quadrate/cross-toulouse"); return CHARGE; }
 cross(es)?{S}(of{S})?(s(ain)?t{S})?florian |
-(s(ain)?t{S})florians?{S}cross(es)?	{ mkNode( E_CHARGE, "quadrate/cross-florian"); return CHARGE; }
+(s(ain)?t{S})?florians?{S}cross(es)?	{ mkNode( E_CHARGE, "quadrate/cross-florian"); return CHARGE; }
 cross(es)?{S}(of{S})?(s(ain)?t{S})?peters? |	
-(s(ain)?t{S})peters?{S}cross(es)?	{ mkNode( E_CHARGE, "cross/peter"); return CHARGE; }
+(s(ain)?t{S})?peters?{S}cross(es)?	{ mkNode( E_CHARGE, "cross/peter"); return CHARGE; }
 torakrzy({S}cross)?			   |
 cross(es)?{S}and{S}a{S}half		{ mkNode( E_CHARGE, "cross/torakrzy"); return CHARGE; }
 
@@ -84,7 +84,7 @@ fylfots?{S}clubbed			{ mkNode( E_CHARGE, "quadrate/fylfot-clubbed"); return CHAR
 maltese{S}cross(let|lets|es)?		{ mkNode( E_CHARGE, "quadrate/maltese-cross"); return CHARGE; }
 (compass{S}roses?|novae)		{ mkNode( E_CHARGE, "quadrate/compass-rose"); return CHARGE; }
 compass{S}stars?			{ mkNode( E_CHARGE, "quadrate/compass-star"); return CHARGE; }
-?plain{S}cross?lett?s?			{ mkNode( E_CHARGE, "quadrate/crosslet"); return CHARGE; }
+(plain{S})?cross?lett?s?		{ mkNode( E_CHARGE, "quadrate/crosslet"); return CHARGE; }
 cross?lett?s?{S}formy			{ mkNode( E_CHARGE, "quadrate/cross-formy"); return CHARGE; }
 saltorels?				{ mkNode( E_CHARGE, "quadrate/saltorel"); return CHARGE; }
 

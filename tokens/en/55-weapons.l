@@ -48,7 +48,7 @@ cheval{S}traps?		{ mkNode( E_CHARGE, "weapon/caltrap"); return CHARGE; }
 (spiked{S})?clubs?	{ mkNode( E_CHARGE, "weapon/club"); return CHARGE; }
 cronels?		{ mkNode( E_CHARGE, "weapon/cronel"); return CHARGE; }
 cross{S}?bows?		{ mkNode( E_CHARGE, "weapon/crossbow"); return CHARGE; }
-(staff|stave|bourdon)s?	{ mkNode( E_CHARGE, "weapon/staff"); return CHARGE; }
+(staff|stave)s?		{ mkNode( E_CHARGE, "weapon/staff"); return CHARGE; }
 ragged{S}sta(ff|ve)s?	{ mkNode( E_CHARGE, "weapon/staff-ragged"); return CHARGE; }
 wreathed{S}sta(ff|ve)s?	{ mkNode( E_CHARGE, "weapon/staff-wreathed"); return CHARGE; }
 arba?l[ea]sts?		{ mkNode( E_CHARGE, "weapon/crossbow"); return CHARGE; }

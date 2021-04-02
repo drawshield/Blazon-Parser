@@ -35,13 +35,13 @@ bevill?ed{S}(opposite|upper) { mkMod(T_LINETYPE, "bevilled-upper"); return LINET
 bevill?y{S}(opposite|upper) { mkMod(T_LINETYPE, "bevilled-upper"); return LINETYPE; }
 bevill?ed({S}lower)? { mkMod(T_LINETYPE, "bevilled"); return LINETYPE; }
 bevill?y({S}lower)? { mkMod(T_LINETYPE, "bevilled"); return LINETYPE; }
-dau?ncett(e|y){S}fl(o|eu)r(y|etty) { mkMod(T_LINETYPE, "dancetty-floretty"); return LINETYPE; }
-dau?ncett(e|y){S}?the{S}peaks{S}?ensigned{S}?with{S}?a{S}fleur-de-lys { mkMod(T_LINETYPE, "dancetty-floretty"); return LINETYPE; }
+dau?ncett[ey]{S}fl(o|eu)r(y|etty) { mkMod(T_LINETYPE, "dancetty-floretty"); return LINETYPE; }
+dau?ncett[ey]{S}(the{S})?peaks{S}(ensigned{S})?(with{S})?(a{S})?fleur-de-lys { mkMod(T_LINETYPE, "dancetty-floretty"); return LINETYPE; }
 dau?ncetty { mkMod(T_LINETYPE, "dancetty"); return LINETYPE; }
 double{S}(en)?arched { mkMod(T_LINETYPE, "double-arched"); return LINETYPE; }
 (en)?arched{S}double { mkMod(T_LINETYPE, "double-arched"); return LINETYPE; }
 (rayonated|radiant) { mkMod(T_LINETYPE, "rayonny"); return LINETYPE; }
-rayonn(e|y) { mkMod(T_LINETYPE, "rayonny"); return LINETYPE; }
+rayonn[ey] { mkMod(T_LINETYPE, "rayonny"); return LINETYPE; }
 (wavy|undy|serpentine) { mkMod(T_LINETYPE, "wavy"); return LINETYPE; }
 (urdy|urde|champaine|champion) { mkMod(T_LINETYPE, "urdy"); return LINETYPE; }
 fir{S}twiggy?e?d? { mkMod(T_LINETYPE, "twigged"); return LINETYPE; }

@@ -17,3 +17,21 @@ alchemical{S}(character|symbol)s?({S}(of|for))?({S}the)?({S}element)?	{ mkNode( 
 (character|symbol)s?({S}(of|for))?	{ mkNode( E_CHARGE, "symbol/any"); return SYM_CHARGE; }
 
 
+(wedges?{S}of{S})?cheeses? |
+cheese{S}wedges?	{ mkNode( E_CHARGE, "food/cheese-wedge"); return CHARGE; }
+wheels?{S}of{S}cheeses?	|
+cheese{S}wheels?	{ mkNode( E_CHARGE, "food/cheese-wheel"); return CHARGE; }
+loa(f|ves)({S}of{S}bread)? |
+breadloa(f|ves)		{ mkNode( E_CHARGE, "food/breadloaf"); return CHARGE; }
+cakes?			{ mkNode( E_CHARGE, "food/cake"); return CHARGE; }
+slices?{S}of{S}cakes?	|
+cake{S}slices?		{ mkNode( E_CHARGE, "food/cake-slice"); return CHARGE; }
+
+(beacon|bale{S}fire)s?	{ mkNode( E_CHARGE, "fire/beacon"); return CHARGE; }
+cressets?		{ mkNode( E_CHARGE, "fire/cresset"); return CHARGE; }
+(fire{S}?ball|bomb{S}?shell|bombe?)s? |
+(hand{S})?grenado?e?s?	{ mkNode( E_CHARGE, "fire/fireball"); return CHARGE; }
+(flambeaux?|torche?s?)	|
+fire{S}brands?		{ mkNode( E_CHARGE, "fire/torch"); return CHARGE; }
+flames?({S}of{S}fire)?	{ mkNode( E_CHARGE, "fire/flames"); return CHARGE; }
+

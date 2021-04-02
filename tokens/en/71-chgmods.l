@@ -42,7 +42,6 @@ fumant {mkMod(T_CHGMOD, "fumant"); return CHGMOD; }
 braced {mkMod(T_CHGMOD, "braced"); return CHGMOD; }
 conjunct {mkMod(T_CHGMOD, "conjunct"); return CHGMOD; }
 gradient {mkMod(T_CHGMOD, "gradient"); return CHGMOD; }
-increscent {mkMod(T_CHGMOD, "increscent"); return CHGMOD; }
 crescent {mkMod(T_CHGMOD, "crescent"); return CHGMOD; }
 unarmed {mkMod(T_CHGMOD, "unarmed"); return CHGMOD; }
 spouting {mkMod(T_CHGMOD, "spouting"); return CHGMOD; }

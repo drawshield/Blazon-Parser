@@ -60,3 +60,38 @@ vallary?{S}(crown|coronet)s?	|
 (crown|coronet)s?{S}vallary?	{ mkNode( E_CHARGE, "crown/vallary"); return CHARGE; }
 viscounts?{S}(crown|coronet)s?	{ mkNode( E_CHARGE, "crown/viscount"); return CHARGE; }
 
+((antique|dutch|mens){S})?(sham)?(brogue|brough|boot)s?	{ mkNode( E_CHARGE, "clothes/boot"); return CHARGE; }
+(electoral{S})?bonnets?	{ mkNode( E_CHARGE, "clothes/bonnet"); return CHARGE; }
+(square{S})?buckles?	{ mkNode( E_CHARGE, "clothes/buckle"); return CHARGE; }
+belts?			{ mkNode( E_CHARGE, "clothes/belt"); return CHARGE; }
+eye{S}?masks?		{ mkNode( E_CHARGE, "clothes/eye-mask"); return CHARGE; }
+ferma(il|ux)		{ mkNode( E_CHARGE, "clothes/buckle"); return CHARGE; }
+arming{S}buckles?	{ mkNode( E_CHARGE, "clothes/arming-buckle"); return CHARGE; }
+caps?(({S}of)?{S}dignity)? { mkNode( E_CHARGE, "clothes/cap-dignity"); return CHARGE; }
+caps?{S}of{S}mercury	{ mkNode( E_CHARGE, "clothes/cap-mercury"); return CHARGE; }
+caps?{S}of{S}(a{S})?jesters?	{ mkNode( E_CHARGE, "clothes/cap-jester"); return CHARGE; }
+jesters{S}caps?		{ mkNode( E_CHARGE, "clothes/cap-jester"); return CHARGE; }
+ducipers?		{ mkNode( E_CHARGE, "clothes/cap-dignity"); return CHARGE; }
+(chapeaux?|capelots?)	{ mkNode( E_CHARGE, "clothes/cap-of-maintenance"); return CHARGE; }
+caps?{S}of{S}(estate|maintenance) { mkNode( E_CHARGE, "clothes/cap-of-maintenance"); return CHARGE; }
+(gem{S})?rings?		{ mkNode( E_CHARGE, "clothes/gem-ring"); return CHARGE; }
+gloves?			{ mkNode( E_CHARGE, "clothes/glove"); return CHARGE; }
+top{S}?hats?		{ mkNode( E_CHARGE, "clothes/tophat"); return CHARGE; }
+(sleeve|mau?nche?)s?	{ mkNode( E_CHARGE, "clothes/maunche"); return CHARGE; }
+(phrygian|liberty){S}caps? { mkNode( E_CHARGE, "clothes/phrygian-cap"); return CHARGE; }
+(mans{S})?garters?	{ mkNode( E_CHARGE, "clothes/garter"); return CHARGE; }
+(purse|scrip)s?		{ mkNode( E_CHARGE, "clothes/purse"); return CHARGE; }
+bags?			{ mkNode( E_CHARGE, "clothes/bag"); return CHARGE; }
+breeche?s?		{ mkNode( E_CHARGE, "clothes/breeches"); return CHARGE; }
+pouch(es)?		{ mkNode( E_CHARGE, "clothes/bag"); return CHARGE; }
+comedy{S}masks?		{ mkNode( E_CHARGE, "clothes/mask-comedy"); return CHARGE; }
+tragedy{S}masks?	{ mkNode( E_CHARGE, "clothes/mask-tragedy"); return CHARGE; }
+
+g(e|im)mel{S}rings?	{ mkNode( E_CHARGE, "jewel/gemel-ring"); return CHARGE; }
+gimballs?		{ mkNode( E_CHARGE, "jewel/gemel-ring"); return CHARGE; }
+(royal{S})?(orbs?|mounds?)({S}royal)?	{ mkNode( E_CHARGE, "jewel/orb"); return CHARGE; }
+rub(y|ies)		{ mkNode( E_CHARGE, "jewel/ruby"); return CHARGE; }
+crystals?		{ mkNode( E_CHARGE, "jewel/crystal"); return CHARGE; }
+diamonds?		{ mkNode( E_CHARGE, "jewel/crystal"); return CHARGE; }
+tor(c|que)s?		{ mkNode( E_CHARGE, "jewel/torque"); return CHARGE; }
+

@@ -76,7 +76,7 @@ point({S}in)?{S}(point|pointed|enty) { mkNode( E_ORDINARY, "point-in-point"); re
 point{S}dexter { mkNode( E_ORDINARY, "point-dexter"); return ORDINARY; }
 point{S}sinister { mkNode( E_ORDINARY, "point-sinister"); return ORDINARY; }
 
-salta?ire{S}?double{S}parted{S}(and{S})?fretty { mkNode( E_ORDINARY, "saltire-2fretty" ); return ORDINARY; }
+salta?ire{S}(double{S})?parted{S}(and{S})?fretty { mkNode( E_ORDINARY, "saltire-2fretty" ); return ORDINARY; }
 cross{S}(double{S})?parted{S}(and{S})?fretty { mkNode( E_ORDINARY, "cross-2fretty" ); return ORDINARY; }
 cross{S}tripartite{S}(and{S})?fretty { mkNode( E_ORDINARY, "cross-3fretty" ); return ORDINARY; }
 cross{S}quarter{S}pierced? { mkNode( E_ORDINARY, "cross-pierced" ); return ORDINARY; }

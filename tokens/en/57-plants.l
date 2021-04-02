@@ -16,7 +16,7 @@ bays?			{ mkNode( E_CHARGE, "tree-fruit/bay"); return CHARGE; }
 holl(y|ies)		{ mkNode( E_CHARGE, "tree-fruit/holly"); return CHARGE; }
 elders?			{ mkNode( E_CHARGE, "tree-fruit/elder"); return CHARGE; }
 willows?		{ mkNode( E_CHARGE, "tree-fruit/willow"); return CHARGE; }
-(cypress|cedar)s?	{ mkNode( E_CHARGE, "tree-fruit/cedar"); return CHARGE; /* XXX Eclipses tree-fruit/cypress*/}
+cedars?			{ mkNode( E_CHARGE, "tree-fruit/cedar"); return CHARGE; }
 apples?			{ mkNode( E_CHARGE, "tree-fruit/apple"); return CHARGE; }
 birch(es)?		{ mkNode( E_CHARGE, "tree-fruit/birch"); return CHARGE; }
 pomegranates?		{ mkNode( E_CHARGE, "tree-fruit/pomegranate"); return CHARGE; }
@@ -31,7 +31,7 @@ whitethorns?		{ mkNode( E_CHARGE, "tree-fruit/whitethorn"); return CHARGE; }
 alderberr(y|ies)	{ mkNode( E_CHARGE, "tree-fruit/alderberry"); return CHARGE; }
 alders?			{ mkNode( E_CHARGE, "tree-fruit/alder-tree"); return CHARGE; }
 aspens?			{ mkNode( E_CHARGE, "tree-fruit/aspen"); return CHARGE; }
-cypress			{ mkNode( E_CHARGE, "tree-fruit/cypress"); return CHARGE; /* XXX Eclipsed by tree-fruit/cedar */}
+cypress			{ mkNode( E_CHARGE, "tree-fruit/cypress"); return CHARGE; }
 chestnuts?		{ mkNode( E_CHARGE, "tree-fruit/chestnut"); return CHARGE; }
 horse{S}chestnut{S}fruits? |
 conkers?		{ mkNode( E_CHARGE, "tree-fruit/conker"); return CHARGE; }

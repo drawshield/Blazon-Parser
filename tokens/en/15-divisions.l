@@ -19,13 +19,13 @@ paly{S}bendy { mkNode(E_DIVISION, "paly-bendy"); return DIVISION_2; }
 bendy{S}paly { mkNode(E_DIVISION, "paly-bendy"); return DIVISION_2; }
 pily{S}bendy { mkNode(E_DIVISION, "pily-bendy"); return DIVISION_2; }
 bendy{S}pily { mkNode(E_DIVISION, "pily-bendy"); return DIVISION_2; }
-b[ua]rr?(y|uly)({S}sans)?({S}nombre)? { mkNode(E_DIVISION, "barry"); return DIVISION_2; }
+b[ua]rr?(ul)?y({S}sans)?({S}nombre)? { mkNode(E_DIVISION, "barry"); return DIVISION_2; }
 paly { mkNode(E_DIVISION, "paly"); return DIVISION_2; }
 chape { mkNode(E_DIVISION, "chape"); return DIVISION_2; }
 chevronn?(ell)?y { mkNode(E_DIVISION, "chevronny"); return DIVISION_2; }
 chausse { mkNode(E_DIVISION, "chausse"); return DIVISION_2; }
 quarterly{S}quartered { mkNode(E_DIVISION, "gyronny"); return DIVISION_2; }
-(per{S})?g(i|y)ronny { mkNode(E_DIVISION, "gyronny"); return DIVISION_2; }
+(per{S})?g[iy]ronny { mkNode(E_DIVISION, "gyronny"); return DIVISION_2; }
 bendy { mkNode(E_DIVISION, "bendy"); return DIVISION_2; }
 per{S}fesse? { mkNode(E_DIVISION, "per-fess"); return DIVISION_2; }
 per{S}pale { mkNode(E_DIVISION, "per-pale"); return DIVISION_2; }

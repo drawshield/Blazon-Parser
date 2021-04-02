@@ -30,6 +30,5 @@ tapiss?ee?({S}of)?({S}wheat)? { mkNode(E_FUR, "tapisse"); return FUR; }
 de{S}l\'?un{S}en{S}l\'?autre |
 interchanged? |
 transmuted |
-counter{S}cha[nr]ged? |
-countercha[nr]ged? |
+counter{S}?cha[nr]ged? |
 countercoloured  { mkNode(E_COUNTERCHANGED, "counterchanged"); return COUNTERCHANGED; }

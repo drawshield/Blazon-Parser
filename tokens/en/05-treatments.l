@@ -24,13 +24,12 @@ estencell?y { mkNode(E_TREATMENT, "estencely"); return TREATMENT2; }
 maily { mkNode(E_TREATMENT, "maily"); return TREATMENT2; }
 (masonn?ed?|muraille) { mkNode(E_TREATMENT, "masoned"); return TREATMENT2; }
 mullett?y { mkNode(E_TREATMENT, "mulletty"); return TREATMENT2; }
-pap(e|i)l?lonn?(y|e) { mkNode(E_TREATMENT, "papelonny"); return TREATMENT2; }
-platy { mkNode(E_TREATMENT, "platy"); return TREATMENT2; }
+pap[ei]l?lonn?[ye] { mkNode(E_TREATMENT, "papelonny"); return TREATMENT2; }
 scaly { mkNode(E_TREATMENT, "scaly"); return TREATMENT2; }
-sem(e|y){S}de{S}l(i|y)s { mkNode(E_TREATMENT, "seme-de-lys"); return TREATMENT2; }
+sem[ey]{S}de{S}l[iy]s { mkNode(E_TREATMENT, "seme-de-lys"); return TREATMENT2; }
 fl(o|eu)ry { mkNode(E_TREATMENT, "seme-de-lys"); return TREATMENT2; }
-vair(e|y) { mkNode(E_TREATMENT, "vairy"); return TREATMENT2; }
-potent(e|y) { mkNode(E_TREATMENT, "potenty"); return TREATMENT2; }
+vair[ey] { mkNode(E_TREATMENT, "vairy"); return TREATMENT2; }
+potent[ey] { mkNode(E_TREATMENT, "potenty"); return TREATMENT2; }
 ai?[qg]ui?lated { mkNode(E_TREATMENT, "aquilated"); return TREATMENT2; }
 ferrated { mkNode(E_TREATMENT, "ferrated"); return TREATMENT2; }
 verd(e|oy) { mkNode(E_TREATMENT, "verdy"); return TREATMENT2; }
@@ -43,5 +42,5 @@ platy |
 guzy |
 pommy | 
 torty { mkNode(E_TREATMENT, yytext); return TREATMENT1; }
-bezant(y|e) { mkNode(E_TREATMENT, "bezanty"); return TREATMENT1; }
+bezant[ye] { mkNode(E_TREATMENT, "bezanty"); return TREATMENT1; }
 

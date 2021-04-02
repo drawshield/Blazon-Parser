@@ -19,7 +19,7 @@ leopards?{S}heads? { mkNode( E_CHARGE, "animal/leopard-head"); return CHARGE; }
 leopards?{S}heads?{S}jessant({S}de)?({S}l[iy]s)? { mkNode( E_CHARGE, "animal/leopard-jessant"); return CHARGE; }
 spotted{S}leopards? { mkNode( E_CHARGE, "animal/leopard-natural"); return CHARGE; }
 lions?{S}leoparde?s? { mkNode( E_CHARGE, "lion/lion-passant-guardant"); return CHARGE; }
-bengal{S}t(i|y)gers? { mkNode( E_CHARGE, "animal/tiger-natural"); return CHARGE; }
+bengal{S}t[iy]gers? { mkNode( E_CHARGE, "animal/tiger-natural"); return CHARGE; }
 (scaly{S})?lizards? { mkNode( E_CHARGE, "animal/lizard"); return CHARGE; }
 springboks? 	{ mkNode( E_CHARGE, "animal/springbok"); return CHARGE; }
 scorpions? 	{ mkNode( E_CHARGE, "animal/scorpion"); return CHARGE; }
@@ -64,7 +64,7 @@ bulls?		{ mkNode(E_CHARGE, "livestock/bull"); return CHARGE; }
 apree?s?	{ mkNode(E_CHARGE, "livestock/ox"); return CHARGE; }
 (nag|horse)s?	{ mkNode(E_CHARGE, "livestock/horse"); return CHARGE; }
 hens?		{ mkNode(E_CHARGE, "livestock/hen"); return CHARGE; }
-(dunghill{S}|moor|heath|game)?cocks?	{ mkNode(E_CHARGE, "livestock/cock"); return CHARGE; /* XXX 'moorcock' shadows bird/moorcock */ }
+(dunghill{S}heath|game)?cocks?	{ mkNode(E_CHARGE, "livestock/cock"); return CHARGE; }
 testicules?	{ mkNode(E_CHARGE, "livestock/testicules"); return CHARGE; }
 turkeycocks?	{ mkNode(E_CHARGE, "livestock/turkeycock"); return CHARGE; }
 eggs?		{ mkNode(E_CHARGE, "livestock/egg"); return CHARGE; }
@@ -149,7 +149,7 @@ cranes?			{ mkNode(E_CHARGE, "bird/crane"); return CHARGE; }
 ravens?			{ mkNode(E_CHARGE, "bird/raven"); return CHARGE; }
 (colomb|dove)s? 	|	
 stock{S}doves?		{ mkNode(E_CHARGE, "bird/dove"); return CHARGE; }
-moorcocks?		{ mkNode(E_CHARGE, "bird/moorcock"); return CHARGE; /* XXX shadowed by livestock/cock */ }
+moorcocks?		{ mkNode(E_CHARGE, "bird/moorcock"); return CHARGE; }
 
 m[ea]rtlett?e?s?	|	
 merlions?		{ mkNode(E_CHARGE, "bird/martlett"); return CHARGE; }
@@ -158,7 +158,6 @@ pelicans?		{ mkNode(E_CHARGE, "bird/pelican"); return CHARGE; }
 (papegay|popp?injay)s?	{ mkNode(E_CHARGE, "bird/popinjay"); return CHARGE; }
 ostriche?s?		{ mkNode(E_CHARGE, "bird/ostrich"); return CHARGE; }
 ostriche?s?{S}feathers?({S}in)?({S}plume)?({S}issuant)?	{ mkNode(E_CHARGE, "bird/ostrich-feather"); return CHARGE; }
-swallows?		{ mkNode(E_CHARGE, "bird/swallow"); return CHARGE; }
 storks?			{ mkNode(E_CHARGE, "bird/stork"); return CHARGE; }
 rocs?			{ mkNode(E_CHARGE, "bird/roc"); return CHARGE; }
 parrots?		{ mkNode(E_CHARGE, "bird/parrot"); return CHARGE; }

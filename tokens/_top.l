@@ -1,5 +1,8 @@
 /* Lexical recogniser for English Blazons */
+ /* XXX do we need yylineno? It's apparently a performance hit if long tokens can include newline */
 %option noyywrap yylineno case-insensitive batch
+%option noreject noyymore noinput nounput nodefault
+%option never-interactive bison-bridge warn
 
 %{
 
@@ -19,7 +22,8 @@ char buffer[4096];
 
 %}
 
-S  [-[:space:]]+
+S  ([-[:space:]]+)
 B  [:space:]*\)
+N  ([1-8]|one|two|three|four|five|six)
 
 %%

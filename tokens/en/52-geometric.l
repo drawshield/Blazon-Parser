@@ -11,10 +11,9 @@ del(f|ves) 		{ mkNode( E_CHARGE, "geometric/delf"); return CHARGE; }
 fusils? 		{ mkNode( E_CHARGE, "geometric/fusil"); return CHARGE; }
 go?uttes? 		{ mkNode( E_CHARGE, "geometric/goutte"); return CHARGE; }
 icicles? 		{ mkNode( E_CHARGE, "geometric/icicle"); return CHARGE; }
-locks?{S}of{S}hair 	{ mkNode( E_CHARGE, "geometric/icicle"); return CHARGE; }
 lozenges? 		{ mkNode( E_CHARGE, "geometric/lozenge"); return CHARGE; }
 mascu?les? 		{ mkNode( E_CHARGE, "geometric/mascle"); return CHARGE; } 
-m(o|u)ll?ets? 		{ mkNode( E_CHARGE, "mullet/mullet"); return CHARGE; }
+m[ou]ll?ets? 		{ mkNode( E_CHARGE, "mullet/mullet"); return CHARGE; }
 astroids? 		{ mkNode( E_CHARGE, "mullet/mullet"); return CHARGE; }
 rou?nd(el|le)s? 	{ mkNode( E_CHARGE, "geometric/roundel"); return CHARGE; }
 rustres? 		{ mkNode( E_CHARGE, "geometric/rustre"); return CHARGE; }
@@ -47,9 +46,9 @@ knots?			{ mkNode( E_CHARGE, "knot/knot"); return CHARGE; }
 bourchier{S}knots?	{ mkNode( E_CHARGE, "knot/bourchier"); return CHARGE; }
 harrington{S}knots?	{ mkNode( E_CHARGE, "knot/harrington"); return CHARGE; }
 hea?ne?age{S}knots?	{ mkNode( E_CHARGE, "knot/heneage-knot"); return CHARGE; }
-ormonde{S}knots?	{ mkNode( E_CHARGE, "knot/ormonde"); return CHARGE; /* XXX Partially eclipses knot/wake-knot */ }
+ormonde{S}knots?	{ mkNode( E_CHARGE, "knot/ormonde"); return CHARGE; }
 stafford{S}knots?	{ mkNode( E_CHARGE, "knot/stafford-knot"); return CHARGE; }
-(wake|ormond){S}knots?	{ mkNode( E_CHARGE, "knot/wake-knot"); return CHARGE; }
+wake{S}knots?		{ mkNode( E_CHARGE, "knot/wake-knot"); return CHARGE; }
 cords?			{ mkNode( E_CHARGE, "knot/cord"); return CHARGE; }
 celtic{S}knots?		{ mkNode( E_CHARGE, "knot/celtic-knot"); return CHARGE; }
 de{S}lacy{S}knots?	{ mkNode( E_CHARGE, "knot/de-lacy-knot"); return CHARGE; }
