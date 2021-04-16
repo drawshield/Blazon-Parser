@@ -1,0 +1,39 @@
+@COLOUR
+
+ ; common and additional colours, fixed names
+%yytext : or murrey sanguine carnation brunatre rose senois buff
+
+ ; colours with abbreviations 
+azure	: az(ure)?
+gules	: gui?(les)?
+argent	: arg(ent)?
+sable	: sa(ble)?
+
+ ; colours with alternate spelling
+purpure	: purp(le|ure) 
+vert	: vert sinople
+cendree	: cei?ndree
+bis	: bis(que)? 
+tenne	: tanned tenne tawny
+
+ ; colours with multi-word names
+celestial-azure	: (horizon|celestial)-azure bleu-celeste
+red-ochre	: red-ochre
+yellow-ochre	: yellow-ochre
+ 
+ ; "de" names (for gouttes particularly)
+or	: d\'?-?or
+argent	: d\'?-?eau
+azure	: de-larmes
+gules	: de-sangu?e? de-vin
+sable	: de-poix
+vert	: d\'?-?(huile|olive)
+ 
+ ; English names
+%yytext	: iron bronze copper crimson lead steel gold blue green red silver black brown pink white
+gray	: gr[ae]y
+
+ ; obsolete names
+ ;   'amethyst', 'diamond', 'dragons head', 'dragons tail', 'emerald',
+ ;   'jacinth', 'luna', 'mars', 'pearl', 'ruby', 'sol', 'topaz', 'venus',
+

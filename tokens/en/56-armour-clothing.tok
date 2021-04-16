@@ -1,0 +1,86 @@
+@HELMET
+royal	: (royal|monarchs?)-helm(et)?s?
+peer	: (peer|lord)s?-helm(et)?s?
+baronet	: (knight|baronet)s?-helm(et)?s?
+esquire	: ((esquire|gentlem[ea]n)s?-)?helm(et)?s?
+
+@CHARGE TORSE
+armour/torse	: (torse|bourlet)s?
+
+@CHARGE
+armour/morion		: morions?
+armour/mail-shirt	: mail(le)?-shirts? shirts?-of-mail(le)? 
+armour/camail		: (cam|avent)ails?
+armour/morion		: caps?-of-steel steel-caps? bas([sc]i)?nets?
+armour/helmet-knight	: heaumes?
+armour/hood		: coif-de-mailles?
+armour/burgonet		: burgonett?e?s?
+
+armour/coute		: cou(te|diere)s? garde-bras
+armour/mailed-fist	: (armour|maill?)ed-fists?
+armour/chamfron		: chamfrons?
+armour/cuirass		: (cuirass|breastplat)e?s?
+armour/cuisses		: cuisses
+armour/epaulieres	: epaulieres?
+armour/genouillieres	: genouillieres
+armour/gorget		: gorgets?
+armour/guige		: guiges?
+armour/hawberk		: ha(u|w)berks?
+armour/gauntlet		: gauntlets?
+armour/carbuncle	: (es)?carbuncles? charbocles?
+armour/scabbard		: (bou?teroll|scabbard)s?
+
+crown/open-crown	: (open-)?(crown|coronet)s? ; default crown
+crown/antique		: antique-crowns?
+crown/triumphal		: triumphal-crowns?
+crown/papal		: papal-crowns?
+crown/obsidional	: obsidional-crowns?
+crown/astral		: (astral|celestial)-(crown|coronet)s?
+crown/baron		: baron(ial|s)?-(crown|coronet)s?
+crown/civil		: civil-crowns?
+crown/ducal		: ducal-(crown|coronet)s?
+crown/duke		: dukes?-(crown|coronet)s?
+crown/earl		: earls?-(crown|coronet)s?
+crown/eastern		: eastern-(crown|coronet)s?
+crown/imperial		: imperial-crowns?
+crown/king-of-arms	: kings?-of-arms-(crown|coronet)s? (crown|coronet)s?-of-(the-)?king-of-arms
+crown/marquis		: marquise?s?-(crown|coronet)s?
+crown/mural		: mural-(crown|coronet)s?
+crown/naval		: naval-(crown|coronet)s?
+crown/palisado		: (crown|coronet)s?-palisados? palisado-(crown|coronet)s?
+crown/royal		: (royal|regal)-crowns?
+crown/saxon		: saxon-(crown|coronet)s?
+crown/vallary		: (crown|coronet)s?-vallary? vallary?-(crown|coronet)s?
+crown/viscount		: viscounts?-(crown|coronet)s?
+
+clothes/boot		: ((antique|dutch|mens)-)?(sham)?(brogue|brough|boot)s?
+clothes/bonnet		: (electoral-)?bonnets?
+clothes/buckle		: (square-)?buckles?
+clothes/belt		: belts?
+clothes/eye-mask	: eye-?masks?
+clothes/buckle		: ferma(il|ux)
+clothes/arming-buckle	: arming-buckles?
+clothes/cap-dignity	: caps?((-of)?-dignity)?
+clothes/cap-mercury	: caps?-of-mercury
+clothes/cap-jester	: caps?-of-(a-)?jesters? jesters-caps?
+clothes/cap-dignity	: ducipers?
+clothes/cap-of-maintenance	: (chapeaux?|capelots?) caps?-of-(estate|maintenance)
+clothes/gem-ring	: (gem-)?rings?
+clothes/glove		: gloves?
+clothes/tophat		: top-?hats?
+clothes/maunche		: (sleeve|mau?nche?)s?
+clothes/phrygian-cap	: (phrygian|liberty)-caps?
+clothes/garter		: (mans-)?garters?
+clothes/purse		: (purse|scrip)s?
+clothes/bag		: bags? pouch(es)?
+clothes/breeches	: breeche?s?
+clothes/mask-comedy	: comedy-masks?
+clothes/mask-tragedy	: tragedy-masks?
+
+jewel/gemel-ring	: g(e|im)mel-rings? gimballs?
+jewel/orb	: (royal-)?(orbs?|mounds?)(-royal)?
+jewel/ruby	: rub(y|ies)
+jewel/crystal	: crystals?
+jewel/crystal	: diamonds?
+jewel/torque	: tor(c|que)s?
+

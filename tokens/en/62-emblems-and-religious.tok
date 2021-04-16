@@ -1,0 +1,47 @@
+@CHARGE
+
+badges/clan-ross	: badges?-of-clan-ross
+
+norse/raven	: odins?-ravens? norse-ravens?
+norse/awen	: (celtic-)?ar?wens?
+norse/longship	: ((norse|viking)-)?long(ship|boat)s?
+norse/vegvisir	: ((norse|viking)-)?vegvisirs?
+
+christian/rosary	: rosar(y|ies) paternosters?
+christian/tombstone	: tombstones?
+christian/cherub	: cherub(im)?s?
+christian/paschal-lamb	: (paschal|holy)-lambs? lambs?-of-god agnus-dei
+christian/crozier	: cro[sz]iers?
+christian/virgin	: madonnas? virgin(-mary)?(-((holding|and)-)?((the-)?child-)?jesus(-in(-her)?-arms)?)?
+christian/mitre		: mitres?
+christian/angel		: angels?
+christian/church-bell	: ((church|war)-)?bells?
+christian/staff-pastoral	: pastoral-sta(ff|ve)s?
+christian/altar		: altars?
+christian/passion-nail	: passion-nails?
+christian/crown-of-thorns	: crowns?-of-thorns?
+
+emblem/rod-of-esclapius	: (staff|rod)s?-(of-)?(a|e|ae)scu?l[ae]pi?us
+emblem/thyrsus		: thyrs(i|us|uses)(-(of-)?dionysus)?
+emblem/chain-of-navarre	: chains?-of-navarre
+emblem/chain-of-navarre-square	: chains?-of-navarre-square square-chains?-of-navarre
+emblem/ankh		: ankhs?
+emblem/caduceus		: caduce(i|us)
+emblem/laurel-wreath	: laurel-wreaths?
+emblem/caduceus		: sta(ff|ve)s?-of-mercury
+emblem/cornucopia	: cornucopias?
+emblem/ermine-spot	: ermine-spots?
+emblem/spot		: spots?
+emblem/fasces		: fasces
+emblem/pentagram	: pentagrams?
+emblem/triskelion	: triskes?lions?
+emblem/pentacle		: pentacles?
+emblem/chi-rho		: chi-rhos?
+emblem/menorah		: menorahs?
+emblem/star-of-david	: (star|shield)s?-of-david
+emblem/fleur-de-lys	: fleurs?-de-l[yi]s
+emblem/heralds-staff	: heralds?-(staff|stave|baton)s?
+emblem/baton-marshall	: marshall?s?-(staff|stave|baton)s?
+emblem/labyrinth	: labyrinths?
+emblem/nesselblatt	: nesselblatt(s|er)?s?
+

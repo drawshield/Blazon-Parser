@@ -1,0 +1,52 @@
+ ; DIVISIONS
+
+@ DIVISION PARTED_DIVISION
+per-bend	: bendwise
+per-saltire	: saltirewise
+per-chevron	: chevronwise
+per-pile	: pilewise
+per-pale	: palewise
+per-fess	: fesse?wise
+
+@ DIVISION DIVISION_2
+pily		: pily
+quarterly	: per-cross
+quarterly-per-fess	: quarterly-per-fesse?
+quarterly-per-pale	: quarterly-per-pale
+paly-bendy	: paly-bendy bendy-paly
+pily-bendy	: pily-bendy bendy-pily
+barry		: b[ua]rr?(ul)?y(-sans)?(-nombre)?
+paly		: paly
+chape		: chape
+chevronny	: chevronn?(ell)?y
+chausse		: chausse
+gyronny		: quarterly-quartered (per-)?g[iy]ronny
+bendy		: bendy
+per-fess	: per-fesse?
+per-pale	: per-pale
+per-pall	: per-pall
+per-pall-arrondi	: per-pall-arrondi
+per-chevron	: per-chevron
+per-bend	: per-bend
+per-saltire	: per-saltire
+fusily		: fusill?y
+fusily-bendy	: fusill?y-bendy fusill?y-in-bend
+barry-bendy	: barry-bendy(-lozengy)? bendy-lozengy
+barry-pily	: barry-pily
+barry-indented-oio	: barry-indented(-the)?-(one|1)-in-the-other
+
+@ DIVISION DIVISION_2_3
+per-pile	: per-pile
+
+@ DIVISION DIVISION_3
+per-pall		: tierced?-(in|per)-pairle
+per-pall-arrondi	: tierced?-(in|per)-pairle-arrondi
+tierced-in-pale		: tierced?-(in|per)-pale
+tierced-in-fess		: tierced?-(in|per)-fesse?
+tierced-in-bend		: tierced?-(in|per)-bend
+tierced-in-chevron	: tierced?-(in|per)-chevron
+  
+ ; this can also be a used instead of "quartered" so we treat it differently
+@ DIVISION QUARTERLY
+quarterly	: quarterly
+

@@ -1,0 +1,19 @@
+ ; FURS
+@ FUR
+%yytext		: ermine erminois erminites pean potent vair
+vair-in-pale	: vair-[ei]n-pale
+vair-en-point	: vair-[ei]n-point
+counter-ermine	: ermines counter-ermine
+counter-vair	: counter-vair
+counter-potent	: counter-potent
+potent-counter-potent	: potent-counter-potent
+tapisse		: tapiss?ee?((-of)?-wheat)?
+
+ ; PROPER
+@ PROPER
+proper	: proper ppr
+
+ ; COUNTERCHANGED
+@ COUNTERCHANGED
+counterchanged	: de-l\'?un-en-l\'?autre interchanged? transmuted counter-?cha[nr]ged? countercoloured
+

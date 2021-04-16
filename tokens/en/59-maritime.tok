@@ -1,0 +1,63 @@
+@CHARGE
+
+ship/galley	: lymphads? (({N}-)?masted-)?galleys?
+ship/oars	: oars?
+ship/rudder	: rudders?
+ship/ships-wheel	: ships?-wheels?
+ship/ship	: (({N}-)?masted-)?ships?
+ship/anchor	: anchors?
+ship/caravel	: caravels?
+ship/coracle	: coracles?
+ship/boat	: (lighter-)?boats?
+ship/fishing-boat	: fishing-boats?
+
+fish/turbot	: (turbot|sole|flook|flounder|bret|birt|carter)(-?fish)?e?s?
+fish/codfish	: cod(-?fish(es)?)?
+fish/fish	: fish(es)?
+fish/luce	: (luc(e|y|ie)|ged)s?
+fish/luce	: pikes?
+fish/barbel	: barbels?
+fish/shark	: sharks?
+fish/eel	: eels?
+fish/herring	: herrings?
+fish/carp	: carps?
+fish/chabot	: chabots?
+fish/goldfish	: goldfishe?s?
+fish/catfish	: catfishe?s?
+fish/salmon	: (salmon|trout)
+fish/pye	: (sea-)?pyes? ; as in ABBENDON
+fish/roach	: roache?s?
+fish/whale	: whales?
+fish/killer-whale	: killer-whales?
+fish/killer-whale	: orcas?
+fish/dolphin	: dolphins? 
+fish/walleye	: (zander|walleye)s?
+
+
+sealife/scallop		: clams?(-shells?)? co(ckle|quel)?(-shells?)? e?scallops?(-shells?)?
+sealife/whelk		: whelks?(-shells?)?
+sealife/lobster		: (lobster|crevice)s?
+sealife/shrimp		: shrimps?
+sealife/sea-horse-natural	: hippocamp(i|us)
+sealife/crab		: crabs?
+sealife/triton-trumpet	: tritons?-(shell|trumpet)s?
+sealife/seal		: seals?
+sealife/calamarie	: calamarie?s?
+sealife/manatee		: manatees?
+sealife/narwhal		: narwh?als?
+sealife/polypus		: polypuse?s?
+sealife/urchin-sea	: sea-urchins?
+sealife/sea-tortoise	: sea-tortoises?
+sealife/turtle		: turtles?
+sealife/swordfish	: sword-?fish(es)?
+
+sealife/sea-dog		: sea-dogs?
+sealife/sea-lion	: lions?-poissons?
+sealife/sea-lion	: sea-lions?
+sealife/sea-horse	: sea-?horses?
+sealife/sea-goat	: sea-goats?
+sealife/sea-dragon	: sea-dragons?
+sealife/sea-serpent	: sea-serpents?
+sealife/sea-wolf	: sea-?wol(f|ves)
+
+

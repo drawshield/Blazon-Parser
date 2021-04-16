@@ -1,0 +1,78 @@
+@~ORIENTATION
+sinister	: sinister
+reversed	: reversed
+dexter		: dexter
+inverted	: inverted
+enhanced	: enhanced
+abased		: abased abaisse
+ ; Not really, but sort it later TODO
+depressed	: (debrui|depres|oppres)sed-(with|by|of)
+
+
+@~CHEVRONMOD
+rompu		: rompu downset
+removed		: removed
+fracted		: debruised fracted
+burst		: eclate burst split
+disjointed	: disjoint(ed)? brisse
+voided		: false
+
+@~ORDMOD
+lozengy		: lozengy
+triangular	: triangular
+throughout	: throughout
+of-pretence	: of-pretence
+ploye		: ploye
+closetted	: closetted
+embowed		: embowed
+quadrate	: (nowy-)?quadrate
+nowy-lozengy	: nowy-lozengy
+riveted		: rivett?ed
+inarched	: [ie]narched
+couped		: couped humetty alese
+couped-sinister	: (couped|humetty|alese)-(in-)?sinister
+couped-dexter	: (couped|humetty|alese)-(in-)?dexter
+couped-chief	: (couped|humetty|alese)-(in-)?chief
+couped-base	: (couped|humetty|alese)-(in-)?base
+pointed		: pointed
+flory-counter-flory	: fl(o|eu)ry-counter-fl(o|eu)ry
+pointed-sinister	: pointed-(in-)?sinister
+pointed-dexter	: pointed-(in-)?dexter
+pointed-chief	: pointed-(in-)?chief
+pointed-base	: pointed-(in-)?base
+braced		: bra[zc]ed interlaced
+gemel		: gemm?ell?(s|ed)?
+fracted		: double-dancetty
+botonny		: bott?onn?(ee|y)
+engouled	: engouled-((into|by)-)?(dragons?-)?(heads?)?
+entire		: en(aluron|urney|to?[iy]re)
+
+@~ORDMOD ORDMODCOL
+compony1	: compony gobone gobonated
+compony2	: counter-(compony|gobone|gobonated)
+fimbriated	: fimbriated edged
+
+
+ ; COMPLEX ORDINARY MODS
+@~ORDMOD VOIDED
+voided	: voided
+
+@~ORDMOD COTTICE
+cottice1	: cott?i(s|ss|c)e[sd]? endorsed addorsed cost
+cottice1	: close-coupled
+cottice2	: doubl[ey]-cott?i(s|ss|c)ed
+cottice3	: (triple|treble|triply)-cott?i(s|ss|c)ed
+
+@~BARMOD
+barmod-up	: the-(dexter|first|1st|upper|higher)(-(one|1))?
+barmod-down	: the-(sinister|last|lower|lowest)(-(one|1))?
+barmod-in	: the-(inner|inside)(-(ones?|1))?
+barmod-out	: the-(outer|outside)(-(ones?|1))?
+
+
+
+  ; decorations (DrawShield Extension)
+@~DECORATION
+abased	: rivett?ed
+
+

@@ -1,0 +1,44 @@
+ ; LINETYPES
+@~ LINETYPE
+indented	: indented
+nebuly		: nebuly
+nowy		: nowy
+plain		: plain
+potenty		: potenty
+raguly		: raguly
+dovetailed	: dovetailed
+engrailed	: engrailed
+escartelly	: escartelly
+erable		: erable
+thorny		: thorny
+ristikoro	: ristikoro
+hakulikoro	: hakulikoro
+vallikoro	: vallikoro
+liljakoro	: liljakoro
+meander		: meander(ed|ing)?
+angled		: angled(-lower)?
+angled-upper	: angled-(opposite|upper)
+battled-ghibelline	: (em)?battled-ghibell?ine
+battled-mine-dumps	: (em)?battled(-in-the-form)?(-of)?-mine-dumps
+battled-embattled	: (battled|double)-(e?m?battled|crenn?ell?e?y?) (em)?battled-grady
+battled-brettesse	: (em)?battled-brett?ess?e?y?
+battled-counter	: (e?m?battled|crenn?ell?e?y?)-counter-(e?m?battled|crenn?ell?e?y?)
+embattled	: (super-)?(e?m?battled|crenn?ell?e?y?)
+embattled-arrondi	: (e?m?battled|crenn?ell?e?y?)-arrondi
+invected	: invec[kt]ed
+arched		: (en)?arched
+bevilled-upper	: bevill?(ed|y)-(opposite|upper)
+bevilled	: bevill?(ed|y)(-lower)?
+dancetty-floretty	: dau?ncett[ey]-fl(o|eu)r(y|etty) dau?ncett[ey]-(the-)?peaks-(ensigned-)?(with-)?(a-)?fleur-de-lys
+dancetty	: dau?ncetty
+double-arched	: double-(en)?arched (en)?arched-double
+rayonny		: rayonated radiant rayonn[ey]
+wavy		: wavy undy serpentine
+urdy		: urdy urde champaine champion
+twigged		: fir-twiggy?e?d? sapinagy
+cupolaed	: (embattled-)?cupolae?d
+gabled		: (embattled-)?gable?d?y?
+indented-pommetty	: indented-pommette?y?
+fir-tree-topped	: fir-tree-topped
+trefle		: trefl[ey]-counter-trefl[ey]
+

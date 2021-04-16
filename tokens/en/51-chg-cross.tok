@@ -1,0 +1,77 @@
+@CHARGE
+
+cross/calvary		: calvary-cross(es)?
+cross/greek		: greek-cross(es)?
+quadrate/cross-coptic	: coptic-cross(es)?
+cross/couped		: couped-cross(es)?
+cross/tau		: taus?(-cross(es)?)?
+cross/patriarchal	: patriarchal-cross(es)?
+cross/paternoster	: paternoster-cross(es)? rosary-cross(es)?
+cross/portate		: portate-cross(es)?
+cross/long		: (latin|long|passion|straight)-cross(es)?
+cross/saltire		: couped-saltires?
+cross/celtic		: celtic-cross(es)?
+cross/russian		: russian-cross(es)?
+cross/egyptian		: egyptian-cross(es)?
+quadrate/cross-jerusalem : jerusalem-cross(es)?
+
+cross/calvary		: cross(es)?-calvary
+cross/couped		: cross(es)?-(couped|coupee)
+cross/greek		: cross(es)?-(greek|humetty)
+cross/patriarchal	: cross(es)?-patriarchal
+cross/tau		: cross(es)?-(of-)?(saint|st)-anthony
+cross/lorraine		: cross(es)?-(of-)?lorraine
+cross/st-james		: cross(es)?-(of-)?s((ain)?t-james|antiago)
+cross/portate		: cross(es)?-portate
+cross/paternoster	: cross(es)?-paternoster
+cross/tau		: cross(es)?-tau
+quadrate/cross-of-4-fusils	: cross(let|lets|es)?-of-(four|4)-fusils?
+quadrate/cross-of-9-fusils	: cross(let|lets|es)?-of-(nine|9)-fusils?
+quadrate/cross-avellane		: cross(es)?-avellane
+quadrate/cross-coptic		: cross(es)?-coptic
+quadrate/cross-botonny		: cross(es)?-bott?onn?(ee|y) cross(es)?-trefle
+quadrate/cross-cercele		: cross(let|lets|es)?-cercelee?s?
+quadrate/cross-crescenty	: cross(let|lets|es)?-crescenty
+quadrate/cross-cleche		: cross(let|lets|es)?-clech(y|e|ee) cross(let|lets|es)?-urd(y|e|ee)
+quadrate/cross-crosslet-crossed	: cross(es)?-cross?lett?-crossed(-patt(ee|y))?
+quadrate/cross-crosslet		: cross(es)?-cross?lett?s?(-recoursy)?
+quadrate/cross-floretty		: cross(let|lets|es)?-florettys?
+quadrate/cross-flory-of-9-fusils	: cross(let|lets|es)?-(flory|fleuronny)-of-(nine|9)-fusils?
+quadrate/cross-flory-lozenge	: cross(let|lets|es)?-(flory|fleuronny)-of-(one|1)-lozenge
+quadrate/cross-flory		: cross(let|lets|es)?-florys? cross(let|lets|es)?-fleuronny?
+quadrate/cross-formy		: cross(es|lets?)-(formee|patt?ee?)(-couped)? cross(es|lets?)-(formy|patt?y)(-couped)?
+quadrate/cross-fourche		: cross(let|lets|es)?-fourche
+quadrate/cross-moline		: cross(let|lets|es)?-(molines?|ancre|anchory)
+quadrate/cross-patonce		: cross(let|lets|es)?-patonces?
+quadrate/cross-paty-floretty	: cross(let|lets|es)?-pat?t(y|e)-floretty
+quadrate/cross-paty-pointed	: cross(let|lets|es)?-pat?t(e|y)-pointed
+quadrate/cross-barby		: cross(let|lets|es)?-barby
+quadrate/cross-pointed		: cross(let|lets|es)?-pointed cross(let|lets|es)?-(ve|u)rd(y|e|ee) cross(let|lets|es)?-champaine
+quadrate/cross-pomme		: cross(let|lets|es)?-pom(me|y)s? 
+quadrate/cross-potent-crossed	: cross(es)?-potent-crossed
+quadrate/cross-potent		: cross(es)?-poten(t|ce)
+quadrate/cross-jerusalem	: cross(es)?-of-jerusalem
+quadrate/cross-recercele	: cross(let|lets|es)?-recercell?e?(e|y) cross(let|lets|es)?-moline-voided
+quadrate/cross-sarcelly		: cross(let|lets|es)?-sarcell(ee|y) cross(let|lets|es)?-doubl(e|y)-pommell?ed
+quadrate/fylfot			: cross(es)?-potent-rebated cross(es)?-gammadions?
+quadrate/maltese-cross		: cross(let|lets|es)?-of-(8|eight|huit)-points
+geometric/chevron		: chevrons?-couped ; XXX not a cross
+cross/saltire			: saltires?-couped
+quadrate/cross-fitchy-double	: cross(es)?-fitch(y|ee)-doubled?
+quadrate/cross-fitchy		: cross(es)?-fitch(y|ee)
+
+quadrate/cross-pisa		: cross(es)?-of-pisa
+quadrate/cross-toulouse		: cross(es)?-of-toulouse
+quadrate/cross-florian		: (s(ain)?t-)?florians?-cross(es)? cross(es)?-(of-)?(s(ain)?t-)?florian
+cross/peter	: cross(es)?-(of-)?(s(ain)?t-)?peters? (s(ain)?t-)?peters?-cross(es)?
+cross/torakrzy	: cross(es)?-and-a-half torakrzy(-cross)?
+
+quadrate/fylfot		: fylfots?
+quadrate/fylfot-clubbed	: fylfots?-clubbed
+quadrate/maltese-cross	: maltese-cross(let|lets|es)?
+quadrate/compass-rose	: (compass-roses?|novae)
+quadrate/compass-star	: compass-stars?
+quadrate/crosslet	: (plain-)?cross?lett?s?
+quadrate/cross-formy	: cross?lett?s?-formy
+quadrate/saltorel	: saltorels?
+

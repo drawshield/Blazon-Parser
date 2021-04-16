@@ -1,0 +1,61 @@
+@CHARGE
+
+label/label		: (file|lam?bel)s?
+annulet/annulet		: annulets?
+geometric/bbox		: bounding-box(es)?
+geometric/billet	: (stone-)?billets?(-carved)?
+geometric/cartouche	: cartouches?
+geometric/crescent	: crescents?
+geometric/delf		: del(f|ves)
+geometric/delf		: (steel-)?(block|gad|cube)s?
+geometric/fusil		: fusils?
+geometric/goutte	: go?uttes?
+geometric/icicle	: icicles?
+geometric/lozenge	: lozenges?
+geometric/mascle	: mascu?les? 
+mullet/mullet		: m[ou]ll?ets? astroids?
+geometric/roundel	: rou?nd(el|le)s?
+geometric/rustre	: rustres?
+geometric/triangle	: triangles?
+geometric/square	: squares?
+geometric/hexagon	: hexagons?
+geometric/pentagon	: pentagons?
+geometric/penrose-triangle	: penrose-triangles?
+
+geometric/triskele	: triskeles?
+geometric/valknut	: valknuts?
+geometric/octagon	: octagons?
+
+knot/knot		: knots?
+knot/bourchier		: bourchier-knots?
+knot/harrington		: harrington-knots?
+knot/heneage-knot	: hea?ne?age-knots?
+knot/ormonde		: ormonde-knots?
+knot/stafford-knot	: stafford-knots?
+knot/wake-knot		: wake-knots?
+knot/cord		: cords?
+knot/celtic-knot	: celtic-knots?
+knot/de-lacy-knot	: de-lacy-knots?
+knot/bowen-knot		: bowen-knots?
+knot/lovers-knot	: lovers?-knots?
+knot/trinity-knot	: (trinity|trefoil)?-knots?
+knot/trinity-knot	: triquetras?(-knots?)?
+knot/carolingian-knot	: carolingian-(knots?|cross(es)?)
+knot/quatrefoil-knot	: quatrefoil?(-knots?)?
+
+@CHARGE CHARGE_PROPER
+geometric/torteau	: gastells?
+geometric/torteau	: [sc]er[ui]ses?
+geometric/bezant	: (tale|beza)nts?
+geometric/golpe		: golpes?
+geometric/golpe		: wounds?
+geometric/guze		: guzes?
+geometric/hurt		: hurts?
+geometric/orange	: oranges?
+geometric/pellet	: pellets?
+geometric/pellet	: gunstones?
+geometric/pellet	: ogress(es)?
+geometric/plate		: plates?
+geometric/pomme		: pom[mi]es?
+geometric/torteau	: torteaux?
+

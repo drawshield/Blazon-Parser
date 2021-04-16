@@ -1,0 +1,53 @@
+@CHARGE
+
+dragon/chinese-dragon	: (chinese|oriental)-dragons?
+dragon/welsh-dragon	: welsh-dragons?
+dragon/dragon		: dragons?
+dragon/wyvern		: w[yi]vern?s?
+
+mythical/deer-goat	: deer-goats?
+mythical/ouroboros	: (worms?-)?ou?rou?boro(i|s|ses)
+mythical/lion-goat	: lion-goats?
+mythical/giraffe-horned	: camelopardels?
+mythical/unicorn	: uni-?corns?
+mythical/sphinx		: sphin(ges|x|xes)
+mythical/sphinx-egyptian	: egyptian-sphin(ges|x|xes)
+mythical/sphinx-greek	: greek-sphin(ges|x|xes)
+mythical/man-lion	: man-lions?
+mythical/opinicus	: opinic(i|us)
+animal/tiger		: t[iy]gers?
+mythical/manticore	: man-t[iy]gers? manticores?
+mythical/musimon	: musimons?
+mythical/lamia		: lamias?
+mythical/enfield	: enfields?
+mythical/harpy		: harp(y|ie)s?
+mythical/amphiptere	: amphi[ps]?teres?
+mythical/merman		: tritons?
+mythical/devil		: devils?
+mythical/frauenadler	: frauenadlers?
+mythical/alphyn		: alphyns?
+mythical/keythong	: keythongs?
+mythical/centaur	: centaurs? sagittar(y|ius)
+mythical/cockatrice	: (amphisien-)?cockatrices?
+mythical/griffin	: (griff[oi]n|gryphon|keythong)s?
+mythical/fishtail-griffin	: fishtail(ed)?-(griff[oi]n|gryphon)s?
+mythical/hippogriff	: hippogriffs?
+mythical/hydra		: hydras?
+mythical/mermaid	: mermaids?
+mythical/mermaid-in-her-vanity	: mermaids?-in-(her|their)-vanity
+mythical/mermaid-in-her-modesty	: mermaids?-in-(her|their)-modesty
+mythical/merman		: merm[ea]n?
+mythical/mermaid	: sirens?
+mythical/phoenix	: phoeni(ces|x|xes)
+mythical/salamander	: salamanders?
+mythical/petasus	: petasus
+mythical/yale		: yales?
+mythical/pegasus	: pegas(i|us|uses)
+mythical/bagwyn		: bagwyns?
+mythical/basilisk	: basilisks?
+mythical/chatloup	: (calopo?us|chatloups?)
+mythical/melusine	: melusines?
+mythical/panther	: panthers? ounces?
+mythical/kraken	: krakens?
+
+

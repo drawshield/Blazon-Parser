@@ -1,0 +1,7 @@
+ ; Sports pitches are implemented like furs
+@ FUR
+soccer-field	: soccer
+american-football-field	: (american-)?football
+tennis-court	: tennis
+basket-ball	: basket-?ball
+

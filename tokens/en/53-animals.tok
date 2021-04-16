@@ -1,0 +1,158 @@
+@CHARGE
+
+lion/lion	: lions?
+lion/lion	: lioncell?e?s?
+
+animal/tortoise		: tortoises?
+animal/reindeer		: reindeers?
+animal/crocodile	: crocodiles?
+animal/antelope		: antelopes?
+animal/armadillo	: armadilloe?s?
+animal/anteater		: ant-?eaters?
+animal/mammoth		: mammoths?
+animal/antelope		: ibex(es)?
+animal/lynx		: lynxe?s?
+animal/elephant		: elephants?
+animal/leopard		: leopards?
+animal/leopard-head	: leopards?-heads?
+animal/leopard-jessant	: leopards?-heads?-jessant(-de)?(-l[iy]s)?
+animal/leopard-natural	: spotted-leopards?
+lion/lion-passant-guardant	: lions?-leoparde?s?
+animal/tiger-natural	: bengal-t[iy]gers?
+animal/lizard		: (scaly-)?lizards?
+animal/springbok	: springboks?
+animal/scorpion		: scorpions?
+animal/camel		: camels?
+animal/bison		: bisons?
+animal/frog		: frogs?
+animal/toad		: toads?
+animal/monkey		: apes? monk(ey|ie)s?
+animal/kangaroo		: kangaroos?
+animal/gorilla		: gorillas?
+animal/rhinoceros	: rhino(cerose?)?s?
+animal/zebra		: zebras?
+animal/porcupine	: porcupines?
+animal/camelopard	: camele?opards?
+
+game/boar	: (sanglier|boar|grice)s?
+game/buck	: (roe)?bucks?
+game/fawn	: fawns?
+game/deer	: deers?
+game/hind	: hinds?
+game/rabbit	: (rabbit|con(ey|ie))s?
+game/hare	: (hare|leveret)s?
+game/stag	: harts?
+game/doe	: does?
+game/stag-horn	: stags?-horns? antlers?
+game/stag	: stags?
+game/elk	: elks?
+
+livestock/ass	: (asse?|mule)s?
+livestock/cow	: cows?
+livestock/pig	: pigs?
+livestock/calf	: cal(f|ves)
+livestock/goat	: goats?
+livestock/ox	: ox(en)?
+livestock/ram	: rams?
+livestock/rams-horn	: rams?-horns?
+livestock/lamb	: lambs?
+livestock/sheep	: sheep?
+livestock/bull	: bulls?
+livestock/ox	: apree?s?
+livestock/horse	: (nag|horse)s?
+livestock/hen	: hens?
+livestock/cock	: (dunghill-heath|game)?cocks?
+livestock/testicules	: testicules?
+livestock/turkeycock	: turkeycocks?
+livestock/egg	: eggs?
+
+dog/greyhound	: greyhounds?
+dog/talbot	: talbots?
+dog/hound	: hounds?
+dog/dog		: dogs?
+dog/mastiff	: alan[dt]s
+
+wildlife/badger		: (badger|brock|gray)s?
+wildlife/wildcat	: mountain-cats? cats?-a-mountains? catamounts?	wildcats?
+wildlife/cat		: cats?
+wildlife/fox		: foxe?s? 
+wildlife/hedgehog	: (hedgehog|urcheon|urchin)s?
+wildlife/weasel		: (weasel|mart[ie]n|foine|stoat|ermine|genet)s?
+wildlife/squirrel	: squirrels?
+wildlife/wolf		: wol(f|ve)s?
+wildlife/mouse		: m(ouse|ice)
+wildlife/rat		: rats?
+wildlife/beaver		: beavers?
+bear/bear		: bears?
+bear/polar-bear		: (polar|ice)-bears?
+wildlife/mole		: mol(diwarp|e)s?
+bear/bear-ragged-staff	: bears?-and-ragged-sta(ff|ve)s?
+wildlife/otter		: otters?
+
+animal/dinosaur		: dinosaurs?
+animal/paw-print	: paws?(-prints?)?
+serpent/serpent		: (asp|serpent)s?
+serpent/snake		: snakes?
+serpent/pithon		: p[iy]thons?
+serpent/serpent-vorant-a-child	: bisciones?
+
+bird/goose	: ((magellan|barnacle)-)?g(oo|ee)se
+bird/smew	: (white-)?(smew|nun)s?
+bird/sheldrake	: sheldrakes?
+bird/shoveller	: shovell?ers?
+bird/cygnet	: cygnets?
+bird/crane	: herons?
+bird/swan	: swans?
+bird/duck	: ducks?
+
+
+hawking/alerion		: (all?erion|erne|eaglet)?s?
+hawking/falcon		: (marlion|falcon|hawk|goshawk)s?
+hawking/falcon		: sparrow-hawks?
+hawking/imperial-eagle	: imperial-eagles?
+hawking/eagle		: eagles?
+hawking/hawk-lure	: (hawks?-lures?)
+hawking/hawkbell	: hawk(s|-)?bells?
+
+seabird/bittern		: bitterns?
+seabird/cormorant	: liver-birds? (sea-)(cormorant|aylet|gannapie)s?
+seabird/seagull		: gulls? (sea|tern)-?(mew|gull|fowl|pewit)s?
+seabird/penguin		: penguins?
+
+bird/bird-nest	: (birds-)?nests?
+bird/wing	: wings?
+bird/wing-pair-2	: vols?
+bird/feather	: feathers?
+bird/starling	: starlings?
+bird/lark	: (sky)?larks?
+bird/quail	: quails?
+bird/bat	: bats? (rere|flitter)-?(mouse|mice)	
+bird/auk	: (great-)?auks?
+bird/robin	: robins?(-redbreasts?)?
+bird/owl	: owls?
+bird/vulture	: vultures?
+bird/chough	: (cornish-)?choughs? sea-swallows?
+bird/swallow	: swallows?
+bird/crane	: cranes?
+bird/crow	: (crow|corbie|daw|rook)s?
+bird/raven	: ravens?
+bird/dove	: stock-doves? (colomb|dove)s?
+bird/moorcock	: moorcocks?
+
+bird/martlett	: merlions? m[ea]rtlett?e?s?
+bird/peacock	: (peacock|pawne)s?
+bird/pelican	: pelicans?
+bird/popinjay	: (papegay|popp?injay)s?
+bird/ostrich	: ostriche?s?
+bird/ostrich-feather	: ostriche?s?-feathers?((-in)?-plume)?(-issuant)?
+bird/stork	: storks?
+bird/roc	: rocs?
+bird/parrot	: parrots?
+bird/nightingale	: nightingales?
+bird/magpie	: magpies?
+bird/chaffinch	: (chaffinche?|pinson)s?
+bird/bullfinch	: bull?finche?s?
+bird/blackbird	: (black-?)?birds?
+bird/snipe	: (snipe|curlew|avocetta)s?
+
+

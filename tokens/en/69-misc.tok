@@ -1,0 +1,33 @@
+@CHARGE ESC_OF_PRETENCE
+special/escutcheon	: (in)?escut?cheon-(of|[ei]n)-(pretence|surtout)
+
+@CHARGE ESC_CHARGE
+special/escutcheon	: (escut?|so)cheons?
+
+@CHARGE TEXT_CHARGE
+characters/digit	: (numeral|number|digit|figure)s?(-?of)?
+characters/letter	: (letters?|text)
+characters/roman	: roman(-letter)?
+characters/word		: words? legend
+characters/letter	: (monogram|cypher)s?
+characters/question	: question-marks?
+
+@CHARGE SYM_CHARGE
+astronomical/symbol	: astronomical-(character|symbol)s?(-(of|for))?(-the)?(-planet)?
+zodiac/symbol		: (zodiac|astrologic)(al)?-(character|symbol)s?(-(of|for))?
+alchemical/symbol	: alchemical-(character|symbol)s?(-(of|for))?(-the)?(-element)?
+symbol/any		: (character|symbol)s?(-(of|for))?
+
+@CHARGE
+food/cheese-wedge	: cheese-wedges? (wedges?-of-)?cheeses?
+food/cheese-wheel	: cheese-wheels? wheels?-of-cheeses?
+food/breadloaf		: breadloa(f|ves) loa(f|ves)(-of-bread)?
+food/cake		: cakes?
+food/cake-slice		: cake-slices? slices?-of-cakes?
+
+fire/beacon		: (beacon|bale-fire)s?
+fire/cresset		: cressets?
+fire/fireball		: (hand-)?grenado?e?s? fire-?balls? bomb(-?shell|e?)s?
+fire/torch		: fire-brands? flambeaux? torche?s?
+fire/flames		: flames?(-of-fire)?
+

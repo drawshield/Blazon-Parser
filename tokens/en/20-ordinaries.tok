@@ -1,0 +1,80 @@
+ ; ORDINARIES
+@ORDINARY
+bar		: bars?
+barrulet	: barrulets?
+crancelin	: crancelin bend-archy-coronett[ey]
+bendlet		: bendlets?
+scarpe		: e?sca[rf]pe?s?
+chevronel	: chevronels?
+couple-close	: couple-closes? close-couples?
+closet		: closets?
+riband		: (baston|riband)s?
+endorse		: [ie]ndorses?
+humet		: humets?
+palet		: pall?ets?
+pile		: piles?
+ ; TODO add Pile of 3 points issuing from the chief as a mod
+mountain	: mountains?
+base		: base
+bend		: bends?
+chief		: chief
+fess		: fesse?
+fess-between-chevrons	: fesse?-between-(2|two)-chevrons?
+dance		: dance
+ford		: ford
+gore		: gores?
+gore-sinister	: gore-sinister sinister-gore
+pallium		: pallium
+pale		: pale
+point		: point
+base		: plaine?-point
+pale-ecclesiastical	: ecclesiastical-pale
+pale-canadian	: canadian-pale
+quarter		: quarter
+tierce		: tierce
+gorge		: gorge whirlpool gurges
+grid		: grid
+trimount	: trimount moun[td]-of-(3|three)-peaks
+baton-dexter	: dexter-(bas?ton|battoon|batune)(-couped)? (bas?ton|battoon|batune)-dexter(-couped)?
+baton		: (bas?ton|battoon|batune)-sinister(-couped)?
+bordure		: bordure
+canton		: cantons?
+cantell		: cantells?
+square-canton	: square-cantons?
+double-tressure	: double-trea?s?sure
+fillet		: fillet
+fillet-saltire	: fillet-saltire
+flaunch		: flau?nche?s? (voider|flank|flanque|flasque)s?
+flaunch-sinister	: flau?nche?-sinister sinister-flau?nche?
+graft		: grafts?
+gusset		: gussets?
+gyron		: gyrons? (based-)?e?s?quie?r?res?
+inescutcheon	: inescut?cheon
+orle		: orle
+pall		: pall
+shakefork	: pale-furche
+square-flaunch	: square-(flau?nche?|flank|flanque|flasque)s?
+tressure	: (royal-)?trea?s?sure
+vetu		: lozenge-throughout lozenge-in-point vetu
+enty		: ent[ey]((-[ie]n)?-point)?
+cross-nordic	: nordic-cross
+point-in-point	: point(-in)?-(point|pointed|enty)
+point-dexter	: point-dexter
+point-sinister	: point-sinister
+
+saltire-2fretty	: salta?ire-(double-)?parted-(and-)?fretty
+cross-2fretty	: cross-(double-)?parted-(and-)?fretty
+cross-3fretty	: cross-tripartite-(and-)?fretty
+cross-pierced	: cross-quarter-?pierced?
+fillet-cross	: fillet-cross cross-fillet
+fret-couped	: fret-couped
+
+@ORD_OR_CHG
+cross/plain-cross	: ((plain|holy)-)?cross(es)?(-passant)?
+geometric/chevron	: chevrons?
+geometric/shakefork	: (shake|hay)forks?
+geometric/chevron-couched	: chevron(el)?s?-couched
+quadrate/cross-formy	: cross-(form(ee|y)|patt?(ee?|y))
+geometric/fret		: frets?
+saltire			: salta?ires?
+

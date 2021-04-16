@@ -1,0 +1,73 @@
+@CHARGE
+
+games/dice		: dic?e
+games/domino		: domino(es)?
+games/chessrook		: (chess-?rook|cocke)s?
+games/chess-queen	: chess-queens?
+games/chess-king	: chess-kings?
+games/chess-pawn	: chess-pawns?
+games/chess-knight	: chess-knights?
+games/chess-bishop	: chess-bishops?
+games/chess-castle	: chess-castles?
+games/jesters-bauble	: jesters?-baubles?
+games/board-alquerque	: alquerque-boards?
+games/board-nine-mens-morris	: (nine|9)-mens?-morris-boards? morris(-boards?)?(-of-(9|nine))? ; default
+games/board-twelve-mens-morris	: (twelve|12)-mens?-morris-boards? morris-(boards-)?of-(twelve|12)
+games/meeple		: meeples?
+
+music/musical-note	: musical-notes?
+music/note-half		: musical-half-notes?
+music/note-eighth	: (musical-)?eighth-notes?
+music/note-quarter	: (musical-)?quarter-notes?
+music/violin		: (violin|crwth|fiddle)s?
+music/clarion		: cla[vr]i(on|cord)s?
+music/accordion		: accordions?
+music/hautboy		: hautboys?
+music/shofar		: shof(ars?|roth)
+music/clarion		: rests?
+music/c-clef		: c-clefs?
+music/g-clef		: g-clefs?
+music/drum		: drums?
+music/recorder		: recorders?
+music/drumstick		: drumsticks?
+music/harp		: harps?(-of-(ireland|ei?rinn?))? ; no difference with common harp(?)
+music/hunting-horn	: (hunting-)?horns? ; default horn
+music/bugle-horn	: bugle-horns?
+music/post-horn		: post-horns?
+music/organ-pipe	: organ-pipes?
+music/church-organ	: church-organs?
+music/trumpet		: trumpets?
+music/flute		: flutes?
+music/guitar		: guitars?
+music/electric-guitar	: electric-guitars?
+music/lyre		: lyres?
+music/lute		: lutes?
+music/bagpipe		: bagpipes?
+
+playing-card/card-back	: playing-cards?-backs?
+playing-card/club	: playing-cards?-clubs?
+playing-card/heart	: playing-cards?-hearts?
+playing-card/spade	: playing-cards?-spades?
+playing-card/diamond	: playing-cards?-diamonds?
+playing-card/king	: playing-cards?-kings?
+playing-card/queen	: playing-cards?-queens?
+playing-card/jack	: playing-cards?-jacks?
+playing-card/joker	: playing-cards?-jokers?
+playing-card/joker-red	: playing-cards?-red-jokers?
+playing-card/joker-black	: playing-cards?-black-jokers?
+playing-card/ace	: playing-cards?-aces?
+playing-card/two	: playing-cards?-(two|deuce|2)s?
+playing-card/three	: playing-cards?-(three|3)s?
+playing-card/four	: playing-cards?-(four|4)s?
+playing-card/five	: playing-cards?-(five|5)s?
+playing-card/six	: playing-cards?-(six|6)e?s?
+playing-card/seven	: playing-cards?-(seven|7)s?
+playing-card/eight	: playing-cards?-(eight|8)s?
+playing-card/nine	: playing-cards?-(nine|9)s?
+playing-card/ten	: playing-cards?-(ten|10)s?
+playing-card/hand-winning	: ((playing-)?cards?-)?winning-hands?
+playing-card/hand-losing	: ((playing-)?cards?-)?losing-hands?
+playing-card/hand-winning	: winning-hands?-of-(playing-)?cards
+playing-card/hand-losing	: losing-hands?-of-(playing-)?cards
+playing-card/hand	: hands?-of-(playing-)?cards
+

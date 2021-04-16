@@ -25,5 +25,6 @@ char buffer[4096];
 S  ([-[:space:]]+)
 B  [:space:]*\)
 N  ([1-8]|one|two|three|four|five|six)
+E  [[:^alnum:]]
 
 %%

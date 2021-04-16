@@ -1,0 +1,62 @@
+@CHARGE
+
+sword/knife	: kni[fv]es? misericordes?
+sword/claymore	: claymores?
+sword/katana	: katanas?
+sword/dagger	: (rondel-)?daggers? dirks? ske[ia]ne?s?
+sword/falchion	: falchions?
+sword/rapier	: rapiers?
+sword/sabre	: sabres? crooked-swords? scim[ie]tars? cutlasse?s?
+sword/seax	: seaxe?s?
+sword/hilt	: hilts?
+sword/swordstpaul	: swords?-of-s(ain)?t-paul
+sword/arming-sword	: (2|two)-handed-swords? ; XXX weapon type 
+sword/arming-sword	: (arming-)?swords? 
+
+projectile/musket	: (musket|pistol|pot-?gun)s?
+projectile/dart		: darts?
+projectile/chaine-shot	: chaine?-shots?
+projectile/trident	: tridents?
+projectile/slingshot	: sling-?shots?
+projectile/javelin	: javelins?
+projectile/arrow	: (quarrel|arrow)s?
+projectile/boson	: b(e|o)sons? bird-bolts?
+projectile/pheon	: (f|ph)eons?
+projectile/spear	: (lance|spear)s?
+projectile/arrow-broad	: broad-arrows?
+projectile/salmon-spear	: salmon-spears?
+
+weapon/cannon		: (field|chamber)-pieces? (culverin|gun|chamber|cannon)s?
+weapon/balista		: (swee?pe?|ball?istae?|mangonel)s?
+weapon/battering-ram	: battering-rams?
+weapon/tilting-spear	: tilting-(lance|spear)s?
+
+weapon/truncheon	: truncheons?
+weapon/trident-head-ukrainian	: (ukrainian-)?trident-heads?
+weapon/mace		: maces?
+weapon/bow		: ((long|string)-)?bows?
+weapon/caltrap		: (g|c)altraps? cheval-traps?
+weapon/club		: (spiked-)?clubs?
+weapon/cronel		: cronels?
+weapon/crossbow		: cross-?bows?
+weapon/staff		: (staff|stave)s?
+weapon/staff-ragged	: ragged-sta(ff|ve)s?
+weapon/staff-wreathed	: wreathed-sta(ff|ve)s?
+weapon/crossbow		: arba?l[ea]sts?
+weapon/staff-palmer	: p(ilgrim|almer)s?-sta(ff|ve)s? bourdons?
+weapon/catherine-wheel	: [ck]atherine-wheels?
+weapon/sword-chape	: sword-chapes?
+weapon/thors-hammer	: thors-hammers? mjolnirs?
+weapon/shackle		: shackles?
+
+axe/lochaber-axe	: lochaber-axe?s?
+axe/pole-axe		: pole-?axe?s? halber[td]s?
+axe/addice		: carpenters?-axe?s? addices?
+axe/battle-axe		: battle-?axe?s?
+axe/common-axe		: (common-)?axe?s? hatchets?
+axe/pick-axe		: pick-?axe?s? hews? miners-axe?s?
+axe/turner-axe		: turners?-axe?s?
+axe/slaughter-axe	: slaughter-axe?s?
+axe/broad-axe		: broad-?axe?s?
+axe/throwing-axe	: throwing-axe?s?
+

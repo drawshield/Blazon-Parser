@@ -1,0 +1,8 @@
+@ TREATMENT TREATMENT2
+grady		: grad(ed|y) 
+grady-in-fess	: grad(ed|y)-in-fesse?
+grady-in-pale	: grad(ed|y)-in-pale
+grady-in-bend	: grad(ed|y)-in-bend
+grady-in-bendsin: grad(ed|y)-in-bend-sinister grad(ed|y)-in-sinister-bend
+grady-in-annulo	: grad(ed|y)-in-annull?o
+

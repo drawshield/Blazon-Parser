@@ -1,0 +1,125 @@
+@CHARGE
+
+tree-fruit/ashen-key	: ashen-keys?
+tree-fruit/mulberry	: mulberry?
+tree-fruit/pumpkin	: pumpkins?
+tree-fruit/walnut	: walnuts?
+tree-fruit/plane	: planes?
+tree-fruit/beech	: beeche?s?
+tree-fruit/linden	: lindens?
+tree-fruit/laurel	: laurels?
+tree-fruit/hazelnut	: hazelnuts?
+tree-fruit/strawberry	: strawberr(y|ies)
+tree-fruit/barberry	: barberry?
+tree-fruit/maple	: maples?
+tree-fruit/bay		: bays?
+tree-fruit/holly	: holl(y|ies)
+tree-fruit/elder	: elders?
+tree-fruit/willow	: willows?
+tree-fruit/cedar	: cedars?
+tree-fruit/apple	: apples?
+tree-fruit/birch	: birch(es)?
+tree-fruit/pomegranate	: pomegranates?
+tree-fruit/almond	: almonds?
+tree-fruit/ash		: (mountain-)?(rowan|rodey|ash)
+tree-fruit/hazel	: hazels?
+tree-fruit/palm		: palms?
+tree-fruit/log		: logs?
+tree-fruit/palm		: palmtrees?
+tree-fruit/cherry	: cherr(y|ies)
+tree-fruit/whitethorn	: whitethorns?
+tree-fruit/alderberry	: alderberr(y|ies)
+tree-fruit/alder-tree	: alders?
+tree-fruit/aspen	: aspens?
+tree-fruit/cypress	: cypress
+tree-fruit/chestnut	: chestnuts?
+tree-fruit/conker	: conkers? horse-chestnut-fruits?
+tree-fruit/fir		: firs?
+tree-fruit/fig		: figs?
+tree-fruit/pine		: pines?
+tree-fruit/pine-cone	: pine-?cones?
+tree-fruit/tree		: trees?
+tree-fruit/trunk	: (stock|trunk)s?-of(-a)?-trees?
+tree-fruit/branch	: (bough|branche?|scrog)s?
+tree-fruit/oak		: oak(tree)?s?
+tree-fruit/yew		: yews?
+tree-fruit/cokar	: (china-)?cokars?
+tree-fruit/pear		: pears?
+tree-fruit/lemon	: lemons?
+tree-fruit/olive	: olives?
+tree-fruit/lime		: limes?
+tree-fruit/banana-stem	: stems?-of-bananas? banana-stems?
+tree-fruit/hop-cone	: hop-cones?
+tree-fruit/marijuana	: marijuana
+tree-fruit/chrysanthemum	: chrysanthemums?
+tree-fruit/oak-leaf	: lea(f|ves) slips?
+
+flower/foxglove		: foxgloves?
+flower/trillium		: trilliums?(-flowers?)?
+flower/forget-me-not	: forget-me-nots?
+flower/flower-stem	: stems?-of(-a)?-flowers?
+flower/lily		: lil(y|ies)
+flower/lily-pad		: lily-pads?
+flower/crocus		: crocus(es)?
+flower/jasmine		: jasmines?(-flowers?)?
+flower/strawberry-flower	: strawberry-flowers?
+flower/strawberry-plant	: strawberry-plants?
+flower/cinquefoil	: (quintfoil|cinquefoil|frais)e?s?
+flower/columbine	: columbines?
+flower/octofoil		: (octo|eight)foile?s? double-quatrefoile?s?
+flower/quatrefoil	: quatrefoile?s?
+flower/rose		: (damask-)?roses?
+
+flower/sexfoil		: s[ie]xfoile?s? angennes?
+flower/shamrock		: shamrocks?
+flower/daffodil		: daffodils?
+flower/dandelion	: dandelions?
+flower/peony		: peon(y|ies)?
+flower/trefoil		: trefoile?s?
+flower/gillyflower	: gillyflowers?
+flower/sunflower	: sunflowers?
+flower/rose-tudor	: tudor-roses?
+flower/rose-york	: york(shire)?-roses? roses?-of-york
+flower/rose-lancaster	: lancaster-roses? roses?-of-lancaster
+flower/rue		: rues?(-(flower|blossom)s?)?
+flower/cornflower	: (blue-?bottle|cornflower)s?
+flower/tulip		: tulips?
+flower/poppy		: popp(y|ies)
+flower/daisy		: dais(y|ies)
+flower/iris		: iris(es)?
+flower/lotus		: lotus(es)?(-(flower|blossom)s?)?
+
+plant/pineapple		: pine-?apples?
+plant/bullrush		: bull?rush(es)?
+plant/wheat-ear		: (big-)?(wheat|corn)-ears? ears?-of-(big-)?(wheat|corn)
+plant/wheat		: wheat corn
+plant/wheat-stalk	: (wheat|corn)-stalks?
+plant/beanpod		: bean(s?-)?[pc]ods?
+plant/bean		: beans?
+plant/pepper-pod	: pepper-pods?
+plant/rye		: rye
+plant/ivy		: iv(y|ies)
+plant/ivy-vine		: ivy-vines?
+plant/ivy-wreath	: ivy-wreaths?
+plant/betony		: bet(ony|thune)
+plant/acorn		: acorns?
+plant/reed		: reeds?
+plant/garlic		: garlic(-plants?)?
+plant/thistle		: thistles?
+plant/balm		: balms?
+plant/grape		: grapes?
+plant/turnip		: turnips?
+plant/aubergine		: (aubergine|eggplant)s?
+plant/cotton		: cotton
+plant/carrot		: carrots?
+plant/cactus		: cact(us|i|uses)
+plant/vine		: vines?
+plant/onion		: onions?
+plant/radish		: radishe?s?
+plant/leek		: leeks?
+plant/bush		: bush(es)?
+plant/acanthus		: acanthus
+plant/mushroom		: mushrooms?
+plant/bamboo		: bamboos?(-poles?)?
+
+

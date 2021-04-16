@@ -1,0 +1,48 @@
+@CHARGE
+
+insect/snail		: snails?
+insect/fly		: (gad)?fl(ies|y)
+insect/silkworm-fly	: silkworm-fl(y|ies)
+insect/gadbee		: gadbees?
+insect/grasshopper	: grasshoppers?
+insect/ant		: ants?
+insect/moth		: moths?
+insect/bee		: bees?
+insect/butterfly	: butterfl(y|ies)
+insect/cricket		: crickets?
+insect/dragonfly	: dragonfl(y|ie)s?
+insect/hornet		: hornets?
+insect/wasp		: wasps?
+insect/spider		: spiders?
+insect/spiderweb	: spider(-|s)?webs?
+insect/beetle		: beetles?
+insect/stag-beetle	: stag-?beetles?
+
+
+natural/hillock		: (hill|hillock|mound|mount)s?
+natural/mole-hill	: mole-?hills?
+natural/bubble		: water-bubbles?
+natural/cloud		: clouds?
+natural/wind		: winds? mistrals?
+natural/stone		: stones?
+natural/rock		: rocks?
+natural/sod		: (grass-)?sods?
+natural/stone-flint	: flint-?stones?
+natural/lightning-bolt	: lightning-bolts? bolts?-of-lightning
+natural/snowflake	: snow-?flakes?
+natural/sea-waves	: waves?-of-the-sea
+natural/forest		: (hurst|grove|wood|forest)s?(-of-trees)?
+natural/teardrop	: teardrop
+
+celestial/moon		: (full-)?moons?
+celestial/moon-todexter	: increscents?
+celestial/moon-tosinister	: decrescents?
+celestial/star		: es?toill?e?s?
+celestial/sun		: suns?
+celestial/sun-rays	: suns?-rays?
+celestial/comet		: (blazing-)?comets?(-stars?)?
+celestial/sunburst	: sunbursts?
+celestial/rainbow	: rainbows?
+celestial/thunderbolt	: (jupiters?-)?thunderbolts?
+
+

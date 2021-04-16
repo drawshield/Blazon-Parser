@@ -1,0 +1,41 @@
+@CHARGE
+
+architecture/well-frame	: well-frames?
+architecture/portcullis	: portcullis(es)?
+architecture/arch	: (door-)?arch(es)?
+architecture/door	: doors?
+architecture/cogwheel	: (cog|clock)-?wheels? gears?(-wheels?)?
+architecture/millwheel	: mill-?wheels?
+architecture/tower	: towers?
+architecture/lighthouse	: lighthouses? pharose?s?
+architecture/waterwheel	: water-?wheels?
+architecture/gate	: gates?
+architecture/gatehouse	: gate(way|house)s?
+architecture/fountain	: fountains?
+architecture/well	: wells?
+architecture/bridge	: bridges?
+architecture/castle	: castles?
+architecture/church	: church(es)?((-with)?(-a)?-spires?)?
+architecture/pillar	: (column|pillar)s?
+architecture/pyramid	: pyramids?
+architecture/cornice	: (quadrate-)?cornices?
+architecture/anille	: anilles?
+architecture/bascule	: bascules?
+architecture/pavilion	: pavill?ions? tents?
+architecture/pennon	: pen(non|n?ant)s?
+architecture/fountain-stone	: fountain-stones?
+
+furnishings/cushion	: (oreiller|cushion)s?
+furnishings/pillow	: pillows?
+furnishings/table	: tables?
+furnishings/tassel	: tassels?
+furnishings/chair	: (seat|chair)s?
+furnishings/gonfannon	: gonfann?ons?
+furnishings/flag	: (flag|fanion)s?
+furnishings/flagpole	: flagpoles?
+furnishings/banner	: banners?
+furnishings/bag-of-madder	: bags?-of-madder
+furnishings/wool-pack	: wool-?[ps]acks?
+furnishings/garland	: garlands? chaplets? wreaths?
+
+

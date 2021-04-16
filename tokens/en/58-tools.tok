@@ -1,0 +1,148 @@
+@CHARGE
+
+tools/barnacle	: barnacles?
+tools/brey	: br[ae]ys?
+tools/padlock	: (fetter|pad)locks?
+tools/fleam	: (flea?g?me?|lancet)s?
+tools/hammer	: (hammer|martell)s?
+tools/set-square	: (set|carpenter|joiner|mason)s?-squares?
+tools/spade	: (spade|shovel)s?(-irons?)?
+tools/spade	: digging-(iron|spade|shovel)s?
+tools/barrow	: (hand-)?barrows?
+tools/ladder	: (scaling-)?ladders?
+tools/scales	: (sets?-)?(of-)?(balanc|scal)es?
+tools/anvil	: (smiths-)?anvils?
+tools/mariners-compass	: mariners?-compass(es)?
+tools/bodkin	: (tailors-)?bodkins?
+tools/billhook	: bills?-?hooks? (wood-)?bills? 
+tools/angles	: angles
+tools/calipers	: calipers
+tools/astrolabe	: astrolabes?
+tools/awl	: awls?
+tools/hoe	: hoes?
+tools/bracket	: brackets?
+tools/cable	: cables?
+tools/chain	: chains?
+tools/rake	: rakes?
+tools/compass	: compass(es)?
+tools/hempbrake	: flax-breakers?
+tools/flail	: flails?
+tools/float	: flo(at|te)s?
+tools/forge-hammer	: forge-hammers?
+tools/sledge-hammer	: sledge-?hammers?
+tools/grappling-iron	: grappling-irons?
+tools/hempbrake	: hackles? hemp-?(break|brac?ke)s?
+tools/key	: keys?
+tools/staple	: staples?
+tools/mallet	: mallets?
+tools/millrind	: mill-?(rind|iron)s? (fers?-de|ink)-molines?
+tools/nail	: nails?
+tools/scythe	: scythes?
+tools/mattock	: mattocks?
+tools/shacklebolt	: shac?k(le)?-?bolts?
+tools/soldering-iron	: soldering-irons?
+tools/wedge	: stone-bills? wedges?
+tools/billhook	: woodbills?
+tools/cramp	: cramp(oon|-?iron)?s?
+tools/wolfiron	: wolf-?irons?
+tools/plummet	: plum(met|bob)s?
+tools/trestle	: trestles?
+
+farming/shepherds-crook	: shepherds-crooks?
+farming/crook-basel	: crooks?-of-basel
+farming/windmill	: windmills?
+farming/eel-basket	: eel-baskets?
+farming/wine-press	: wine-press(es)?
+farming/woolcard	: wool-cards?
+farming/corn-sheaf	: garbs?
+farming/millstone	: mill-?stones?
+farming/corn		: corn
+farming/wagon		: wagons?
+farming/corn-sheaf	: (wheat|corn)-?shea(f|ves) shea(f|ves)-of-(wheat|corn)
+farming/oat-sheaf	: oat-?shea(f|ves)
+farming/fan-winnowing	: winnowing-fans? scruttles?
+farming/spoked-wheel	: spoked-wheels? ((wagon|cart)-)?wheels?(-of-{N}-spokes)?
+farming/beehive		: beehives?
+farming/shredding-knife	: shredding-kni[fv]es?
+farming/plough		: plo(ugh|w)s?
+farming/ploughshare	: plo(ugh|w)-?shares?
+farming/wicker-fence	: wicker-fences?
+farming/fishhook	: fish-?hooks?
+farming/harrow		: harrows?
+farming/sickle		: sickles?
+
+crafts/spindle		: spindles?(-of-silk)?
+crafts/ribbon		: ribbons?
+crafts/thimble		: thimbles?
+crafts/scissors		: scissors
+crafts/shears		: shears
+crafts/yarn-ball	: (balls?-of-)?yarn
+crafts/yarn-ball	: yarn-balls?
+crafts/needle		: needles?
+crafts/needle-threaded	: threaded-needles?
+crafts/needle-threaded	: needles?-threaded
+crafts/shuttle		: (weavers?-)?shuttles?
+crafts/artists-brush	: artists-brush(es)?
+crafts/embroiderers-broach	: embroiderers?-broach(es)?
+crafts/quill-pen	: quills?(-pens?)?
+crafts/thread-spool	: thread-spools? spools?(-of-threads?)?
+crafts/barber-pole	: barbers?-poles?
+
+household/bung		: bungs?(-of-a-tun)?
+household/fire-steel	: fire-?steels? furisons?
+household/meat-spit	: spits?-of-meat meat-spits?
+household/tops		: playing-tops?
+household/lamp		: (arabian-)?lamps?
+household/flask		: flasks?
+household/bucket	: (bucket|pail)s?
+household/cup-of-acorns	: cups?-of-acorns
+household/hourglass	: hour-?glass(es)?
+household/crutch	: crutch(es)?
+household/book		: books?
+household/book-shelf	: book-?shel(f|ves) shel(f|ves)-of-books?
+household/abacus	: abac(i|us|uses)
+household/comb		: combs?
+household/pen		: writing-pens?
+household/mortar-pestle	: pestles?-(and-)?mortars? mortars?-(and-)?pestles?
+household/barrel	: (hogshead|barrel|tub|tun)s?
+household/fan-ladies	: ladies-fans?
+household/globe		: terrestrial-(globe|sphere)s?
+household/saltcellar	: salt-?cellars?
+household/candlestick	: candle-?sticks?
+household/candle	: candles?
+household/scroll	: e?scrolls?
+household/urn		: (vase|urn)s?
+household/amphora	: amphora(e|s)?
+household/bottle-leather	: leather-bottles?
+household/rubber-duck	: rubber-ducks?
+farming/butter-churn	: butter-churns?
+farming/fleece		: fleeces?
+@CHARGE CHARGE_PROPER
+farming/fleece		: golden-fleeces?
+@CHARGE
+household/bellows	: bellows?
+household/armillary-sphere	: armill?ary-spheres?
+
+utensil/water-bouget	: dossers? (water-)?b(ou|ed)gets?
+utensil/fleshpot	: flesh-?pots?
+utensil/trivet		: (round-)?trivets?
+utensil/triangular-trivet	: triangular-trivets?
+utensil/cauldron	: cauldrons?
+utensil/charger		: chargers?
+utensil/chalice		: chalices? (drinking|college|lily)-(pot|cup)s? 
+utensil/ladle		: ladles?
+utensil/cup-covered	: (pot|cup)-covers? covers?-for-(a-)?(pot|cup)s?
+utensil/mug	: mugs?
+utensil/cup	: cups?
+utensil/goblet	: goblets?
+utensil/fork	: forks?
+utensil/spoon	: spoons?
+utensil/ewer	: (ew|beak|pitch)ers?
+utensil/ewer	: (lav|wat)er-pots?
+
+tack/rowel	: (spur-)?(rouelle|rowel|molet)s?
+tack/stirrup	: stirrups?
+tack/spur	: spurs?
+tack/horseshoe	: (horseshoe|ferr)s?
+tack/saddle	: saddles?
+

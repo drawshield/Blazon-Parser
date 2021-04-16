@@ -1,0 +1,38 @@
+@CHARGE
+
+human/knight-mounted	: mounted-knights? chevaliers? knights?-mounted		
+human/triskelion-of-arms	: triskes?lions?-of-arms
+human/triskelion-of-legs-armored	: triskes?lions?-of-armou?red-legs triskes?lions?-of-legs-(armou?red)?
+
+human/archer	: archers? bowm[ae]n
+human/molar	: (t(oo|ee)th|molars?)
+human/falconer	: falconers?
+human/savage	: wildm[ae]n?
+human/eye	: eyes?
+human/maiden	: maidens?
+human/man	: (english)?m[ae]ns?
+human/egyptian	: egyptians?
+human/heart	: (human|body)?-hearts?
+human/arm	: (human)?-arms?
+human/boy	: boys?
+
+human/moor	: (blacka)?moors?
+human/blacksmith	: blacksmiths?
+human/saracen	: saracens?
+human/savage	: savages? (wild|wood|savage)-m[ae]ns?	
+human/bone	: (sh(in|ank)-)?bones?
+human/hand	: (human-)?(main|hand)s?
+human/hand-clawed	: (human-)?(main|hand)s?-clawed
+human/hand-benediction	: (human-)?(main|hand)s?-of-benediction
+human/skull	: (human-)?(mort|skull)s?
+human/skeleton	: (human-)?skeletons?
+human/skull	: deaths-heads?
+human/leg	: (human-)?(jambe|gambe|leg)s?
+human/foot	: (human-)?f(oo|ee)t
+human/footprint	: (human-)?foot-?prints?
+human/asker	: askers?
+human/hair	: locks?-of-hair
+human/beard	: ((hu)?mans?-)?beards?
+human/monk	: monks?
+human/hand-pair-2-clasped	: fois?
+
