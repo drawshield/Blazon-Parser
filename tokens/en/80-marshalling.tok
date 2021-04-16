@@ -1,0 +1,10 @@
+ ; MARSHALLING
+
+@COMPLEX PAIRED
+dimidiated	: dimidiated-with
+impaled		: impaled-with
+
+@COMPLEX QUARTERED
+quartered	: (grand)?quartered
+quartered-per-saltire	: (grand)?quartered-per-saltire
+

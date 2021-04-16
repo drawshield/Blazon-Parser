@@ -1,6 +1,6 @@
 %%
 
-(achieve|hatch)ment({S}of)?	{ return ACHIEVEMENT; }
+(achieve|hatch)ment({S}of)?	{ stash(); return ACHIEVEMENT; }
 
 ((a|the){S})?crest({S}of)?	{ mkNode( E_CREST, "crest"); return CREST; }
 

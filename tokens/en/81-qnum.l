@@ -4,12 +4,6 @@
   * MARSHALLING
   ******************************/
 
-dimidiated{S}with { mkNode(E_COMPLEX, "dimidiated"); return PAIRED; }
-impaled{S}with { mkNode(E_COMPLEX, "impaled"); return PAIRED; }
-
-(grand)?quartered { mkNode(E_COMPLEX, "quartered"); return QUARTERED; }
-(grand)?quartered{S}per{S}saltire { mkNode(E_COMPLEX, "quartered-per-saltire"); return QUARTERED; }
-
 ")" { stash(); return QUARTERMARK; }
 
 (first|1st|i)  { stash();  val("1"); return QUARTERNUM; }

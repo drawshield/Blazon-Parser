@@ -1,0 +1,38 @@
+@~CHGMOD CHGPREFIX
+
+covered	: covered
+standing: standing
+open	: open
+heraldic: heraldic
+dexter	: dexter
+sinister: sinister
+double	: double
+branched: branched
+staved	: staved
+single	: single
+modern	: modern
+winged	: winged
+natural	: natural
+nude	: nude
+displayed	: spread
+head	: heads?-of(-(a|an|the))?
+closed	: closed?
+demi	: (dem[yi]|half)
+like	: like 		; not sure whether this has any real meaning, but added as mod just in case
+portion	: (tuft|stalk|limb|sprig|bough|scrog|branche?)s?(-of)?
+double-headed	: double-headed
+equal-armed	: equal-armed
+
+@~cHGMOD ESCPREFIX
+shape-french	: french(-shaped)
+shape-swiss	: swiss(-shaped)
+shape-oval	: oval-shaped?
+shape-lozenge	: lozenge-shaped?
+shape-square	: square-shaped?
+shape-english	: english(-shaped?)?
+shape-italian	: italian(-shaped?)?
+shape-polish	: polish(-shaped?)?
+shape-spanish	: spanish(-shaped?)?
+shape-german	: german(-shaped?)?
+shape-heater	: heater(-shaped?)?
+
