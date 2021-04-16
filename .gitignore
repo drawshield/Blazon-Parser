@@ -7,7 +7,7 @@ blazon.tab.c
 blazon.tab.h
 blazon.l
 blazon.output
-blazon
+metalex
 *.code-workspace
 
 
