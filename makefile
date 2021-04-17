@@ -9,7 +9,7 @@ INC	= -I/usr/include/libxml2
 LIBS	= -lxml2
 LEX	= flex
 YACC	= bison
-LFLAGS	= -Cfe
+LFLAGS	= -Cfe -Ca
 YFLAGS	= -vd
 OBJECTS	= blazonML.o blazon.tab.o lex.yy.o errors.o spelling.o canon.o
 
