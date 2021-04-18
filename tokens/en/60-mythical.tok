@@ -29,7 +29,7 @@ mythical/alphyn		: alphyns?
 mythical/keythong	: keythongs?
 mythical/centaur	: centaurs? sagittar(y|ius)
 mythical/cockatrice	: (amphisien-)?cockatrices?
-mythical/griffin	: (griff[oi]n|gryphon|keythong)s?
+mythical/griffin	: gr(iff[oi]|ypho)ns?
 mythical/fishtail-griffin	: fishtail(ed)?-(griff[oi]n|gryphon)s?
 mythical/hippogriff	: hippogriffs?
 mythical/hydra		: hydras?

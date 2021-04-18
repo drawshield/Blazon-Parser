@@ -18,7 +18,7 @@
  */
 %option noyywrap yylineno case-insensitive batch
 %option noreject noyymore noinput nounput nodefault
-%option never-interactive bison-bridge warn
+%option never-interactive warn
 
 %{
 

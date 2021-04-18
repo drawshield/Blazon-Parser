@@ -56,7 +56,9 @@ static void out_regex(char*);
 <EXPECTCOL>:		{ multi = 0; BEGIN(RHS0); }
 <RHS0>[^ \t\r\n]+	{ out_regex(yytext); BEGIN(RHS); } 
 
-<RHS>[^ \t\r\n;]+	{ if(multi) printf("|"); else printf("\t|\n");
+<RHS>[^ \t\r\n;]+	{ if(multi) printf("|");
+                          else if(strchr(yytext, '-')) printf("\t{ %s%s, %s); return %s; }\n", func, elid, keyterm, tokid);
+             		  else printf("\t|\n");
 			  out_regex(yytext);
 			}
 <RHS>(;.*)?\n		{ if(multi) printf(")/{E}"); 

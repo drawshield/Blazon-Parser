@@ -26,7 +26,6 @@ sixteen { val( "16" ); return NUMBER; }
 seventeen { val( "17" ); return NUMBER; }
 eighteen { val( "18" ); return NUMBER; }
 nineteen { val( "19" ); return NUMBER; }
-twenty { val( "20" ); return NUMBER; }
 (twen|thir|for|fif|six)ty  		{ snprintf(nbuf,3,"%c0",adigit[yytext[2]&7]); val(nbuf); return NUMBER; }
 (twen|thir|for|fif|six)ty{S}one/{E}  	{ snprintf(nbuf,3,"%c1",adigit[yytext[2]&7]); val(nbuf); return NUMBER; }
 (twen|thir|for|fif|six)ty{S}two/{E} 	{ snprintf(nbuf,3,"%c2",adigit[yytext[2]&7]); val(nbuf); return NUMBER; }
@@ -55,7 +54,7 @@ twenty { val( "20" ); return NUMBER; }
  /* Ordinals using Roman numerals */
 x{0,3}v?i{0,4}	{{ int n = 0; while(*yytext) { n += (*yytext=='x') ? 10 : (*yytext=='v') ? 5 : 1; yytext++; }
 			snprintf(nbuf,3,"%d",n); val(nbuf); return QNUM_ROM; }}
-x{0,3}i[vx]	{{ char * s = strchr(yytext, i); snprintf(nbuf,3,"%d",10*(s-yytext)+((s[1]=='v')?4:9)); val(nbuf); return QNUM_ROM; }}
+x{0,3}i[vx]	{{ char * s = strchr(yytext, 'i'); snprintf(nbuf,3,"%ld",10*(s-yytext)+((s[1]=='v')?4:9)); val(nbuf); return QNUM_ROM; }}
  /* TODO approaching 50 -- probably not important */
  
  /* Ordinals using full words */
@@ -78,16 +77,16 @@ sixtenth  	{ stash();  val("16"); return QNUM_WORD; }
 seventeenth	{ stash();  val("17"); return QNUM_WORD; }
 eightheenth	{ stash();  val("18"); return QNUM_WORD; }
 nineteenth 	{ stash();  val("19"); return QNUM_WORD; }
-(twen|thir|for|fif|six)tieth  		{ snprintf(nbuf,3,"%c0",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}first/{E}  	{ snprintf(nbuf,3,"%c1",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}second/{E} 	{ snprintf(nbuf,3,"%c2",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}third/{E}  	{ snprintf(nbuf,3,"%c3",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}fourth/{E} 	{ snprintf(nbuf,3,"%c4",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}fifth/{E}  	{ snprintf(nbuf,3,"%c5",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}sixth/{E}  	{ snprintf(nbuf,3,"%c6",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}seventh/{E} { snprintf(nbuf,3,"%c7",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}eighth/{E}	{ snprintf(nbuf,3,"%c8",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
-(twen|thir|for|fif|six)ty{S}ninth/{E}  	{ snprintf(nbuf,3,"%c9",adigit[yytext[2]&7]); stval(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)tieth  		{ snprintf(nbuf,3,"%c0",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}first/{E}  	{ snprintf(nbuf,3,"%c1",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}second/{E} 	{ snprintf(nbuf,3,"%c2",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}third/{E}  	{ snprintf(nbuf,3,"%c3",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}fourth/{E} 	{ snprintf(nbuf,3,"%c4",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}fifth/{E}  	{ snprintf(nbuf,3,"%c5",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}sixth/{E}  	{ snprintf(nbuf,3,"%c6",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}seventh/{E} { snprintf(nbuf,3,"%c7",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}eighth/{E}	{ snprintf(nbuf,3,"%c8",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
+(twen|thir|for|fif|six)ty{S}ninth/{E}  	{ snprintf(nbuf,3,"%c9",adigit[yytext[2]&7]); val(nbuf); return QNUM_WORD; }
 
  /* Ordinals using letters */
 [a-z]{B} { stash(); snprintf(nbuf, 3, "%d", *yytext & 0x1f); val(nbuf); return QNUM_LTR; }

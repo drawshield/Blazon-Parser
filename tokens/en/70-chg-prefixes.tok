@@ -23,7 +23,7 @@ portion	: (tuft|stalk|limb|sprig|bough|scrog|branche?)s?(-of)?
 double-headed	: double-headed
 equal-armed	: equal-armed
 
-@~cHGMOD ESCPREFIX
+@~CHGMOD ESCPREFIX
 shape-french	: french(-shaped)
 shape-swiss	: swiss(-shaped)
 shape-oval	: oval-shaped?

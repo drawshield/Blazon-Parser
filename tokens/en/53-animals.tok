@@ -106,7 +106,7 @@ bird/swan	: swans?
 bird/duck	: ducks?
 
 
-hawking/alerion		: (all?erion|erne|eaglet)?s?
+hawking/alerion		: (all?erion|erne|eaglet)s?
 hawking/falcon		: (marlion|falcon|hawk|goshawk)s?
 hawking/falcon		: sparrow-hawks?
 hawking/imperial-eagle	: imperial-eagles?

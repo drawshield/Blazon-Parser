@@ -38,11 +38,11 @@ mantling{S}(of{S})?(a{S})?cloak			{ mkNode( E_MANTLING, "cloak" ); return MANTLI
 cloak({S}mantling)?				{ mkNode( E_MANTLING, "cloak" ); return MANTLING; }
 
 
-(the{S})?motto{S}[[:print:]]+		{ mkNode( E_MOTTO, "plain");
+(the{S})?motto{S}[a-z0-9]+		{ mkNode( E_MOTTO, "plain");
 					  xmlNewProp(yylval.n, A_TEXT, strchr(yytext,'m') + 6);
 					  return MOTTO;
 					}
-(the{S})?devi[sc]e{S}[[:print:]]+	{ mkNode( E_MOTTO, "plain");
+(the{S})?devi[sc]e{S}[a-z0-9]+		{ mkNode( E_MOTTO, "plain");
 					  xmlNewProp(yylval.n, A_TEXT, strchr(yytext,'d') + 7);
 					  return MOTTO;		
 					}
@@ -58,8 +58,7 @@ cloak({S}mantling)?				{ mkNode( E_MANTLING, "cloak" ); return MANTLING; }
 					  		   		xmlNewProp(yylval.n, A_TEXT, buf);
 									return MOTTO;
 								    case '\\':
-									*t++ = *(++s)++;
-									break;
+									s++;
 								    default:
 									*t++ = *s++;
 								}
