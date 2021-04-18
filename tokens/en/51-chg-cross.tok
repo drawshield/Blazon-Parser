@@ -72,6 +72,6 @@ quadrate/maltese-cross	: maltese-cross(let|lets|es)?
 quadrate/compass-rose	: (compass-roses?|novae)
 quadrate/compass-star	: compass-stars?
 quadrate/crosslet	: (plain-)?cross?lett?s?
-quadrate/cross-formy	: cross?lett?s?-formy
+quadrate/cross-formy	: cross?letts?-formy
 quadrate/saltorel	: saltorels?
 

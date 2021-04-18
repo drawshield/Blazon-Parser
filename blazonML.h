@@ -24,6 +24,8 @@ T_* - Types for modifiers
 #define E_MANTLING "mantling"
 #define E_HELMET "helmet"
 #define E_SUPPORTERS "supporters"
+#define E_COMPARTMENT "compartment"
+#define E_FRINGE "fringe"
 #define E_MOTTO "motto"
 #define A_TEXT "text"
 #define E_LOCATION "location"
