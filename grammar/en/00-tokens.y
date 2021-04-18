@@ -26,13 +26,19 @@
 %token <n> ORDINARY ORD_OR_CHG ORDMOD ORDMODCOL
 
 /* --------------------------------- Charges -------------------------------- */
-%token <n> CHARGE ARRANGEMENT CHGPREFIX CHGMOD
+%token <n> CHARGE CHARGE_PROPER HELMET TORSE ESC_CHARGE ESC_OF_PRETENCE SYM_CHARGE
+%token <n> TEXT_CHARGE ARRANGEMENT
 
 /* -------------------------------- Modifiers ------------------------------- */
 %token <n> LINETYPE DECORATION VOIDED COTTICE
-%token <n> ORIENTATION CHEVRONMOD BARMOD
+%token <n> ORIENTATION CHEVRONMOD BARMOD ESCPREFIX CHGPREFIX CHGMOD
+%token <n> CHGMOD_OR_PREF CHARGE_OR_MOD
 
 /* ------------------------------- Marshalling ------------------------------ */
 %token <n> PAIRED QUARTERED 
-%token <s>  QUARTERNUM
+%token <s> QNUM_ARA QNUM_ROM QNUM_WORD QNUM_LTR
 %token QUARTERMARK QUARTER
+
+/* ------------------------------- Achievements ----------------------------- */
+%token <n> ACHIEVEMENT CREST COMPARTMENT ECCLESIASTIC SUPPORTERS MANTLING MOTTO FRINGED
+

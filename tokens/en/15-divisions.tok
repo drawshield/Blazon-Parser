@@ -11,26 +11,28 @@ per-fess	: fesse?wise
 @ DIVISION DIVISION_2
 pily		: pily
 quarterly	: per-cross
-quarterly-per-fess	: quarterly-per-fesse?
-quarterly-per-pale	: quarterly-per-pale
+quarterly-per-fess	: quarterly,?-per-fesse?
+quarterly-per-pale	: quarterly,?-per-pale
 paly-bendy	: paly-bendy bendy-paly
 pily-bendy	: pily-bendy bendy-pily
 barry		: b[ua]rr?(ul)?y(-sans)?(-nombre)?
 paly		: paly
-chape		: chape
+chape		: (per-)?chape
+chape-ploye	: (per-)?chape-ploye
 chevronny	: chevronn?(ell)?y
-chausse		: chausse
+chausse		: (per-)?chausse
 gyronny		: quarterly-quartered (per-)?g[iy]ronny
 bendy		: bendy
 per-fess	: per-fesse?
 per-pale	: per-pale
+per-chief	: per-chief
 per-pall	: per-pall
 per-pall-arrondi	: per-pall-arrondi
 per-chevron	: per-chevron
 per-bend	: per-bend
 per-saltire	: per-saltire
 fusily		: fusill?y
-fusily-bendy	: fusill?y-bendy fusill?y-in-bend
+fusily-bendy	: fusill?y-bendy(-dexter)? fusill?y-in-bend
 barry-bendy	: barry-bendy(-lozengy)? bendy-lozengy
 barry-pily	: barry-pily
 barry-indented-oio	: barry-indented(-the)?-(one|1)-in-the-other

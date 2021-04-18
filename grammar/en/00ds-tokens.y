@@ -1,6 +1,6 @@
 
 %token <n> SHAPE PALETTE EFFECT ASPECT
 %token DRAWN
-%token <s> REALNUM RATIO
+%token <s> DECIMAL RATIO
 
 
