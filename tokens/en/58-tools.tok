@@ -61,7 +61,7 @@ farming/wagon		: wagons?
 farming/corn-sheaf	: (wheat|corn)-?shea(f|ves) shea(f|ves)-of-(wheat|corn)
 farming/oat-sheaf	: oat-?shea(f|ves)
 farming/fan-winnowing	: winnowing-fans? scruttles?
-farming/spoked-wheel	: spoked-wheels? ((wagon|cart)-)?wheels?(-of-{N}-spokes)?
+farming/spoked-wheel	: spoked-wheels? ((wagon|cart)-)?wheels?
 farming/beehive		: beehives?
 farming/shredding-knife	: shredding-kni[fv]es?
 farming/plough		: plo(ugh|w)s?

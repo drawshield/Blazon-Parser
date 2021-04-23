@@ -26,13 +26,12 @@
 %token <n> ORDINARY ORD_OR_CHG ORDMOD ORDMODCOL
 
 /* --------------------------------- Charges -------------------------------- */
-%token <n> CHARGE CHARGE_PROPER HELMET TORSE ESC_CHARGE ESC_OF_PRETENCE SYM_CHARGE
-%token <n> TEXT_CHARGE ARRANGEMENT
+%token <n> CHARGE CHARGE_PROPER HELMET TORSE ESC_CHARGE ESC_OF_PRETENCE ARRANGEMENT
 
 /* -------------------------------- Modifiers ------------------------------- */
 %token <n> LINETYPE DECORATION VOIDED COTTICE
 %token <n> ORIENTATION CHEVRONMOD BARMOD ESCPREFIX CHGPREFIX CHGMOD
-%token <n> CHGMOD_OR_PREF CHARGE_OR_MOD
+%token <n> CHGMOD_OR_PREF CHARGE_OR_MOD CHG_FEAT
 
 /* ------------------------------- Marshalling ------------------------------ */
 %token <n> PAIRED QUARTERED 

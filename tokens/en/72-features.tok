@@ -1,0 +1,86 @@
+@~FEATURE CHG_FEAT
+%yytext	: crossed fructed beaked hooped plumed wreathed seeded barbed gemmed acorned laced muzzled allume tusked spotted corded chausse crined nooked hooded spouting habited lined maned nerved striped penned stringed aulned stemmed belled finned nest staff seamed acorns towered domed tasselled mortared shelled tied headed drooping voided beaded ringed masonry
+
+leathered	: leather(s|ed)?
+pole		: pole[sd]?
+cuff		: cuff(s|ed)?
+in-profile	: in-profile
+turned-up	: turned-up
+tools		: tool(s|ed)?
+head		: with-heads?
+knobbed		: knob(s|bed)?
+apron		: apron(s|ed)?
+belted		: belt(s|ed)?
+trousered	: trouser(s|ed)? hose(s|ed)?
+hatted		: hat(s|ted)?
+booted		: boot(s|ed)?
+caparisoned	: housings?
+quilled		: quill(s|ed)? furnished-with-quills?
+caparisoned	: caparison(s|ed)?
+stirruped	: stirrup(s|ed)?
+chains		: chain(s|ed)?
+full-faced	: full-faced
+jessant		: jessant(-de-l[iy]s)?
+ribboned	: ribbon(s|ed)?
+bow		: bows?
+tipped		: tip(s|ped)?
+hands		: hands?
+buckled		: buckle[sd]?(-(in-)?(the-)?centre)?
+shelled		: in-the(ir)?-shells?
+clasped		: clasp(s|ed)
+threaded	: thread(s|ed)
+garnished	: garnish(ing|ed)
+visor		: vi[sz]ors?
+spurs		: spur(s|red)?
+top		: (top|impost|cap|capital)s?
+base		: (pedestal|base)s?
+attired		: (tyne|attir|antler)(s|ed)
+banner		: banner(ed|s)?
+fluted		: flute[ds]
+fluked		: fluke[ds]
+shafted		: s?haft(s|ed)?
+feathered	: (flight|feather)ed
+combed		: (crested|combs|combed)?
+jelloped	: jelloped
+tailed		: (queue|tail)(s|e?d)
+encircled	: banded encircled
+stock		: stocks?
+hilt		: (stave?|hilt)(s|ed)?
+pomell		: (pom?mell?s?|pomm?ell?ed)
+langued		: (to|la)ngue[sd]
+blade		: bladed?s?
+handle		: h(andl|elv)e[ds]?
+leaved		: leaves?d?
+legged		: (b?e?legged|membered)
+unguled		: (u?o?ngull?ed|hoo[fv]ed?s?)
+trunked		: trunk(s|ed)?
+slipped		: slipped stalked leaved 
+legged		: legged membered
+winged		: winged aisle 
+armed		: (barbed|armed)(-at-(all-)?points)?
+armoured	: in-full-armou?r
+armoured	: armou?r(ed)?
+pointed		: point(s|ed)(-steeled)? heads?-steeled
+pointed		: (e|ai)guisc?e
+horned		: horned acorne horns
+fimbriated	: fimbriated edge[ds]
+flowers		: (flower|bud)(s|d?ed)
+wattled		: j[eo]llopped wattle[sd]?
+hulled		: hull(s|ed)?
+sails		: sail(s|ed)?
+pennants	: pennant(s|ed)?
+collared	: collar(s|ed)?
+eyes		: eyes(-of-(the-)?tails?)?
+stick		: (vine-)?stick
+feetfettered	: (fore-)?feet-fettered
+head		: faces? heads? ; See Parker Corpus ADY, usually a mod but if both present, features
+claw		: (talon|claw)s?
+ear		: ears?
+leg		: ([gj]ambe|leg)s?
+inflamed	: flammant bursting exploding (en|in)flamed?
+inflamed	: fired(-in-{N}?-places)? in-(a-)?(flame[sd]?|fire)
+inflamed	: (with|emitting)-flames(-of-fire)? flames?-issu(ing|ant)(-from-each)?
+holding-nut	: (crack|hold)ing-(an?-)?(ore-)?nuts?
+bellied		: bellied
+pizzled		: pizzled
+ 

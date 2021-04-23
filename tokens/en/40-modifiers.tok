@@ -35,7 +35,7 @@ couped-dexter	: (couped|humetty|alese)-(in-)?dexter
 couped-chief	: (couped|humetty|alese)-(in-)?chief
 couped-base	: (couped|humetty|alese)-(in-)?base
 pointed		: pointed
-flory-counter-flory	: fl(o|eu)ry-counter-fl(o|eu)ry
+flory-counter-flory	: fl(o|eu)ry-counter-?fl(o|eu)ry
 pointed-sinister	: pointed-(in-)?sinister
 pointed-dexter	: pointed-(in-)?dexter
 pointed-chief	: pointed-(in-)?chief

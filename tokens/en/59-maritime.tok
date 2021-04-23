@@ -1,10 +1,10 @@
 @CHARGE
 
-ship/galley	: lymphads? (({N}-)?masted-)?galleys?
+ship/galley	: lymphads? galleys?
 ship/oars	: oars?
 ship/rudder	: rudders?
 ship/ships-wheel	: ships?-wheels?
-ship/ship	: (({N}-)?masted-)?ships?
+ship/ship	: ships?
 ship/anchor	: anchors?
 ship/caravel	: caravels?
 ship/coracle	: coracles?

@@ -18,7 +18,9 @@ mountain	: mountains?
 base		: base
 bend		: bends?
 chief		: chief
+chief-triangular: chief-triangular triangular-chief
 fess		: fesse?
+grand-stave	: gr(eat|and)-sta(ff|ve)
 fess-between-chevrons	: fesse?-between-(2|two)-chevrons?
 dance		: dance
 ford		: ford
@@ -34,9 +36,10 @@ quarter		: quarter
 tierce		: tierce
 gorge		: gorge whirlpool gurges
 grid		: grid
-trimount	: trimount moun[td]-of-(3|three)-peaks
+trimount	: trimount
+mount		: moun[td]
 baton-dexter	: dexter-(bas?ton|battoon|batune)(-couped)? (bas?ton|battoon|batune)-dexter(-couped)?
-baton		: (bas?ton|battoon|batune)-sinister(-couped)?
+baton		: (bas?ton|battoon|batune)(-sinister)?(-couped)?
 bordure		: bordure
 canton		: cantons?
 cantell		: cantells?

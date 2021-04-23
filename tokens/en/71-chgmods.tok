@@ -1,100 +1,167 @@
 @~CHGMOD
 
-couchant	: couchant
-courant		: courant
-coward		: coward
-dormant		: dormant
-migrant		: migrant
-erect		: erect
-pierced		: pierced
-passant		: passant
-cadent		: cadent
-counterpassant	: counterpassant
-salient		: salient
-statant		: statant
-equipped	: equipped
-accrued		: accrued
-clymant		: clymant
-segreant	: segreant
-dexter		: dexter
-sinister	: sinister
-closed		: closed
-accosted	: accosted
-ambulant	: ambulant
-anime		: anime
-annodated	: annodated
-arrondie	: arrondie
-ascendant	: ascendant
-aversant	: aversant
-ayrant		: ayrant
-baillone	: baillone
-bi-corporate	: bi-corporate
-cantoned	: cantoned
-cloue		: cloue
-developed	: developed
-disarmed	: disarmed
-disclosed	: disclosed
-distilling	: distilling
-enraged		: enraged
-double-tete	: double-tete
-flotant		: flotant
-fumant		: fumant
-braced		: braced
-conjunct	: conjunct
-gradient	: gradient
-crescent	: crescent
-unarmed		: unarmed
-spouting	: spouting
-incensed	: incensed
-issuant		: issuant
-jacent		: jacent
-questing	: questing
-tergiant	: tergiant
-laminated	: laminated
-marined		: marined
-mounted		: mounted
-naissant	: naissant
-nageant		: nageant
-nimbus		: nimbus
-eradicated	: eradicated
-pascuant	: pascuant
-pinioned	: pinioned
-removed		: removed
-retorted	: retorted
-sanglat		: sanglat
-scintillant	: scintillant
-natural		: natural
-nude		: nude
-spancelled	: spancelled
-springing	: springing
-surgeant	: surgeant
-torqued		: torqued
-transfluent	: transfluent
-transposed	: transposed
-tricoporate	: tricoporate
-troncone	: troncone
-trussed		: trussed
-vervelled	: vervelled
-vorant		: vorant
-ancient		: ancient
-blasted		: blasted
-forcene		: forcene
-broken		: broken
-covered		: covered
-uncovered	: uncovered
-waved		: waved
-vambraced	: vambraced
-double		: double
-skipping	: skipping
-recursant	: recursant
-fixed		: fixed
-ploye		: ploye
-clenched	: clenched
-pometty		: pometty
-floretty	: floretty
-debruised	: debruised
-increscent	: increscent
-decrescent	: decrescent
-rousant		: rousant
-latin		: latin
+%yytext	: couchant courant coward dormant migrant erect pierced passant cadent counterpassant salient statant equipped accrued clymant segreant dexter sinister closed accosted ambulant anime annodated arrondie ascendant aversant ayrant baillone cantoned cloue developed disarmed disclosed distilling enraged flotant fumant braced conjunct gradient crescent unarmed spouting incensed issuant jacent questing tergiant laminated marined mounted naissant nageant nimbus eradicated pascuant pinioned removed retorted sanglat scintillant spancelled springing surgeant torqued transfluent transposed tricoporate troncone trussed vervelled vorant ancient blasted forcene broken uncovered waved vambraced skipping recursant fixed ploye clenched pometty floretty debruised increscent decrescent rousant latin
 
+bi-corporate	: bi-corporate
+double-tete	: double-tete
+
+forepaw-raised		: ((dexter|sinister)-)?forepaws?-raised
+with-arrow		: (with|and)-(an-)?arrow
+with-arrow-nocked	: (with|and)-(an-)?arrow-(nocked-)?(and-)?drawn
+with-arrow-nocked	: (with|and)-(an-)?arrow-nocked
+of-spirals		: of-sp(ri|ir)als
+naissant		: naient
+two-arches		: (of|with)-(two|2)-arches
+three-arches		: (of|with)-(three|3)-arches
+in-lure			: in-lure
+of-chain		: of-chain
+of-rope			: of-rope
+of-benediction		: of-benediction
+bust			: busts?
+vorant-of-child		: vorant-(of-)?(a-)?child(ren)?
+tower-back		: maintaining-(a-)?towers?(on-(their|its)-backs?)?
+en-arriere		: en-arriere
+terraced		: terra(ced|ssee?)
+courant			: in-full-course
+playing-card		: (playing-)?cards?
+salient			: salient-to-sinister
+salient-reversed	: salient-to-dexter
+hearts			: of-hearts
+clubs			: of-clubs
+spades			: of-spades
+diamonds		: of-diamonds
+counterpassant		: repassant
+essorant		: ascend(ing|ant) soaring essorante?s?
+herisse			: herisse?s?
+volant			: volante?s?
+fondant			: fondante?s?
+sarcelled		: sarcelled? 
+a-la-quise		: a-la-quise
+pendent			: pendent(-by-strings)?
+raguly			: ragul(y|ed) 
+double-headed		: double-headed
+fitchyfoot		: fitch(y|ee)-at-(the-)?foot 
+crenelly-ends		: crenell[ey]-at-the-ends 
+fitchy			: fitch(y|ee) 
+tail-forked-saltire	: (queue|tail)s?-(fou?rchee?|forked)-(crossed-)?(in-)?saltire
+tail-forked-saltire-reversed	: (queue|tail)s?-(fou?rchee?|forked)-(crossed-)?(in-)?saltire-reversed
+tail-forked		: (queue|tail)s?-(fou?rchee?|forked)
+tail-nowed		: (queue|tail)s?-(torqu|now|knott)ed
+nowed			: (now|knott)ed
+slipscrossed		: slips-crossed
+headless		: without-(the-)?head
+throughsword		: thrust-through-with-a-sword
+triple-towered		: triple-towered
+appalmed		: app(aume|almed)
+foliated		: (in-)?folia(ge|ted)
+in-glory		: (in-)?((his|their)-)?(glory|splendou?r)
+inpride			: in-((his|their)-)?pride
+inpiety			: in-((her|their)-)?piety
+full			: in-(her-)?(complement|plenitude)
+increscent		: in-(her-)?increment
+decrescent		: in-(her-)?de[ct]r[ie]ment
+vulned			: vuln(ed|ing)
+uriant			: urin?ant
+on-each-side		: on-each-side
+at-gaze			: at-gaze
+umbrated		: a?d?umbrated
+trippant		: tripp(ing|ant)
+rising			: rousant rising
+sinister		: traversed
+tripartite		: tripart(ed|ite)
+reflexed		: refle(ct|x)ed r?e?verted
+radiant		 	: radiant rayonne irradiated
+open			: expanded extended overt
+
+jessed			: jessed?
+increscent		: in-increment
+guarded			: guarde?d?
+doubled			: doubl(ed|ing)
+gringole		: gringole guivre
+lodged			: harboured lodged
+embowed			: (em)?(flexed|bent|bowed)
+guardant		: gu?ardant
+double-nowed		: double-nowed
+embrued			: [ei]mbrued
+elevated		: (rais|elevat)ed
+dismembered		: dechausse mutile dis(member|join)ed
+defamed			: (de|in)famed
+decollated		: decoll(e|ated)
+dismembered		: de-membered
+sejant			: seje?ant assis
+reguardant		: regu?ardant contourne tourne
+displayed		: (wings-)?(outspread|display|unfold|overture)ed?
+wingless		: (sans|without)-wings
+sejant-erect		: seje?ant-erect
+caboshed		: [ck]abo[cs][hs]ed
+bust			: couped-below-the-shoulders
+thigh			: couped-under-the-knees
+couped			: couped(-under-and-above)?
+couped-fitchy		: couped-fitch(y|ee)
+inverted		: points?-in-base
+upright			: points?-in-chief 
+inverted		: points?-(reversed|downward)s?
+upright			: points?-(uppermost|upwards)
+conjoined		: (con?joined|aboute)(-at-(?the(ir)?-)?(head|tail)s)?
+inverted		: inverted
+pierced			: trans(fixed|pierced)
+reversed		: (revers|subvert)ed
+preying			: (prey|truss)ing
+entire			: (entire|firme)
+ensoleil		: en-soleil
+rampant			: rampant climant
+glissant		: gliding glissant
+palewise		: erect-in-pale	
+haurient		: hauri[ea]nt ; of fish
+fesswise		: na[it]ant? ; of fish
+arranged		: (dispo[sn]|arrang)ed
+affronty		: affront(e[ed]?|ant|y)
+laying			: la?ying
+      ; Next 4 Mostly for labels
+straight		: straight
+pattee			: patt?e[ey]
+dovetailed		: dovetail(ed)?
+difference		: for-difference 
+annulated		: annu(lated|ette|ly)
+erased			: arrache erased
+interlaced		: complexed intertwined interlaced
+    ; aslant		: embelif aslant
+at-anchor		: (at-)?anc(hored|hory|re|ed)
+masted			: of-{N}-masts?
+fullsail		: in-full-sail
+fullsail		: ((the|her)-)?sails?-set
+     ; sails-furled		: ((the|her)-)?sails?-furled(-and-shrouded)?
+furled			: ((with-)?((the|her)-)?sails?-)?furled(-and-shrouded)?
+snake-entwined		: snakes?-entwined-a?round-(it|her|him|them)
+entwined-pillar		: entwined-a?round-(a-)?pillars?
+from-ground		: growing-out-of-the-ground
+wing			: wings?
+bough			: (bough|branche?|scrog?)s? ; of a tree
+sprig			: (tw|spr)igs? ; of a tree
+nut			: (cone|nut)s?
+on-chair		: on-a-chair
+leaf			: (leaf-leaves-slips?)
+seed			: seeds?
+tree			: trees? ; e,g, an oak tree
+in-pairs		: in-pairs
+hound-ears		: hounds?-ears?
+trian-aspect		: in-tr(ai|ia)n-aspect
+to-sinister		: laying-to-(the-)?(sinister|left)
+to-dexter		: laying-to-(the-)?(dexter|right)
+to-centre		: laying-to-(the-)?(middle|center|centre)
+linked			: linked-together
+turned-down		: top-turned-down
+long-handled		: long-handle[sd]
+with-stone		: holding-(a-)?stones?(-in-(the-)?(dexter-)?foot)?
+rays			: with-rays-streaming
+concentric		: one-(within|inside)-(the-)?other
+concentric		: concentric
+     ; Theme Pack - Font Effects
+%yytext	: enarched underlined wavy
+bold			: enlarged
+italic			: aslant(ed)?
+text-inline		: (dispo[sn]|arrang)ed-in-fess
+text-stacked		: (dispo[sn]|arrang)ed-in-pale
+text-block		: (dispo[sn]|arrang)ed-in-(a-)?block
+encircled		: (dispo[sn]|arrang)ed-in-(a-)?circle
+ 

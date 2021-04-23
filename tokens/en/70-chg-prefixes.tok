@@ -1,27 +1,32 @@
+@~CHGMOD CHGMOD_OR_PREF
+closed	: closed?
+covered	: covered
+double	: double
+natural	: natural
+nude	: nude
+fouled	: fouled
+equal-armed	: equal-armed
+open	: open
+
 @~CHGMOD CHGPREFIX
 
-covered	: covered
 standing: standing
-open	: open
 heraldic: heraldic
-dexter	: dexter
-sinister: sinister
-double	: double
+dexter	: dexter	; XXX
+sinister: sinister	; XXX
 branched: branched
 staved	: staved
 single	: single
 modern	: modern
 winged	: winged
-natural	: natural
-nude	: nude
 displayed	: spread
 head	: heads?-of(-(a|an|the))?
-closed	: closed?
+claw	: claws?-of(-(a|an|the))?
+leg	: legs?-of(-(a|an|the))?
 demi	: (dem[yi]|half)
-like	: like 		; not sure whether this has any real meaning, but added as mod just in case
+like	: like 		; XXX not sure whether this has any real meaning, but added as mod just in case
 portion	: (tuft|stalk|limb|sprig|bough|scrog|branche?)s?(-of)?
 double-headed	: double-headed
-equal-armed	: equal-armed
 
 @~CHGMOD ESCPREFIX
 shape-french	: french(-shaped)

@@ -31,7 +31,7 @@ furnishings/table	: tables?
 furnishings/tassel	: tassels?
 furnishings/chair	: (seat|chair)s?
 furnishings/gonfannon	: gonfann?ons?
-furnishings/flag	: (flag|fanion)s?
+furnishings/flag	: fanions?
 furnishings/flagpole	: flagpoles?
 furnishings/banner	: banners?
 furnishings/bag-of-madder	: bags?-of-madder

@@ -37,6 +37,8 @@ tree-fruit/conker	: conkers? horse-chestnut-fruits?
 tree-fruit/fir		: firs?
 tree-fruit/fig		: figs?
 tree-fruit/pine		: pines?
+tree-fruit/pine-scots	: scots?-pines?
+tree-fruit/pine-new-england	: new-england-pines?
 tree-fruit/pine-cone	: pine-?cones?
 tree-fruit/tree		: trees?
 tree-fruit/trunk	: (stock|trunk)s?-of(-a)?-trees?

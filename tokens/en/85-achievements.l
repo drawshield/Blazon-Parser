@@ -46,25 +46,9 @@ cloak({S}mantling)?				{ mkNode( E_MANTLING, "cloak" ); return MANTLING; }
 					  xmlNewProp(yylval.n, A_TEXT, strchr(yytext,'d') + 7);
 					  return MOTTO;		
 					}
-(the{S})?(motto|devi[sc]e){S}\"([^"]|\\[\\"])*\"	{{ char *s, *t, buf[64];
+(the{S})?(motto|devi[sc]e){S}\"([^"]|\\[\\"])*\"	{{ char buf[64];
 							   mkNode( E_MOTTO, "plain");
-							   s = strchr(yytext,'"');
-							   t = buf;
-							   while(t < buf+64) {
-								switch(*s) {
-								    case '\0':
-								    case '"':
-									*t = '\0';
-					  		   		xmlNewProp(yylval.n, A_TEXT, buf);
-									return MOTTO;
-								    case '\\':
-									s++;
-								    default:
-									*t++ = *s++;
-								}
-							   }
-							   buf[60] = buf[61] = buf[62] = '.';
-							   buf[63] = '\0';
+							   getQuotedVal(buf, 64);
 					  		   xmlNewProp(yylval.n, A_TEXT, buf);
 					 		   return MOTTO;		
 							}}

@@ -4,20 +4,6 @@ special/escutcheon	: (in)?escut?cheon-(of|[ei]n)-(pretence|surtout)
 @CHARGE ESC_CHARGE
 special/escutcheon	: (escut?|so)cheons?
 
-@CHARGE TEXT_CHARGE
-characters/digit	: (numeral|number|digit|figure)s?(-?of)?
-characters/letter	: (letters?|text)
-characters/roman	: roman(-letter)?
-characters/word		: words? legend
-characters/letter	: (monogram|cypher)s?
-characters/question	: question-marks?
-
-@CHARGE SYM_CHARGE
-astronomical/symbol	: astronomical-(character|symbol)s?(-(of|for))?(-the)?(-planet)?
-zodiac/symbol		: (zodiac|astrologic)(al)?-(character|symbol)s?(-(of|for))?
-alchemical/symbol	: alchemical-(character|symbol)s?(-(of|for))?(-the)?(-element)?
-symbol/any		: (character|symbol)s?(-(of|for))?
-
 @CHARGE
 food/cheese-wedge	: cheese-wedges? (wedges?-of-)?cheeses?
 food/cheese-wheel	: cheese-wheels? wheels?-of-cheeses?
