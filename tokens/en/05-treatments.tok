@@ -1,5 +1,13 @@
  ; Treatments that take two tinctures
 @ TREATMENT TREATMENT2
+
+%yytext	: gingham rosace fretty plumetty grillage honeycombed ermined maily ferrated
+
+glen-check	: (glen|prince-of-wales)-check[sy]?
+houndstooth	: hounds-?tooth
+shepherd-check	: shepherds?-check[sy]?
+buffalo-check	: buffalo-check[sy]?
+graph-check	: graph-check[sy]?
 annuletty	: ann?ulett?y 
 roundelly	: rou?ndell?y
 billetty	: billett?y 
@@ -7,25 +15,18 @@ checky		: checky cheque?y checkered
 counter-billetty: (billett?y-)?counter-billett?y
 crusilly	: crusill?[ye]
 estoilly	: estoill?[ye]
-fretty		: fretty
 latticed	: treille latticed
-plumetty	: plumetty
 goutty		: go?utty?e?e?
-grillage	: grillage
-honeycombed	: honeycombed
-ermined		: ermined
 estencely	: estencell?y
 lozengy		: lozengy masculy
-maily		: maily
 masoned		: masonn?ed? muraille
 mulletty	: mullett?y
 papelonny	: pap[ei]l?lonn?[ye]
-scaly		: scaly
+scaly		: scaly escaille
 seme-de-lys	: sem[ey]-de-l[iy]s fl(o|eu)ry
 vairy		: vair[ey]
 potenty		: potent[ey]
 aquilated	: ai?[qg]ui?lated
-ferrated	: ferrated
 verdy		: verd(e|oy)
 barruly-wavy	: barruly-wavy
 pied		: pied((-at)?-random)? piebald

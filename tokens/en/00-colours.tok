@@ -30,8 +30,17 @@ sable	: de-poix
 vert	: d\'?-?(huile|olive)
  
  ; English names
-%yytext	: iron bronze copper crimson lead steel gold blue green red silver black brown pink white
+%yytext	: iron bronze copper crimson lead steel white
+or	: gold
+azure	: blue
+vert	: green
+gules	: red
+argent	: silver
+sable	: black
+bunatre	: brown
 gray	: gr[ae]y
+rose	: pink
+
 
  ; obsolete names
  ;   'amethyst', 'diamond', 'dragons head', 'dragons tail', 'emerald',
